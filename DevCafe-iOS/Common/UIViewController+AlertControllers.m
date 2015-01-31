@@ -23,7 +23,10 @@
                                    handler:^(UIAlertAction *action)
                                    {
                                        NSLOG(@"Cancel action");
-                                       cancelActionHandler(action);
+                                       if(cancelAction != nil)
+                                       {
+                                           cancelActionHandler(action);
+                                       }
                                    }];
 
     [alertController addAction:cancelAction];

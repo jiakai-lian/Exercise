@@ -11,5 +11,7 @@
 //different type of notification name must be uique
 static NSString * const SAMPLE_NOTIFICATION = @"sample";
 
+static NSString * const LOCATION_CHANGED_NOTIFICATION = @"loaction changed";
+
 
 #endif
