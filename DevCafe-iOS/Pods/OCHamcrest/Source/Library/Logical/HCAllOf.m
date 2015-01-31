@@ -7,7 +7,7 @@
 
 
 @interface HCAllOf ()
-@property(readonly, nonatomic, copy) NSArray *matchers;
+@property (readonly, nonatomic, copy) NSArray *matchers;
 @end
 
 @implementation HCAllOf
@@ -21,13 +21,11 @@
 {
     self = [super init];
     if (self)
-    {
-            _matchers = [matchers copy];
-    }
+        _matchers = [matchers copy];
     return self;
 }
 
-- (BOOL)matches:(id)item describingMismatchTo:(id <HCDescription>)mismatchDescription
+- (BOOL)matches:(id)item describingMismatchTo:(id<HCDescription>)mismatchDescription
 {
     for (id <HCMatcher> oneMatcher in self.matchers)
     {
@@ -41,7 +39,7 @@
     return YES;
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [description appendList:self.matchers start:@"(" separator:@" and " end:@")"];
 }

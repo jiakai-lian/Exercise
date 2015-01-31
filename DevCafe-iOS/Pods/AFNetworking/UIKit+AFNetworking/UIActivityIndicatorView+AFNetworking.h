@@ -46,7 +46,6 @@
  */
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
 - (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task;
-
 #endif
 
 ///---------------------------------------

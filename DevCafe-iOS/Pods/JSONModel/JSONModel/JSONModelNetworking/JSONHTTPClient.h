@@ -21,15 +21,15 @@
 /**
  * HTTP Request methods
  */
-extern NSString *const kHTTPMethodGET;
-extern NSString *const kHTTPMethodPOST;
+extern NSString* const kHTTPMethodGET;
+extern NSString* const kHTTPMethodPOST;
 
 /**
  * Content-type strings
  */
-extern NSString *const kContentTypeAutomatic;
-extern NSString *const kContentTypeJSON;
-extern NSString *const kContentTypeWWWEncoded;
+extern NSString* const kContentTypeAutomatic;
+extern NSString* const kContentTypeJSON;
+extern NSString* const kContentTypeWWWEncoded;
 
 /**
  * A block type to handle incoming JSON object and an error. 
@@ -39,7 +39,7 @@ extern NSString *const kContentTypeWWWEncoded;
  * @param json object derived from a JSON string
  * @param err JSONModelError or nil
  */
-typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
+typedef void (^JSONObjectBlock)(id json, JSONModelError* err);
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - configuration methods
@@ -63,27 +63,27 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * headers[@"APIToken"] = @"MySecretTokenValue";
  * </pre>
  */
-+ (NSMutableDictionary *)requestHeaders;
++(NSMutableDictionary*)requestHeaders;
 
 /**
  * Sets the default encoding of the request body.
  * See NSStringEncoding for a list of supported encodings
  * @param encoding text encoding constant
  */
-+ (void)setDefaultTextEncoding:(NSStringEncoding)encoding;
++(void)setDefaultTextEncoding:(NSStringEncoding)encoding;
 
 /**
  * Sets the policies for caching HTTP data
  * See NSURLRequestCachePolicy for a list of the pre-defined policies
  * @param policy the caching policy
  */
-+ (void)setCachingPolicy:(NSURLRequestCachePolicy)policy;
++(void)setCachingPolicy:(NSURLRequestCachePolicy)policy;
 
 /**
  * Sets the timeout for network calls
  * @param seconds the amount of seconds to wait before considering the call failed
  */
-+ (void)setTimeoutInSeconds:(int)seconds;
++(void)setTimeoutInSeconds:(int)seconds;
 
 /**
  * A method to enable/disable automatic network indicator showing. 
@@ -92,7 +92,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * system network indicator automatically on begin and end of 
  * network operations
  */
-+ (void)setControlsNetworkIndicator:(BOOL)doesControlIndicator;
++(void)setControlsNetworkIndicator:(BOOL)doesControlIndicator;
 
 /**
  * A method to set the default conent type of the request body
@@ -100,7 +100,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * which checks the body request and decides between "application/json"
  * and "application/x-www-form-urlencoded"
  */
-+ (void)setRequestContentType:(NSString *)contentTypeString;
++(void)setRequestContentType:(NSString*)contentTypeString;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - GET asynchronious JSON calls
@@ -111,7 +111,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param urlString the URL as a string
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)getJSONFromURLWithString:(NSString *)urlString completion:(JSONObjectBlock)completeBlock;
++(void)getJSONFromURLWithString:(NSString*)urlString completion:(JSONObjectBlock)completeBlock;
 
 /**
  * Makes GET request to the given URL address and fetches a JSON response. Sends the params as a query string variables.
@@ -119,7 +119,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param params a dictionary of key / value pairs to be send as variables to the request
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)getJSONFromURLWithString:(NSString *)urlString params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock;
++(void)getJSONFromURLWithString:(NSString*)urlString params:(NSDictionary*)params completion:(JSONObjectBlock)completeBlock;
 
 /**
  * Makes a request to the given URL address and fetches a JSON response.
@@ -129,7 +129,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param bodyString the body of the POST request as a string
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)JSONFromURLWithString:(NSString *)urlString method:(NSString *)method params:(NSDictionary *)params orBodyString:(NSString *)bodyString completion:(JSONObjectBlock)completeBlock;
++(void)JSONFromURLWithString:(NSString*)urlString method:(NSString*)method params:(NSDictionary*)params orBodyString:(NSString*)bodyString completion:(JSONObjectBlock)completeBlock;
 
 /**
  * Makes a request to the given URL address and fetches a JSON response.
@@ -140,7 +140,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param headers the headers to set on the request - overrides those in +requestHeaders
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)JSONFromURLWithString:(NSString *)urlString method:(NSString *)method params:(NSDictionary *)params orBodyString:(NSString *)bodyString headers:(NSDictionary *)headers completion:(JSONObjectBlock)completeBlock;
++(void)JSONFromURLWithString:(NSString*)urlString method:(NSString*)method params:(NSDictionary*)params orBodyString:(NSString*)bodyString headers:(NSDictionary*)headers completion:(JSONObjectBlock)completeBlock;
 
 /**
  * Makes a request to the given URL address and fetches a JSON response.
@@ -151,7 +151,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param headers the headers to set on the request - overrides those in +requestHeaders
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)JSONFromURLWithString:(NSString *)urlString method:(NSString *)method params:(NSDictionary *)params orBodyData:(NSData *)bodyData headers:(NSDictionary *)headers completion:(JSONObjectBlock)completeBlock;
++(void)JSONFromURLWithString:(NSString*)urlString method:(NSString*)method params:(NSDictionary *)params orBodyData:(NSData*)bodyData headers:(NSDictionary*)headers completion:(JSONObjectBlock)completeBlock;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - POST synchronious JSON calls
@@ -162,7 +162,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param params a dictionary of key / value pairs to be send as variables to the request
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)postJSONFromURLWithString:(NSString *)urlString params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock;
++(void)postJSONFromURLWithString:(NSString*)urlString params:(NSDictionary*)params completion:(JSONObjectBlock)completeBlock;
 
 /**
  * Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.
@@ -170,7 +170,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param bodyString the body of the POST request as a string
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)postJSONFromURLWithString:(NSString *)urlString bodyString:(NSString *)bodyString completion:(JSONObjectBlock)completeBlock;
++(void)postJSONFromURLWithString:(NSString*)urlString bodyString:(NSString*)bodyString completion:(JSONObjectBlock)completeBlock;
 
 /**
  * Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.
@@ -178,7 +178,7 @@ typedef void (^JSONObjectBlock)(id json, JSONModelError *err);
  * @param bodyData the body of the POST request as an NSData object
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)postJSONFromURLWithString:(NSString *)urlString bodyData:(NSData *)bodyData completion:(JSONObjectBlock)completeBlock;
++(void)postJSONFromURLWithString:(NSString*)urlString bodyData:(NSData*)bodyData completion:(JSONObjectBlock)completeBlock;
 
 
 @end

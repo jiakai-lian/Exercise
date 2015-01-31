@@ -21,9 +21,7 @@
     {
         unichar character = [self characterAtIndex:index];
         if (!isdigit(character))
-        {
-                    break;
-        }
+            break;
         decimal = decimal * 10 + character - '0';
         readDigit = YES;
     }
@@ -41,9 +39,9 @@
 
 
 @interface HCDescribedAs ()
-@property(readonly, nonatomic, copy) NSString *descriptionTemplate;
-@property(readonly, nonatomic, strong) id <HCMatcher> matcher;
-@property(readonly, nonatomic, copy) NSArray *values;
+@property (readonly, nonatomic, copy) NSString *descriptionTemplate;
+@property (readonly, nonatomic, strong) id <HCMatcher> matcher;
+@property (readonly, nonatomic, copy) NSArray *values;
 @end
 
 
@@ -77,12 +75,12 @@
     return [self.matcher matches:item];
 }
 
-- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
 {
     [self.matcher describeMismatchOf:item to:mismatchDescription];
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     NSArray *components = [self.descriptionTemplate componentsSeparatedByString:@"%"];
     BOOL firstComponent = YES;
@@ -105,13 +103,9 @@
     int index;
     NSString *remainder = [component och_getDecimalNumber:&index];
     if (index < 0)
-    {
-            [[description appendText:@"%"] appendText:component];
-        }
+        [[description appendText:@"%"] appendText:component];
     else
-    {
-            [[description appendDescriptionOf:self.values[index]] appendText:remainder];
-    }
+        [[description appendDescriptionOf:self.values[index]] appendText:remainder];
 }
 
 @end

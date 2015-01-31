@@ -7,7 +7,7 @@
 
 
 @interface HCHasCount ()
-@property(readonly, nonatomic, strong) id <HCMatcher> countMatcher;
+@property (readonly, nonatomic, strong) id <HCMatcher> countMatcher;
 @end
 
 @implementation HCHasCount
@@ -21,18 +21,14 @@
 {
     self = [super init];
     if (self)
-    {
-            _countMatcher = matcher;
-    }
+        _countMatcher = matcher;
     return self;
 }
 
 - (BOOL)matches:(id)item
 {
     if (![self itemHasCount:item])
-    {
-            return NO;
-    }
+        return NO;
 
     NSNumber *count = @([item count]);
     return [self.countMatcher matches:count];
@@ -43,19 +39,19 @@
     return [item respondsToSelector:@selector(count)];
 }
 
-- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
 {
     [mismatchDescription appendText:@"was "];
     if ([self itemHasCount:item])
     {
         [[[mismatchDescription appendText:@"count of "]
-                appendDescriptionOf:@([item count])]
-                appendText:@" with "];
+                               appendDescriptionOf:@([item count])]
+                               appendText:@" with "];
     }
     [mismatchDescription appendDescriptionOf:item];
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[description appendText:@"a collection with count of "] appendDescriptionOf:self.countMatcher];
 }

@@ -17,7 +17,7 @@
 
 #import "NSArray+JSONModel.h"
 
-@implementation NSArray (JSONModel)
+@implementation NSArray(JSONModel)
 
 - (id)modelWithIndexValue:(id)indexValue
 {

@@ -7,13 +7,12 @@
 
 
 @interface MKTProtocolMock ()
-@property(readonly, nonatomic, assign) BOOL includeOptionalMethods;
+@property (readonly, nonatomic, assign) BOOL includeOptionalMethods;
 @end
 
 @implementation MKTProtocolMock
 
-+ (instancetype)mockForProtocol:(Protocol *)aProtocol
-{
++ (instancetype)mockForProtocol:(Protocol *)aProtocol {
     return [self mockForProtocol:aProtocol includeOptionalMethods:YES];
 }
 
@@ -22,8 +21,7 @@
     return [[self alloc] initWithProtocol:aProtocol includeOptionalMethods:includeOptionalMethods];
 }
 
-- (instancetype)initWithProtocol:(Protocol *)aProtocol
-{
+- (instancetype)initWithProtocol:(Protocol *)aProtocol {
     return [self initWithProtocol:aProtocol includeOptionalMethods:YES];
 }
 
@@ -41,7 +39,7 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"mock implementer of %@ protocol",
-                                      NSStringFromProtocol(self.mockedProtocol)];
+            NSStringFromProtocol(self.mockedProtocol)];
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
@@ -49,13 +47,9 @@
     struct objc_method_description methodDescription =
             protocol_getMethodDescription(self.mockedProtocol, aSelector, YES, YES);
     if (!methodDescription.name && self.includeOptionalMethods)
-    {
-            methodDescription = protocol_getMethodDescription(self.mockedProtocol, aSelector, NO, YES);
-    }
+        methodDescription = protocol_getMethodDescription(self.mockedProtocol, aSelector, NO, YES);
     if (!methodDescription.name)
-    {
-            return nil;
-    }
+        return nil;
     return [NSMethodSignature signatureWithObjCTypes:methodDescription.types];
 }
 

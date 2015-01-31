@@ -19,18 +19,16 @@
 
     self = [super init];
     if (self)
-    {
-            _substring = [aString copy];
-    }
+        _substring = [aString copy];
     return self;
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[[[description appendText:@"a string "]
-            appendText:[self relationship]]
-            appendText:@" "]
-            appendDescriptionOf:self.substring];
+                    appendText:[self relationship]]
+                    appendText:@" "]
+                    appendDescriptionOf:self.substring];
 }
 
 @end

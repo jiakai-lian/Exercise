@@ -23,7 +23,7 @@
 {
     NSString *failureReason = [NSString stringWithFormat:@"%@:%lu: matcher error: %@",
                                                          failure.fileName,
-                                                         (unsigned long) failure.lineNumber,
+                                                         (unsigned long)failure.lineNumber,
                                                          failure.reason];
     return [NSException exceptionWithName:@"Hamcrest Error" reason:failureReason userInfo:nil];
 }

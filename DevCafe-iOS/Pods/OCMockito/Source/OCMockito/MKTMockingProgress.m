@@ -9,9 +9,9 @@
 
 
 @interface MKTMockingProgress ()
-@property(nonatomic, strong) MKTInvocationMatcher *invocationMatcher;
-@property(nonatomic, strong) id <MKTVerificationMode> verificationMode;
-@property(nonatomic, strong) MKTOngoingStubbing *ongoingStubbing;
+@property (nonatomic, strong) MKTInvocationMatcher *invocationMatcher;
+@property (nonatomic, strong) id <MKTVerificationMode> verificationMode;
+@property (nonatomic, strong) MKTOngoingStubbing *ongoingStubbing;
 @end
 
 @implementation MKTMockingProgress
@@ -20,9 +20,7 @@
 {
     static id sharedProgress = nil;
     if (!sharedProgress)
-    {
-            sharedProgress = [[self alloc] init];
-    }
+        sharedProgress = [[self alloc] init];
     return sharedProgress;
 }
 
@@ -66,9 +64,7 @@
 - (void)setMatcher:(id <HCMatcher>)matcher forArgument:(NSUInteger)index
 {
     if (!self.invocationMatcher)
-    {
-            self.invocationMatcher = [[MKTInvocationMatcher alloc] init];
-    }
+        self.invocationMatcher = [[MKTInvocationMatcher alloc] init];
     [self.invocationMatcher setMatcher:matcher atIndex:index];
 }
 

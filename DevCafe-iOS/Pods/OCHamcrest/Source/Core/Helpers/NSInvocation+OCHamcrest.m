@@ -12,7 +12,7 @@
 + (NSInvocation *)och_invocationWithTarget:(id)target selector:(SEL)selector
 {
     NSMethodSignature *signature = [target methodSignatureForSelector:selector];
-    NSInvocation *invocation = [self och_invocationWithSignature:signature selector:selector];
+    NSInvocation *invocation= [self och_invocationWithSignature:signature selector:selector];
     [invocation setTarget:target];
     return invocation;
 }

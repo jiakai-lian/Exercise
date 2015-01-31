@@ -7,7 +7,6 @@
 @interface HCAnyOf : HCBaseMatcher
 
 + (instancetype)anyOf:(NSArray *)matchers;
-
 - (instancetype)initWithMatchers:(NSArray *)matchers;
 
 @end

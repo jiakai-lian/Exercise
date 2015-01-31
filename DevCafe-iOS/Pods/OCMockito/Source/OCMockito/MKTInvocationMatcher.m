@@ -18,9 +18,7 @@
 {
     static MKTUnspecifiedArgumentPlaceholder *instance = nil;
     if (!instance)
-    {
-            instance = [[[self class] alloc] init];
-    }
+        instance = [[[self class] alloc] init];
     return instance;
 }
 
@@ -33,18 +31,14 @@
 {
     self = [super init];
     if (self)
-    {
-            _argumentMatchers = [[NSMutableArray alloc] init];
-    }
+        _argumentMatchers = [[NSMutableArray alloc] init];
     return self;
 }
 
 - (void)setMatcher:(id <HCMatcher>)matcher atIndex:(NSUInteger)index
 {
     if (index < [self.argumentMatchers count])
-    {
-            self.argumentMatchers[index] = matcher;
-        }
+        self.argumentMatchers[index] = matcher;
     else
     {
         [self trueUpArgumentMatchersToCount:index];
@@ -82,9 +76,7 @@
     for (NSUInteger index = 0; index < self.numberOfArguments; ++index)
     {
         if (self.argumentMatchers[index] == [self placeholderForUnspecifiedMatcher])
-        {
-                    self.argumentMatchers[index] = [self matcherForArgument:expectedArgs[index]];
-        }
+            self.argumentMatchers[index] = [self matcherForArgument:expectedArgs[index]];
     }
 }
 
@@ -96,9 +88,7 @@
 - (id <HCMatcher>)matcherForArgument:(id)arg
 {
     if (arg == [NSNull null])
-    {
-            return HC_nilValue();
-    }
+        return HC_nilValue();
 
     return HCWrapInMatcher(arg);
 }
@@ -106,17 +96,13 @@
 - (BOOL)matches:(NSInvocation *)actual
 {
     if ([self.expected selector] != [actual selector])
-    {
-            return NO;
-    }
+        return NO;
 
     NSArray *actualArgs = [actual mkt_arguments];
     for (NSUInteger index = 0; index < self.numberOfArguments; ++index)
     {
         if ([self argument:actualArgs[index] doesNotMatch:self.argumentMatchers[index]])
-        {
-                    return NO;
-        }
+            return NO;
     }
     return YES;
 }
@@ -124,9 +110,7 @@
 - (BOOL)argument:(id)arg doesNotMatch:(id <HCMatcher>)matcher
 {
     if (arg == [NSNull null])
-    {
-            arg = nil;
-    }
+        arg = nil;
     return ![matcher matches:arg];
 }
 
@@ -136,9 +120,7 @@
     {
         id <HCMatcher> matcher = self.argumentMatchers[index];
         if ([matcher respondsToSelector:@selector(captureArgument:)])
-        {
-                    [self captureArgumentsAtIndex:index acrossInvocations:invocations intoMatcher:matcher];
-        }
+            [self captureArgumentsAtIndex:index acrossInvocations:invocations intoMatcher:matcher];
     }
 }
 

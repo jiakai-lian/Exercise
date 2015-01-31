@@ -10,8 +10,8 @@
 
 
 @interface HCHasProperty ()
-@property(readonly, nonatomic, copy) NSString *propertyName;
-@property(readonly, nonatomic, strong) id <HCMatcher> valueMatcher;
+@property (readonly, nonatomic, copy) NSString *propertyName;
+@property (readonly, nonatomic, strong) id <HCMatcher> valueMatcher;
 @end
 
 @implementation HCHasProperty
@@ -40,32 +40,32 @@
     if (![item respondsToSelector:propertyGetter])
     {
         [[[[mismatchDescription appendText:@"no "]
-                appendText:self.propertyName]
-                appendText:@" on "]
-                appendDescriptionOf:item];
+                                appendText:self.propertyName]
+                                appendText:@" on "]
+                                appendDescriptionOf:item];
         return NO;
     }
 
     NSInvocation *getterInvocation = [NSInvocation och_invocationWithTarget:item selector:propertyGetter];
     id propertyValue = [getterInvocation och_invoke];
-    BOOL match = [self.valueMatcher matches:propertyValue];
+    BOOL match =  [self.valueMatcher matches:propertyValue];
     if (!match)
     {
         [[[[[mismatchDescription appendText:self.propertyName]
-                appendText:@" was "]
-                appendDescriptionOf:propertyValue]
-                appendText:@" on "]
-                appendDescriptionOf:item];
+                                 appendText:@" was "]
+                                 appendDescriptionOf:propertyValue]
+                                 appendText:@" on "]
+                                 appendDescriptionOf:item];
     }
     return match;
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[[[description appendText:@"an object with "]
-            appendText:self.propertyName]
-            appendText:@" "]
-            appendDescriptionOf:self.valueMatcher];
+                    appendText:self.propertyName]
+                    appendText:@" "]
+                    appendDescriptionOf:self.valueMatcher];
 }
 @end
 

@@ -5,7 +5,7 @@
 
 
 @interface MKTReturnsValue ()
-@property(readonly, nonatomic, strong) id value;
+@property (readonly, nonatomic, strong) id value;
 @end
 
 @implementation MKTReturnsValue
@@ -14,9 +14,7 @@
 {
     self = [super init];
     if (self)
-    {
-            _value = value;
-    }
+        _value = value;
     return self;
 }
 

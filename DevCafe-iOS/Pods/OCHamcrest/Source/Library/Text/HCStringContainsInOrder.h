@@ -10,7 +10,6 @@
 }
 
 + (instancetype)containsInOrder:(NSArray *)substringList;
-
 - (instancetype)initWithSubstrings:(NSArray *)substringList;
 
 @end

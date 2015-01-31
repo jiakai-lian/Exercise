@@ -19,22 +19,20 @@
     return NO;
 }
 
-- (BOOL)matches:(id)item describingMismatchTo:(id <HCDescription>)mismatchDescription
+- (BOOL)matches:(id)item describingMismatchTo:(id<HCDescription>)mismatchDescription
 {
     BOOL matchResult = [self matches:item];
     if (!matchResult)
-    {
-            [self describeMismatchOf:item to:mismatchDescription];
-    }
+        [self describeMismatchOf:item to:mismatchDescription];
     return matchResult;
 }
 
-- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
 {
     [[mismatchDescription appendText:@"was "] appendDescriptionOf:item];
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     HC_ABSTRACT_METHOD;
 }

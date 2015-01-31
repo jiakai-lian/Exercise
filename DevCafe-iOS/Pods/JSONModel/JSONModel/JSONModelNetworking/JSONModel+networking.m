@@ -19,95 +19,91 @@
 
 BOOL _isLoading;
 
-@implementation JSONModel (Networking)
+@implementation JSONModel(Networking)
 
 @dynamic isLoading;
 
-- (BOOL)isLoading
+-(BOOL)isLoading
 {
     return _isLoading;
 }
 
-- (void)setIsLoading:(BOOL)isLoading
+-(void)setIsLoading:(BOOL)isLoading
 {
     _isLoading = isLoading;
 }
 
-- (instancetype)initFromURLWithString:(NSString *)urlString completion:(JSONModelBlock)completeBlock
+-(instancetype)initFromURLWithString:(NSString *)urlString completion:(JSONModelBlock)completeBlock
 {
     id placeholder = [super init];
     __block id blockSelf = self;
-
-    if (placeholder)
-    {
+    
+    if (placeholder) {
         //initialization
         self.isLoading = YES;
-
+        
         [JSONHTTPClient getJSONFromURLWithString:urlString
-                                      completion:^(NSDictionary *json, JSONModelError *e)
-                                      {
-
-                                          JSONModelError *initError = nil;
+                                      completion:^(NSDictionary *json, JSONModelError* e) {
+                                          
+                                          JSONModelError* initError = nil;
                                           blockSelf = [self initWithDictionary:json error:&initError];
-
-                                          if (completeBlock)
-                                          {
-                                              dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_MSEC), dispatch_get_main_queue(), ^
-                                              {
-                                                  completeBlock(blockSelf, e ? e : initError);
+                                          
+                                          if (completeBlock) {
+                                              dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_MSEC), dispatch_get_main_queue(), ^{
+                                                  completeBlock(blockSelf, e?e:initError );
                                               });
                                           }
-
+                                          
                                           self.isLoading = NO;
-
+                                          
                                       }];
     }
     return placeholder;
 }
 
-+ (void)getModelFromURLWithString:(NSString *)urlString completion:(JSONModelBlock)completeBlock
++ (void)getModelFromURLWithString:(NSString*)urlString completion:(JSONModelBlock)completeBlock
 {
-    [JSONHTTPClient getJSONFromURLWithString:urlString
-                                  completion:^(NSDictionary *jsonDict, JSONModelError *err)
-                                  {
-                                      JSONModel *model = nil;
+	[JSONHTTPClient getJSONFromURLWithString:urlString
+								  completion:^(NSDictionary* jsonDict, JSONModelError* err)
+	{
+		JSONModel* model = nil;
 
-                                      if (err == nil)
-                                      {
-                                          model = [[self alloc] initWithDictionary:jsonDict error:&err];
-                                      }
+		if(err == nil)
+		{
+			model = [[self alloc] initWithDictionary:jsonDict error:&err];
+		}
 
-                                      if (completeBlock != nil)
-                                      {
-                                          dispatch_async(dispatch_get_main_queue(), ^
-                                          {
-                                              completeBlock(model, err);
-                                          });
-                                      }
-                                  }];
+		if(completeBlock != nil)
+		{
+			dispatch_async(dispatch_get_main_queue(), ^
+			{
+				completeBlock(model, err);
+			});
+		}
+    }];
 }
 
-+ (void)postModel:(JSONModel *)post toURLWithString:(NSString *)urlString completion:(JSONModelBlock)completeBlock
++ (void)postModel:(JSONModel*)post toURLWithString:(NSString*)urlString completion:(JSONModelBlock)completeBlock
 {
-    [JSONHTTPClient postJSONFromURLWithString:urlString
-                                   bodyString:[post toJSONString]
-                                   completion:^(NSDictionary *jsonDict, JSONModelError *err)
-                                   {
-                                       JSONModel *model = nil;
+	[JSONHTTPClient postJSONFromURLWithString:urlString
+								   bodyString:[post toJSONString]
+								   completion:^(NSDictionary* jsonDict, JSONModelError* err)
+	{
+		JSONModel* model = nil;
 
-                                       if (err == nil)
-                                       {
-                                           model = [[self alloc] initWithDictionary:jsonDict error:&err];
-                                       }
+		if(err == nil)
+		{
+			model = [[self alloc] initWithDictionary:jsonDict error:&err];
+		}
 
-                                       if (completeBlock != nil)
-                                       {
-                                           dispatch_async(dispatch_get_main_queue(), ^
-                                           {
-                                               completeBlock(model, err);
-                                           });
-                                       }
-                                   }];
+		if(completeBlock != nil)
+		{
+			dispatch_async(dispatch_get_main_queue(), ^
+			{
+				completeBlock(model, err);
+			});
+		}
+	}];
 }
 
 @end

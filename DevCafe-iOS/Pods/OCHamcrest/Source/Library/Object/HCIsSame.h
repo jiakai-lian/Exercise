@@ -7,7 +7,6 @@
 @interface HCIsSame : HCBaseMatcher
 
 + (instancetype)isSameAs:(id)object;
-
 - (instancetype)initSameAs:(id)object;
 
 @end

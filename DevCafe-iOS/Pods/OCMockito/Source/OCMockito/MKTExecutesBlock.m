@@ -5,7 +5,7 @@
 
 
 @interface MKTExecutesBlock ()
-@property(readonly, nonatomic, copy) id (^block)(NSInvocation *);
+@property (readonly, nonatomic, copy) id (^block)(NSInvocation *);
 @end
 
 @implementation MKTExecutesBlock
@@ -14,9 +14,7 @@
 {
     self = [super init];
     if (self)
-    {
-            _block = [block copy];
-    }
+        _block = [block copy];
     return self;
 }
 

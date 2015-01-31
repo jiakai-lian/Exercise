@@ -15,9 +15,7 @@
     for (NSInvocation *invocation in self.invocations.registeredInvocations)
     {
         if ([self.wanted matches:invocation])
-        {
-                    ++count;
-        }
+            ++count;
     }
     return count;
 }

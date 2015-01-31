@@ -47,12 +47,12 @@
 
  If YES, the manager will change status bar network activity indicator according to network operation notifications it receives. The default value is NO.
  */
-@property(nonatomic, assign, getter = isEnabled) BOOL enabled;
+@property (nonatomic, assign, getter = isEnabled) BOOL enabled;
 
 /**
  A Boolean value indicating whether the network activity indicator is currently displayed in the status bar.
  */
-@property(readonly, nonatomic, assign) BOOL isNetworkActivityIndicatorVisible;
+@property (readonly, nonatomic, assign) BOOL isNetworkActivityIndicatorVisible;
 
 /**
  Returns the shared network activity indicator manager object for the system.

@@ -95,7 +95,7 @@
 /**
  The run loop modes in which the operation will run on the network thread. By default, this is a single-member set containing `NSRunLoopCommonModes`.
  */
-@property(nonatomic, strong) NSSet *runLoopModes;
+@property (nonatomic, strong) NSSet *runLoopModes;
 
 ///-----------------------------------------
 /// @name Getting URL Connection Information
@@ -104,17 +104,17 @@
 /**
  The request used by the operation's connection.
  */
-@property(readonly, nonatomic, strong) NSURLRequest *request;
+@property (readonly, nonatomic, strong) NSURLRequest *request;
 
 /**
  The last response received by the operation's connection.
  */
-@property(readonly, nonatomic, strong) NSURLResponse *response;
+@property (readonly, nonatomic, strong) NSURLResponse *response;
 
 /**
  The error, if any, that occurred in the lifecycle of the request.
  */
-@property(readonly, nonatomic, strong) NSError *error;
+@property (readonly, nonatomic, strong) NSError *error;
 
 ///----------------------------
 /// @name Getting Response Data
@@ -123,19 +123,19 @@
 /**
  The data received during the request.
  */
-@property(readonly, nonatomic, strong) NSData *responseData;
+@property (readonly, nonatomic, strong) NSData *responseData;
 
 /**
  The string representation of the response data.
  */
-@property(readonly, nonatomic, copy) NSString *responseString;
+@property (readonly, nonatomic, copy) NSString *responseString;
 
 /**
  The string encoding of the response.
 
  If the response does not specify a valid string encoding, `responseStringEncoding` will return `NSUTF8StringEncoding`.
  */
-@property(readonly, nonatomic, assign) NSStringEncoding responseStringEncoding;
+@property (readonly, nonatomic, assign) NSStringEncoding responseStringEncoding;
 
 ///-------------------------------
 /// @name Managing URL Credentials
@@ -146,14 +146,14 @@
 
  This is the value that is returned in the `NSURLConnectionDelegate` method `-connectionShouldUseCredentialStorage:`.
  */
-@property(nonatomic, assign) BOOL shouldUseCredentialStorage;
+@property (nonatomic, assign) BOOL shouldUseCredentialStorage;
 
 /**
  The credential used for authentication challenges in `-connection:didReceiveAuthenticationChallenge:`.
 
  This will be overridden by any shared credentials that exist for the username or password of the request URL, if present.
  */
-@property(nonatomic, strong) NSURLCredential *credential;
+@property (nonatomic, strong) NSURLCredential *credential;
 
 ///-------------------------------
 /// @name Managing Security Policy
@@ -162,7 +162,7 @@
 /**
  The security policy used to evaluate server trust for secure connections.
  */
-@property(nonatomic, strong) AFSecurityPolicy *securityPolicy;
+@property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
 ///------------------------
 /// @name Accessing Streams
@@ -173,14 +173,14 @@
 
  This property acts as a proxy to the `HTTPBodyStream` property of `request`.
  */
-@property(nonatomic, strong) NSInputStream *inputStream;
+@property (nonatomic, strong) NSInputStream *inputStream;
 
 /**
  The output stream that is used to write data received until the request is finished.
 
  By default, data is accumulated into a buffer that is stored into `responseData` upon completion of the request, with the intermediary `outputStream` property set to `nil`. When `outputStream` is set, the data will not be accumulated into an internal buffer, and as a result, the `responseData` property of the completed request will be `nil`. The output stream will be scheduled in the network thread runloop upon being set.
  */
-@property(nonatomic, strong) NSOutputStream *outputStream;
+@property (nonatomic, strong) NSOutputStream *outputStream;
 
 ///---------------------------------
 /// @name Managing Callback Queues
@@ -189,12 +189,12 @@
 /**
  The dispatch queue for `completionBlock`. If `NULL` (default), the main queue is used.
  */
-@property(nonatomic, strong) dispatch_queue_t completionQueue;
+@property (nonatomic, strong) dispatch_queue_t completionQueue;
 
 /**
  The dispatch group for `completionBlock`. If `NULL` (default), a private dispatch group is used.
  */
-@property(nonatomic, strong) dispatch_group_t completionGroup;
+@property (nonatomic, strong) dispatch_group_t completionGroup;
 
 ///---------------------------------------------
 /// @name Managing Request Operation Information
@@ -203,7 +203,7 @@
 /**
  The user info dictionary for the receiver.
  */
-@property(nonatomic, strong) NSDictionary *userInfo;
+@property (nonatomic, strong) NSDictionary *userInfo;
 
 ///------------------------------------------------------
 /// @name Initializing an AFURLConnectionOperation Object
@@ -253,9 +253,7 @@
  @param handler A handler to be called shortly before the application’s remaining background time reaches 0. The handler is wrapped in a block that cancels the operation, and cleans up and marks the end of execution, unlike the `handler` parameter in `UIApplication -beginBackgroundTaskWithExpirationHandler:`, which expects this to be done in the handler itself. The handler is called synchronously on the main thread, thus blocking the application’s suspension momentarily while the application is notified.
   */
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && !defined(AF_APP_EXTENSIONS)
-
 - (void)setShouldExecuteAsBackgroundTaskWithExpirationHandler:(void (^)(void))handler;
-
 #endif
 
 ///---------------------------------
@@ -322,9 +320,9 @@
 /**
  Posted when an operation begins executing.
  */
-extern NSString *const AFNetworkingOperationDidStartNotification;
+extern NSString * const AFNetworkingOperationDidStartNotification;
 
 /**
  Posted when an operation finishes.
  */
-extern NSString *const AFNetworkingOperationDidFinishNotification;
+extern NSString * const AFNetworkingOperationDidFinishNotification;

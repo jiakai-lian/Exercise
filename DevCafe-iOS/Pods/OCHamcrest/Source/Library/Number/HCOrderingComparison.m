@@ -5,10 +5,10 @@
 
 
 @interface HCOrderingComparison ()
-@property(readonly, nonatomic, strong) id expected;
-@property(readonly, nonatomic, assign) NSComparisonResult minCompare;
-@property(readonly, nonatomic, assign) NSComparisonResult maxCompare;
-@property(readonly, nonatomic, copy) NSString *comparisonDescription;
+@property (readonly, nonatomic, strong) id expected;
+@property (readonly, nonatomic, assign) NSComparisonResult minCompare;
+@property (readonly, nonatomic, assign) NSComparisonResult maxCompare;
+@property (readonly, nonatomic, copy) NSString *comparisonDescription;
 @end
 
 @implementation HCOrderingComparison
@@ -31,9 +31,9 @@
 {
     if (![expectedValue respondsToSelector:@selector(compare:)])
     {
-        @throw [NSException exceptionWithName:@"UncomparableObject"
-                                       reason:@"Object must respond to compare:"
-                                     userInfo:nil];
+        @throw [NSException exceptionWithName: @"UncomparableObject"
+                                       reason: @"Object must respond to compare:"
+                                     userInfo: nil];
     }
 
     self = [super init];
@@ -50,9 +50,7 @@
 - (BOOL)matches:(id)item
 {
     if (item == nil)
-    {
-            return NO;
-    }
+        return NO;
 
     NSComparisonResult compare;
     @try
@@ -66,12 +64,12 @@
     return self.minCompare <= compare && compare <= self.maxCompare;
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[[[description appendText:@"a value "]
-            appendText:self.comparisonDescription]
-            appendText:@" "]
-            appendDescriptionOf:self.expected];
+                    appendText:self.comparisonDescription]
+                    appendText:@" "]
+                    appendDescriptionOf:self.expected];
 }
 
 @end

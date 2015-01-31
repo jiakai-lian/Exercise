@@ -14,9 +14,7 @@
 
     self = [super init];
     if (self)
-    {
-            _matcher = matcher;
-    }
+        _matcher = matcher;
     return self;
 }
 
@@ -54,9 +52,7 @@
         if (![self.matcher matches:item])
         {
             if (isPastFirst)
-            {
-                            [mismatchDescription appendText:@", "];
-            }
+                [mismatchDescription appendText:@", "];
             [self.matcher describeMismatchOf:item to:mismatchDescription];
             isPastFirst = YES;
         }
@@ -64,7 +60,7 @@
     [mismatchDescription appendText:@"]"];
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[description appendText:@"every item is "] appendDescriptionOf:self.matcher];
 }

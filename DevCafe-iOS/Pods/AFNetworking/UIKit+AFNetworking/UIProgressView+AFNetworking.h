@@ -48,7 +48,6 @@
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
 - (void)setProgressWithUploadProgressOfTask:(NSURLSessionUploadTask *)task
                                    animated:(BOOL)animated;
-
 #endif
 
 /**
@@ -58,10 +57,8 @@
  @param animated `YES` if the change should be animated, `NO` if the change should happen immediately.
  */
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
-
 - (void)setProgressWithDownloadProgressOfTask:(NSURLSessionDownloadTask *)task
                                      animated:(BOOL)animated;
-
 #endif
 
 ///------------------------------------

@@ -8,8 +8,8 @@
 
 
 @interface HCIsDictionaryContaining ()
-@property(readonly, nonatomic, strong) id <HCMatcher> keyMatcher;
-@property(readonly, nonatomic, strong) id <HCMatcher> valueMatcher;
+@property (readonly, nonatomic, strong) id <HCMatcher> keyMatcher;
+@property (readonly, nonatomic, strong) id <HCMatcher> valueMatcher;
 @end
 
 
@@ -36,23 +36,19 @@
 - (BOOL)matches:(id)dict
 {
     if ([dict isKindOfClass:[NSDictionary class]])
-    {
-            for (id oneKey in dict)
-                if ([self.keyMatcher matches:oneKey] && [self.valueMatcher matches:dict[oneKey]])
-                {
-                    return YES;
-                }
-    }
+        for (id oneKey in dict)
+            if ([self.keyMatcher matches:oneKey] && [self.valueMatcher matches:dict[oneKey]])
+                return YES;
     return NO;
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[[[[description appendText:@"a dictionary containing { "]
-            appendDescriptionOf:self.keyMatcher]
-            appendText:@" = "]
-            appendDescriptionOf:self.valueMatcher]
-            appendText:@"; }"];
+                     appendDescriptionOf:self.keyMatcher]
+                     appendText:@" = "]
+                     appendDescriptionOf:self.valueMatcher]
+                     appendText:@"; }"];
 }
 
 @end

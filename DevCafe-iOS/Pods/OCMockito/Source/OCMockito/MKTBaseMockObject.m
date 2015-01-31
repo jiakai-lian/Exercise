@@ -14,8 +14,8 @@
 
 
 @interface MKTBaseMockObject ()
-@property(readonly, nonatomic, strong) MKTMockingProgress *mockingProgress;
-@property(nonatomic, strong) MKTInvocationContainer *invocationContainer;
+@property (readonly, nonatomic, strong) MKTMockingProgress *mockingProgress;
+@property (nonatomic, strong) MKTInvocationContainer *invocationContainer;
 @end
 
 @implementation MKTBaseMockObject
@@ -39,9 +39,7 @@
 - (void)forwardInvocation:(NSInvocation *)invocation
 {
     if ([self handlingVerifyOfInvocation:invocation])
-    {
-            return;
-    }
+        return;
     [self prepareInvocationForStubbing:invocation];
     [self answerInvocation:invocation];
 }
@@ -50,11 +48,9 @@
 {
     id <MKTVerificationMode> verificationMode = [self.mockingProgress pullVerificationMode];
     if (verificationMode)
-    {
-            [self verifyInvocation:invocation usingVerificationMode:verificationMode];
-    }
+        [self verifyInvocation:invocation usingVerificationMode:verificationMode];
     return verificationMode != nil;
-}
+ }
 
 - (void)verifyInvocation:(NSInvocation *)invocation usingVerificationMode:(id <MKTVerificationMode>)verificationMode
 {
@@ -68,9 +64,7 @@
 {
     MKTInvocationMatcher *invocationMatcher = [self.mockingProgress pullInvocationMatcher];
     if (!invocationMatcher)
-    {
-            invocationMatcher = [[MKTInvocationMatcher alloc] init];
-    }
+        invocationMatcher = [[MKTInvocationMatcher alloc] init];
     [invocationMatcher setExpectedInvocation:invocation];
     return invocationMatcher;
 }
@@ -96,9 +90,7 @@
 {
     MKTStubbedInvocationMatcher *stubbedInvocation = [self.invocationContainer findAnswerFor:invocation];
     if (stubbedInvocation)
-    {
-            [self useExistingAnswerInStub:stubbedInvocation forInvocation:invocation];
-    }
+        [self useExistingAnswerInStub:stubbedInvocation forInvocation:invocation];
 }
 
 - (void)useExistingAnswerInStub:(MKTStubbedInvocationMatcher *)stub forInvocation:(NSInvocation *)invocation

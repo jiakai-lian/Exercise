@@ -8,7 +8,6 @@
 @interface HCHasProperty : HCDiagnosingMatcher
 
 + (instancetype)hasProperty:(NSString *)property value:(id <HCMatcher>)valueMatcher;
-
 - (instancetype)initWithProperty:(NSString *)property value:(id <HCMatcher>)valueMatcher;
 
 @end

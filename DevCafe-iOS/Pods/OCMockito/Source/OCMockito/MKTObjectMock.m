@@ -7,8 +7,8 @@
 
 
 @interface MKTObjectMock ()
-@property(readonly, nonatomic, strong) Class mockedClass;
-@property(nonatomic, strong) MKTDynamicProperties *dynamicProperties;
+@property (readonly, nonatomic, strong) Class mockedClass;
+@property (nonatomic, strong) MKTDynamicProperties *dynamicProperties;
 @end
 
 @implementation MKTObjectMock
@@ -38,9 +38,7 @@
 {
     NSMethodSignature *dynamicPropertySignature = [self.dynamicProperties methodSignatureForSelector:aSelector];
     if (dynamicPropertySignature)
-    {
-            return dynamicPropertySignature;
-    }
+        return dynamicPropertySignature;
     return [self.mockedClass instanceMethodSignatureForSelector:aSelector];
 }
 
@@ -55,7 +53,7 @@
 - (BOOL)respondsToSelector:(SEL)aSelector
 {
     return [self.dynamicProperties methodSignatureForSelector:aSelector] ||
-            [self.mockedClass instancesRespondToSelector:aSelector];
+           [self.mockedClass instancesRespondToSelector:aSelector];
 }
 
 @end

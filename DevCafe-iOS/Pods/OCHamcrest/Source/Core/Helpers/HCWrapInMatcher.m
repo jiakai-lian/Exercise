@@ -9,13 +9,9 @@
 id <HCMatcher> HCWrapInMatcher(id matcherOrValue)
 {
     if (!matcherOrValue)
-    {
-            return nil;
-    }
+        return nil;
 
     if ([matcherOrValue conformsToProtocol:@protocol(HCMatcher)])
-    {
-            return matcherOrValue;
-    }
+        return matcherOrValue;
     return HC_equalTo(matcherOrValue);
 }

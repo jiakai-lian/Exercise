@@ -10,11 +10,9 @@
 }
 
 + (instancetype)isAnything;
-
 + (instancetype)isAnythingWithDescription:(NSString *)aDescription;
 
 - (instancetype)init;
-
 - (instancetype)initWithDescription:(NSString *)aDescription;
 
 @end

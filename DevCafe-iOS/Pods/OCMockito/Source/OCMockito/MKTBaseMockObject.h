@@ -8,7 +8,6 @@
 @interface MKTBaseMockObject : NSProxy <MKTPrimitiveArgumentMatching>
 
 - (instancetype)init;
-
 - (void)reset;
 
 @end

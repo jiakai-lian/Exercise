@@ -8,7 +8,7 @@
 
 
 @interface HCIsDictionaryContainingValue ()
-@property(readonly, nonatomic, strong) id <HCMatcher> valueMatcher;
+@property (readonly, nonatomic, strong) id <HCMatcher> valueMatcher;
 @end
 
 
@@ -23,29 +23,23 @@
 {
     self = [super init];
     if (self)
-    {
-            _valueMatcher = valueMatcher;
-    }
+        _valueMatcher = valueMatcher;
     return self;
 }
 
 - (BOOL)matches:(id)dict
 {
     if ([dict respondsToSelector:@selector(allValues)])
-    {
-            for (id oneValue in [dict allValues])
-                if ([self.valueMatcher matches:oneValue])
-                {
-                    return YES;
-                }
-    }
+        for (id oneValue in [dict allValues])
+            if ([self.valueMatcher matches:oneValue])
+                return YES;
     return NO;
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[description appendText:@"a dictionary containing value "]
-            appendDescriptionOf:self.valueMatcher];
+                  appendDescriptionOf:self.valueMatcher];
 }
 
 @end

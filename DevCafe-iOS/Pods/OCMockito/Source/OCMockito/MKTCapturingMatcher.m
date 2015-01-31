@@ -5,7 +5,7 @@
 
 
 @interface MKTCapturingMatcher ()
-@property(readonly, nonatomic, strong) NSMutableArray *arguments;
+@property (readonly, nonatomic, strong) NSMutableArray *arguments;
 @end
 
 @implementation MKTCapturingMatcher
@@ -14,18 +14,14 @@
 {
     self = [super initWithDescription:@"<Capturing argument>"];
     if (self)
-    {
-            _arguments = [[NSMutableArray alloc] init];
-    }
+        _arguments = [[NSMutableArray alloc] init];
     return self;
 }
 
 - (void)captureArgument:(id)arg
 {
     if (!arg)
-    {
-            arg = [NSNull null];
-    }
+        arg = [NSNull null];
     [self.arguments addObject:arg];
 }
 
@@ -37,9 +33,7 @@
 - (id)lastValue
 {
     if ([self noArgumentWasCaptured])
-    {
-            return [self throwNoArgumentException];
-    }
+        return [self throwNoArgumentException];
     return [self convertNilArgument:[self.arguments lastObject]];
 }
 
@@ -51,17 +45,15 @@
 - (id)throwNoArgumentException
 {
     @throw [NSException exceptionWithName:@"NoArgument"
-                                   reason:@"No argument value was captured!\n"
-                                           "You might have forgotten to use [argument capture] in verify()"
-                                 userInfo:nil];
+                                       reason:@"No argument value was captured!\n"
+                                              "You might have forgotten to use [argument capture] in verify()"
+                                     userInfo:nil];
 }
 
 - (id)convertNilArgument:(id)arg
 {
     if (arg == [NSNull null])
-    {
-            arg = nil;
-    }
+        arg = nil;
     return arg;
 }
 

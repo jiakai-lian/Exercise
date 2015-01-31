@@ -21,18 +21,14 @@ static NSString *actualTypeName(id mock)
 {
     NSString *className = NSStringFromClass([mock class]);
     if (!className)
-    {
-            return @"nil";
-    }
+        return @"nil";
     return [@"type " stringByAppendingString:className];
 }
 
 static BOOL reportedInvalidMock(id mock, id testCase, const char *fileName, int lineNumber, NSString *functionName)
 {
     if (isValidMockClass(mock))
-    {
-            return NO;
-    }
+        return NO;
     NSString *description = [NSString stringWithFormat:@"Argument passed to %@ should be a mock but is %@",
                                                        functionName, actualTypeName(mock)];
     MKTFailTest(testCase, fileName, lineNumber, description);
@@ -47,9 +43,7 @@ MKTOngoingStubbing *MKTGivenWithLocation(id testCase, const char *fileName, int 
 id MKTVerifyWithLocation(id mock, id testCase, const char *fileName, int lineNumber)
 {
     if (reportedInvalidMock(mock, testCase, fileName, lineNumber, @"verify()"))
-    {
-            return nil;
-    }
+        return nil;
 
     return MKTVerifyCountWithLocation(mock, MKTTimes(1), testCase, fileName, lineNumber);
 }
@@ -57,9 +51,7 @@ id MKTVerifyWithLocation(id mock, id testCase, const char *fileName, int lineNum
 id MKTVerifyCountWithLocation(id mock, id mode, id testCase, const char *fileName, int lineNumber)
 {
     if (reportedInvalidMock(mock, testCase, fileName, lineNumber, @"verifyCount()"))
-    {
-            return nil;
-    }
+        return nil;
 
     return [[MKTMockitoCore sharedCore] verifyMock:mock
                                           withMode:mode

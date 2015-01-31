@@ -33,14 +33,14 @@
  * Sets the API url
  * @param base the API url as a string
  */
-+ (void)setAPIBaseURLWithString:(NSString *)base;
++(void)setAPIBaseURLWithString:(NSString*)base;
 
 /**
  * Sets the default content type for the requests/responses
  * @param ctype The content-type as a string. Some possible types, 
  * depending on the service: application/json, text/json, x-application/javascript, etc.
  */
-+ (void)setContentType:(NSString *)ctype;
++(void)setContentType:(NSString*)ctype;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -51,7 +51,7 @@
  * @param params the variables to pass to the API
  * @param completeBlock a JSONObjectBlock block to execute upon completion
  */
-+ (void)getWithPath:(NSString *)path andParams:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock;
++(void)getWithPath:(NSString*)path andParams:(NSDictionary*)params completion:(JSONObjectBlock)completeBlock;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -62,7 +62,7 @@
  * @param params the variables to pass to the API
  * @param completeBlock a JSONObjectBlock block to execute upon completion
  */
-+ (void)postWithPath:(NSString *)path andParams:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock;
++(void)postWithPath:(NSString*)path andParams:(NSDictionary*)params completion:(JSONObjectBlock)completeBlock;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -73,7 +73,7 @@
  * @param args the list of arguments to pass to the API
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)rpcWithMethodName:(NSString *)method andArguments:(NSArray *)args completion:(JSONObjectBlock)completeBlock;
++(void)rpcWithMethodName:(NSString*)method andArguments:(NSArray*)args completion:(JSONObjectBlock)completeBlock;
 
 /** @name JSON RPC (2.0) request method */
 /**
@@ -83,7 +83,7 @@
  * depending whether you're using named or unnamed parameters
  * @param completeBlock JSONObjectBlock to execute upon completion
  */
-+ (void)rpc2WithMethodName:(NSString *)method andParams:(id)params completion:(JSONObjectBlock)completeBlock;
++(void)rpc2WithMethodName:(NSString*)method andParams:(id)params completion:(JSONObjectBlock)completeBlock;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 

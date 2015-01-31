@@ -38,15 +38,10 @@
 - (id)initWithArray:(NSArray *)array modelClass:(Class)cls;
 
 - (id)objectAtIndex:(NSUInteger)index;
-
 - (id)objectAtIndexedSubscript:(NSUInteger)index;
-
 - (void)forwardInvocation:(NSInvocation *)anInvocation;
-
 - (NSUInteger)count;
-
 - (id)firstObject;
-
 - (id)lastObject;
 
 /**

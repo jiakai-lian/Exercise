@@ -8,8 +8,8 @@
 @end
 
 @interface MKTArgumentGetter ()
-@property(readonly, nonatomic, assign) char const *handlerType;
-@property(readonly, nonatomic, strong) MKTArgumentGetter *successor;
+@property (readonly, nonatomic, assign) char const *handlerType;
+@property (readonly, nonatomic, strong) MKTArgumentGetter *successor;
 @end
 
 
@@ -35,9 +35,7 @@
 - (id)retrieveArgumentAtIndex:(NSInteger)idx ofType:(char const *)type onInvocation:(NSInvocation *)invocation
 {
     if ([self handlesArgumentType:type])
-    {
-            return [self getArgumentAtIndex:idx ofType:type onInvocation:invocation];
-    }
+        return [self getArgumentAtIndex:idx ofType:type onInvocation:invocation];
 
     return [self.successor retrieveArgumentAtIndex:idx ofType:type onInvocation:invocation];
 }

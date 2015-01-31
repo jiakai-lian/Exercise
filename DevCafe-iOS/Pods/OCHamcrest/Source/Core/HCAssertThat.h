@@ -7,7 +7,7 @@
 
 
 FOUNDATION_EXPORT void HC_assertThatWithLocation(id testCase, id actual, id <HCMatcher> matcher,
-        const char *fileName, int lineNumber);
+                                                 const char *fileName, int lineNumber);
 
 #define HC_assertThat(actual, matcher)  \
     HC_assertThatWithLocation(self, actual, matcher, __FILE__, __LINE__)
@@ -39,9 +39,9 @@ FOUNDATION_EXPORT void HC_assertThatWithLocation(id testCase, id actual, id <HCM
 typedef id (^HCAssertThatAfterActualBlock)();
 
 OBJC_EXPORT void HC_assertThatAfterWithLocation(id testCase, NSTimeInterval maxTime,
-        HCAssertThatAfterActualBlock actualBlock,
-        id <HCMatcher> matcher,
-        const char *fileName, int lineNumber);
+                                                HCAssertThatAfterActualBlock actualBlock,
+                                                id<HCMatcher> matcher,
+                                                const char *fileName, int lineNumber);
 
 #define HC_assertThatAfter(maxTime, actualBlock, matcher)  \
     HC_assertThatAfterWithLocation(self, maxTime, actualBlock, matcher, __FILE__, __LINE__)

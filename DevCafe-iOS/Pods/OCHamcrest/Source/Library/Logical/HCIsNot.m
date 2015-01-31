@@ -7,7 +7,7 @@
 
 
 @interface HCIsNot ()
-@property(readonly, nonatomic, strong) id <HCMatcher> matcher;
+@property (readonly, nonatomic, strong) id <HCMatcher> matcher;
 @end
 
 @implementation HCIsNot
@@ -21,9 +21,7 @@
 {
     self = [super init];
     if (self)
-    {
-            _matcher = matcher;
-    }
+        _matcher = matcher;
     return self;
 }
 
@@ -32,12 +30,12 @@
     return ![self.matcher matches:item];
 }
 
-- (void)describeTo:(id <HCDescription>)description
+- (void)describeTo:(id<HCDescription>)description
 {
     [[description appendText:@"not "] appendDescriptionOf:self.matcher];
 }
 
-- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
 {
     [self.matcher describeMismatchOf:item to:mismatchDescription];
 }

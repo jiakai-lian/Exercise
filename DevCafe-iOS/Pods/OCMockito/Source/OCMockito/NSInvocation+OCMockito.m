@@ -23,9 +23,7 @@
         const char *argType = [signature getArgumentTypeAtIndex:idx];
         id arg = [MKTArgumentGetterChain() retrieveArgumentAtIndex:idx ofType:argType onInvocation:self];
         if (arg)
-        {
-                    [arguments addObject:arg];
-                }
+            [arguments addObject:arg];
         else
         {
             NSLog(@"mkt_arguments unhandled type: %s", argType);
@@ -45,9 +43,7 @@
 - (void)mkt_retainArgumentsWithWeakTarget
 {
     if ([self argumentsRetained])
-    {
-            return;
-    }
+        return;
     MKT_TPDWeakProxy *proxy = [[MKT_TPDWeakProxy alloc] initWithObject:[self target]];
     [self setTarget:proxy];
     [self retainArguments];

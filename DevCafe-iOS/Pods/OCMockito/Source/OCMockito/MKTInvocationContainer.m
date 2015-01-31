@@ -8,8 +8,8 @@
 
 
 @interface MKTInvocationContainer ()
-@property(nonatomic, strong) MKTStubbedInvocationMatcher *invocationForStubbing;
-@property(readonly, nonatomic, strong) NSMutableArray *stubbed;
+@property (nonatomic, strong) MKTStubbedInvocationMatcher *invocationForStubbing;
+@property (readonly, nonatomic, strong) NSMutableArray *stubbed;
 @end
 
 @implementation MKTInvocationContainer
@@ -54,9 +54,7 @@
 {
     for (MKTStubbedInvocationMatcher *s in self.stubbed)
         if ([s matches:invocation])
-        {
-                    return s;
-        }
+            return s;
     return nil;
 }
 

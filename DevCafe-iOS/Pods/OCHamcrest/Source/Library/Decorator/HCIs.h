@@ -7,7 +7,6 @@
 @interface HCIs : HCBaseMatcher
 
 + (instancetype)is:(id <HCMatcher>)matcher;
-
 - (instancetype)initWithMatcher:(id <HCMatcher>)matcher;
 
 @end

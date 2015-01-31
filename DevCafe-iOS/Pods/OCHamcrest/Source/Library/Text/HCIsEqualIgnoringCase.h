@@ -7,7 +7,6 @@
 @interface HCIsEqualIgnoringCase : HCBaseMatcher
 
 + (instancetype)isEqualIgnoringCase:(NSString *)string;
-
 - (instancetype)initWithString:(NSString *)string;
 
 @end

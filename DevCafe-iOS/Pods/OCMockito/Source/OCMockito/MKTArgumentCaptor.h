@@ -7,9 +7,7 @@
 @interface MKTArgumentCaptor : NSObject
 
 - (id)capture;
-
 - (id)value;
-
 - (NSArray *)allValues;
 
 @end

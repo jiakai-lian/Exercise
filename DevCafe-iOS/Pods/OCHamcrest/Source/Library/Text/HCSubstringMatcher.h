@@ -6,7 +6,7 @@
 
 @interface HCSubstringMatcher : HCBaseMatcher
 
-@property(readonly, nonatomic, copy) NSString *substring;
+@property (readonly, nonatomic, copy) NSString *substring;
 
 - (instancetype)initWithSubstring:(NSString *)aString;
 

@@ -3,9 +3,7 @@
 
 #import "MKTStructArgumentGetter.h"
 
-typedef struct
-{
-} MKTDummyStructure;
+typedef struct {} MKTDummyStructure;
 
 
 @implementation MKTStructArgumentGetter
