@@ -8,7 +8,7 @@
         <!--Nearby Café-->
         <scene sceneID="5yd-3D-cKX">
             <objects>
-                <tableViewController title="Nearby Café" id="Yke-Z0-dSn" sceneMemberID="viewController">
+                <tableViewController title="Nearby Café" id="Yke-Z0-dSn" customClass="VenueTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="22" sectionFooterHeight="22" id="dLt-J5-41f">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

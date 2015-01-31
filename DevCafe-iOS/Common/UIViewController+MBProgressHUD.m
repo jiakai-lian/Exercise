@@ -17,25 +17,17 @@
 
 - (void) showProgressHUD:(NSString *)message
 {
-    self.hud= [[MBProgressHUD alloc] initWithView:self.view];
-    self.hud.labelText = message;
-    self.hud.mode = MBProgressHUDModeIndeterminate;
-    [self.view addSubview:self.hud];
-    [self.hud show:YES];
 
 }
 
 - (void) showProgressHUD
 {
-    [self showProgressHUD:nil];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 - (void) hideProgressHUD
 {
-   [self.hud hide:YES];
-    
-    //set to nil to release the object
-    self.hud = nil;
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 @end

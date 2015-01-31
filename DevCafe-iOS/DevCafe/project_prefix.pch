@@ -15,5 +15,7 @@
 #import "Common.h"
 #import <MKFoundationKit/NSObject+MK_AutoDescribe.h>
 #import "UIViewController+MBProgressHUD.h"
+#import "UIViewController+AlertControllers.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #endif
