@@ -27,6 +27,8 @@
 		3E0926F41A7CDDA0009D0A1F /* SearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926F31A7CDDA0009D0A1F /* SearchResponse.m */; };
 		3E0926F71A7CE103009D0A1F /* SearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E0926F61A7CE103009D0A1F /* SearchResponse.json */; };
 		3E0926F91A7CE132009D0A1F /* SearchResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */; };
+		3E0926FB1A7CEAA9009D0A1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0926FA1A7CEAA9009D0A1F /* CoreLocation.framework */; };
+		3E0927071A7CEE5D009D0A1F /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927061A7CEE5D009D0A1F /* LocationHandler.m */; };
 		F5C2D3292EABFB6E6DEC8A8E /* libPods-DevCafeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,10 @@
 		3E0926F31A7CDDA0009D0A1F /* SearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResponse.m; sourceTree = "<group>"; };
 		3E0926F61A7CE103009D0A1F /* SearchResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SearchResponse.json; sourceTree = "<group>"; };
 		3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResponseTests.m; sourceTree = "<group>"; };
+		3E0926FA1A7CEAA9009D0A1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3E0926FF1A7CEB90009D0A1F /* VersionChecking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionChecking.h; sourceTree = "<group>"; };
+		3E0927051A7CEE5D009D0A1F /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
+		3E0927061A7CEE5D009D0A1F /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
 		48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevCafeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5729012C401AEDBC761354F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8ACAB25E3018E883866E5071 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0926FB1A7CEAA9009D0A1F /* CoreLocation.framework in Frameworks */,
 				07B37D6AE71CA8ACADE5B8E8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +214,8 @@
 		3E0926EA1A7C90F3009D0A1F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3E0927041A7CEE5D009D0A1F /* LocationService */,
+				3E0926FF1A7CEB90009D0A1F /* VersionChecking.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -217,6 +226,15 @@
 				3E0926F61A7CE103009D0A1F /* SearchResponse.json */,
 			);
 			path = SampleJSON;
+			sourceTree = "<group>";
+		};
+		3E0927041A7CEE5D009D0A1F /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				3E0927051A7CEE5D009D0A1F /* LocationHandler.h */,
+				3E0927061A7CEE5D009D0A1F /* LocationHandler.m */,
+			);
+			path = LocationService;
 			sourceTree = "<group>";
 		};
 		507FF1200214A1921F0666B4 /* Pods */ = {
@@ -233,6 +251,7 @@
 		93B93B97632189950D474878 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E0926FA1A7CEAA9009D0A1F /* CoreLocation.framework */,
 				F0300F1BB413CB108F5620DC /* libPods.a */,
 				48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */,
 			);
@@ -417,6 +436,7 @@
 				3E0926E91A7C8E5A009D0A1F /* Contact.m in Sources */,
 				3E0926E61A7C8E11009D0A1F /* Location.m in Sources */,
 				3E0926B51A7C859A009D0A1F /* main.m in Sources */,
+				3E0927071A7CEE5D009D0A1F /* LocationHandler.m in Sources */,
 				1A8782D4A7601AD0728A955B /* NetworkConf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
