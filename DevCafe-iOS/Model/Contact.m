@@ -1,5 +1,6 @@
 //
 //  Contact.m
+//  Modal object for Contact
 //  DevCafe
 //
 //  Created by jiakai lian on 31/01/2015.
@@ -9,5 +10,7 @@
 #import "Contact.h"
 
 @implementation Contact
+
+
 
 @end

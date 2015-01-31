@@ -1,5 +1,6 @@
 //
 //  Contact.h
+//  Modal object for Contact
 //  DevCafe
 //
 //  Created by jiakai lian on 31/01/2015.
@@ -9,5 +10,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Contact : NSObject
+
+@property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *formattedPhone;
 
 @end

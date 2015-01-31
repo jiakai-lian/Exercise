@@ -1,5 +1,6 @@
 //
 //  Location.m
+//  Model object for Location
 //  DevCafe
 //
 //  Created by jiakai lian on 31/01/2015.

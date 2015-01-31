@@ -1,5 +1,6 @@
 //
 //  Venue.m
+//  Model object for Venue
 //  DevCafe
 //
 //  Created by jiakai lian on 31/01/2015.
