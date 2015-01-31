@@ -46,6 +46,7 @@
     _location = [locations lastObject];
     NSLog(@"lat%f - lon%f", _location.coordinate.latitude, _location.coordinate.longitude);
     
+    //send out a notification to notify other receivers
     [self postNotification:LOCATION_CHANGED_NOTIFICATION WithContent:
      @{
        @"lat": [[NSNumber alloc] initWithDouble:_location.coordinate.latitude],

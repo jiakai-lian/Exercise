@@ -25,10 +25,18 @@
     //show progrss hud
     [self showProgressHUD];
     
+    #if !(TARGET_IPHONE_SIMULATOR)
     self.locationHandler = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).locationHanlder;
     CLLocationCoordinate2D coordinate = self.locationHandler.location.coordinate;
     
     [self updateVenuesWithLat:[[NSNumber alloc] initWithDouble:coordinate.latitude]  andLng:[[NSNumber alloc] initWithDouble:coordinate.longitude]];
+    #else
+    //if run on the simulator
+    NSNumber *lat = [[NSNumber alloc]initWithDouble:33.8861];
+    NSNumber *lng = [[NSNumber alloc]initWithDouble:151.2111];
+    
+    [self updateVenuesWithLat:lat  andLng:lng ];
+    #endif
     
     //register to notification center to receive location changed message
     [self register:@selector(whenLocationChanged:)  name:LOCATION_CHANGED_NOTIFICATION];
