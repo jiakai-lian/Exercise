@@ -10,4 +10,21 @@
 
 @interface UIViewController (MBProgressHUD)
 
+/**
+ *  show a progress hud with a message
+ *
+ *  @param message message content
+ */
+- (void) showProgressHUD:(NSString *)message;
+
+/**
+ *  show a progress hud with no message
+ */
+- (void) showProgressHUD;
+
+/**
+ *  hide the showed hud
+ */
+- (void) hideProgressHUD;
+
 @end

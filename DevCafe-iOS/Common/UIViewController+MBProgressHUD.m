@@ -27,7 +27,7 @@
 
 - (void) showProgressHUD
 {
-    [self showProgressHUD:NSLocalizedString(@"Please wait...", nil)];
+    [self showProgressHUD:nil];
 }
 
 - (void) hideProgressHUD
