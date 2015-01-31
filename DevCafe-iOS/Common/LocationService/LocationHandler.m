@@ -15,6 +15,7 @@
 {
     self = [super init];
     if (self) {
+        //init location manager
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
         _locationManager.distanceFilter = 30.0f;
@@ -30,6 +31,16 @@
 }
 
 #pragma update Location
+/*
+ *  locationManager:didUpdateLocations:
+ *
+ *  Discussion:
+ *    Invoked when new locations are available.  Required for delivery of
+ *    deferred locations.  If implemented, updates will
+ *    not be delivered to locationManager:didUpdateToLocation:fromLocation:
+ *
+ *    locations is an array of CLLocation objects in chronological order.
+ */
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray *)locations
 {
