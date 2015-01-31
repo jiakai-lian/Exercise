@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+#target ‘DevCafe’ do
+pod 'AFNetworking','~> 2.0'
+pod 'JSONModel'
+#pod 'iVersion'
+pod 'MBProgressHUD'
+#pod 'TPKeyboardAvoiding'
+pod 'MKFoundationKit/AutoDescribe'
+#pod 'ELCImagePickerController'
+#pod 'MagicalRecord'
+#end
+
+target 'DevCafeTests' do
+pod 'OCHamcrest'
+pod 'OCMockito'
+end
+
