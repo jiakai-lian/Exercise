@@ -7,7 +7,6 @@
 //
 
 #import "LocationHandler.h"
-#import "VersionChecking.h"
 
 @implementation LocationHandler
 
