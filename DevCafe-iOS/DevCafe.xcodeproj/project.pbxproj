@@ -86,10 +86,11 @@
 		3E0926A61A7C859A009D0A1F = {
 			isa = PBXGroup;
 			children = (
-				3E0926E01A7C8D23009D0A1F /* Model */,
+				3E0926EA1A7C90F3009D0A1F /* Common */,
 				3E0926B11A7C859A009D0A1F /* DevCafe */,
 				3E0926CE1A7C859A009D0A1F /* DevCafeTests */,
 				93B93B97632189950D474878 /* Frameworks */,
+				3E0926E01A7C8D23009D0A1F /* Model */,
 				3E0926DF1A7C8C39009D0A1F /* Network */,
 				507FF1200214A1921F0666B4 /* Pods */,
 				3E0926B01A7C859A009D0A1F /* Products */,
@@ -174,6 +175,13 @@
 				3E0926E81A7C8E5A009D0A1F /* Contact.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3E0926EA1A7C90F3009D0A1F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		507FF1200214A1921F0666B4 /* Pods */ = {
