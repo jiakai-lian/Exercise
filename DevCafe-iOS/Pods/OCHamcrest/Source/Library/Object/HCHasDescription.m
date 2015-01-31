@@ -20,7 +20,9 @@
                                                                    selector:@selector(description)];
     self = [super initWithInvocation:anInvocation matching:descriptionMatcher];
     if (self)
-        self.shortMismatchDescription = YES;
+    {
+            self.shortMismatchDescription = YES;
+    }
     return self;
 }
 

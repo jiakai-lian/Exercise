@@ -106,31 +106,39 @@ static void HCRequireYesOrNo(BOOL value)
 
     self = [super init];
     if (self)
-        _value = value;
+    {
+            _value = value;
+    }
     return self;
 }
 
 - (BOOL)matches:(id)item
 {
     if (![item isKindOfClass:[NSNumber class]])
-        return NO;
+    {
+            return NO;
+    }
 
     return [item boolValue] == self.value;
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:@"a BOOL with value "]
-                  appendText:stringForBool(self.value)];
+            appendText:stringForBool(self.value)];
 }
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
 {
     [mismatchDescription appendText:@"was "];
     if ([item isKindOfClass:[NSNumber class]])
-        [mismatchDescription appendText:stringForBool([item boolValue])];
+    {
+            [mismatchDescription appendText:stringForBool([item boolValue])];
+        }
     else
-        [mismatchDescription appendDescriptionOf:item];
+    {
+            [mismatchDescription appendDescriptionOf:item];
+    }
 }
 
 @end

@@ -14,7 +14,9 @@
 - (BOOL)matches:(id)item
 {
     if (![item respondsToSelector:@selector(rangeOfString:)])
-        return NO;
+    {
+            return NO;
+    }
 
     return [item rangeOfString:self.substring].location != NSNotFound;
 }

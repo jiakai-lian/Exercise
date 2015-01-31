@@ -9,7 +9,7 @@
 
 
 @interface HCConformsToProtocol ()
-@property (readonly, nonatomic, strong) Protocol *protocol;
+@property(readonly, nonatomic, strong) Protocol *protocol;
 @end
 
 @implementation HCConformsToProtocol
@@ -25,7 +25,9 @@
 
     self = [super init];
     if (self)
-        _protocol = protocol;
+    {
+            _protocol = protocol;
+    }
     return self;
 }
 
@@ -34,10 +36,10 @@
     return [item conformsToProtocol:self.protocol];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:@"an object that conforms to "]
-                  appendText:NSStringFromProtocol(self.protocol)];
+            appendText:NSStringFromProtocol(self.protocol)];
 }
 
 @end

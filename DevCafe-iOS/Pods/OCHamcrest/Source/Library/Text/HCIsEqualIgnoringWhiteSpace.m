@@ -13,7 +13,9 @@ static void removeTrailingSpace(NSMutableString *string)
     {
         NSUInteger charIndex = length - 1;
         if (isspace([string characterAtIndex:charIndex]))
-            [string deleteCharactersInRange:NSMakeRange(charIndex, 1)];
+        {
+                    [string deleteCharactersInRange:NSMakeRange(charIndex, 1)];
+        }
     }
 }
 
@@ -28,7 +30,9 @@ static NSMutableString *stripSpace(NSString *string)
         if (isspace(character))
         {
             if (!lastWasSpace)
-                [result appendString:@" "];
+            {
+                            [result appendString:@" "];
+            }
             lastWasSpace = true;
         }
         else
@@ -44,8 +48,8 @@ static NSMutableString *stripSpace(NSString *string)
 
 
 @interface HCIsEqualIgnoringWhiteSpace ()
-@property (readonly, nonatomic, copy) NSString *originalString;
-@property (readonly, nonatomic, copy) NSString *strippedString;
+@property(readonly, nonatomic, copy) NSString *originalString;
+@property(readonly, nonatomic, copy) NSString *strippedString;
 @end
 
 @implementation HCIsEqualIgnoringWhiteSpace
@@ -71,15 +75,17 @@ static NSMutableString *stripSpace(NSString *string)
 - (BOOL)matches:(id)item
 {
     if (![item isKindOfClass:[NSString class]])
-        return NO;
+    {
+            return NO;
+    }
 
     return [self.strippedString isEqualToString:stripSpace(item)];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendDescriptionOf:self.originalString]
-                  appendText:@" ignoring whitespace"];
+            appendText:@" ignoring whitespace"];
 }
 
 @end

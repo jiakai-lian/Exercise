@@ -27,44 +27,58 @@
 #import "AFHTTPRequestOperation.h"
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+
 #import "AFURLSessionManager.h"
+
 #endif
 
 @implementation UIRefreshControl (AFNetworking)
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
-- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task {
+- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task
+{
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
     [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
     [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
     [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
 
-    if (task) {
-        if (task.state == NSURLSessionTaskStateRunning) {
+    if (task)
+    {
+        if (task.state == NSURLSessionTaskStateRunning)
+        {
             [self beginRefreshing];
 
             [notificationCenter addObserver:self selector:@selector(af_beginRefreshing) name:AFNetworkingTaskDidResumeNotification object:task];
             [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidCompleteNotification object:task];
             [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidSuspendNotification object:task];
-        } else {
+        }
+        else
+        {
             [self endRefreshing];
         }
     }
 }
+
 #endif
 
-- (void)setRefreshingWithStateOfOperation:(AFURLConnectionOperation *)operation {
+- (void)setRefreshingWithStateOfOperation:(AFURLConnectionOperation *)operation
+{
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
     [notificationCenter removeObserver:self name:AFNetworkingOperationDidStartNotification object:nil];
     [notificationCenter removeObserver:self name:AFNetworkingOperationDidFinishNotification object:nil];
 
-    if (operation) {
-        if (![operation isFinished]) {
-            if ([operation isExecuting]) {
+    if (operation)
+    {
+        if (![operation isFinished])
+        {
+            if ([operation isExecuting])
+            {
                 [self beginRefreshing];
-            } else {
+            }
+            else
+            {
                 [self endRefreshing];
             }
 
@@ -76,14 +90,18 @@
 
 #pragma mark -
 
-- (void)af_beginRefreshing {
-    dispatch_async(dispatch_get_main_queue(), ^{
+- (void)af_beginRefreshing
+{
+    dispatch_async(dispatch_get_main_queue(), ^
+    {
         [self beginRefreshing];
     });
 }
 
-- (void)af_endRefreshing {
-    dispatch_async(dispatch_get_main_queue(), ^{
+- (void)af_endRefreshing
+{
+    dispatch_async(dispatch_get_main_queue(), ^
+    {
         [self endRefreshing];
     });
 }

@@ -7,8 +7,8 @@
 
 
 @interface HCIsDictionaryContainingEntries ()
-@property (readonly, nonatomic, copy) NSArray *keys;
-@property (readonly, nonatomic, copy) NSArray *valueMatchers;
+@property(readonly, nonatomic, copy) NSArray *keys;
+@property(readonly, nonatomic, copy) NSArray *valueMatchers;
 @end
 
 
@@ -32,7 +32,7 @@
     return self;
 }
 
-- (BOOL)matches:(id)dict describingMismatchTo:(id<HCDescription>)mismatchDescription
+- (BOOL)matches:(id)dict describingMismatchTo:(id <HCDescription>)mismatchDescription
 {
     if (![dict isKindOfClass:[NSDictionary class]])
     {
@@ -47,9 +47,9 @@
         if (dict[key] == nil)
         {
             [[[[mismatchDescription appendText:@"no "]
-                                    appendDescriptionOf:key]
-                                    appendText:@" key in "]
-                                    appendDescriptionOf:dict];
+                    appendDescriptionOf:key]
+                    appendText:@" key in "]
+                    appendDescriptionOf:dict];
             return NO;
         }
 
@@ -59,9 +59,9 @@
         if (![valueMatcher matches:actualValue])
         {
             [[[[mismatchDescription appendText:@"value for "]
-                                    appendDescriptionOf:key]
-                                    appendText:@" was "]
-                                    appendDescriptionOf:actualValue];
+                    appendDescriptionOf:key]
+                    appendText:@" was "]
+                    appendDescriptionOf:actualValue];
             return NO;
         }
     }
@@ -69,15 +69,15 @@
     return YES;
 }
 
-- (void)describeKeyValueAtIndex:(NSUInteger)index to:(id<HCDescription>)description
+- (void)describeKeyValueAtIndex:(NSUInteger)index to:(id <HCDescription>)description
 {
     [[[[description appendDescriptionOf:self.keys[index]]
-                    appendText:@" = "]
-                    appendDescriptionOf:self.valueMatchers[index]]
-                    appendText:@"; "];
+            appendText:@" = "]
+            appendDescriptionOf:self.valueMatchers[index]]
+            appendText:@"; "];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [description appendText:@"a dictionary containing { "];
     NSUInteger count = [self.keys count];

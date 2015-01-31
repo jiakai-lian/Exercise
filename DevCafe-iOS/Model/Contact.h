@@ -11,7 +11,7 @@
 
 @interface Contact : NSObject
 
-@property (nonatomic, strong) NSString *phone;
-@property (nonatomic, strong) NSString *formattedPhone;
+@property(nonatomic, strong) NSString *phone;
+@property(nonatomic, strong) NSString *formattedPhone;
 
 @end

@@ -5,7 +5,7 @@
 
 
 @interface MKTThrowsException ()
-@property (readonly, nonatomic, strong) NSException *exception;
+@property(readonly, nonatomic, strong) NSException *exception;
 @end
 
 @implementation MKTThrowsException
@@ -14,7 +14,9 @@
 {
     self = [super init];
     if (self)
-        _exception = exception;
+    {
+            _exception = exception;
+    }
     return self;
 }
 

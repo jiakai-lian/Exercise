@@ -7,15 +7,15 @@
 
 
 @interface HCMatchSequence : NSObject
-@property (readonly, nonatomic, copy) NSArray *matchers;
-@property (readonly, nonatomic, strong) id <HCDescription, NSObject> mismatchDescription;
-@property (nonatomic, assign) NSUInteger nextMatchIndex;
+@property(readonly, nonatomic, copy) NSArray *matchers;
+@property(readonly, nonatomic, strong) id <HCDescription, NSObject> mismatchDescription;
+@property(nonatomic, assign) NSUInteger nextMatchIndex;
 @end
 
 @implementation HCMatchSequence
 
 - (instancetype)initWithMatchers:(NSArray *)itemMatchers
-             mismatchDescription:(id<HCDescription, NSObject>)description
+             mismatchDescription:(id <HCDescription, NSObject>)description
 {
     self = [super init];
     if (self)
@@ -36,7 +36,7 @@
     if (self.nextMatchIndex < [self.matchers count])
     {
         [[self.mismatchDescription appendText:@"no item was "]
-                              appendDescriptionOf:self.matchers[self.nextMatchIndex]];
+                appendDescriptionOf:self.matchers[self.nextMatchIndex]];
         return NO;
     }
     return YES;
@@ -74,7 +74,7 @@
 
 
 @interface HCIsCollectionContainingInOrder ()
-@property (readonly, nonatomic, copy) NSArray *matchers;
+@property(readonly, nonatomic, copy) NSArray *matchers;
 @end
 
 @implementation HCIsCollectionContainingInOrder
@@ -88,11 +88,13 @@
 {
     self = [super init];
     if (self)
-        _matchers = [itemMatchers copy];
+    {
+            _matchers = [itemMatchers copy];
+    }
     return self;
 }
 
-- (BOOL)matches:(id)collection describingMismatchTo:(id<HCDescription, NSObject>)mismatchDescription
+- (BOOL)matches:(id)collection describingMismatchTo:(id <HCDescription, NSObject>)mismatchDescription
 {
     if (![collection conformsToProtocol:@protocol(NSFastEnumeration)])
     {
@@ -101,19 +103,21 @@
     }
 
     HCMatchSequence *matchSequence =
-        [[HCMatchSequence alloc] initWithMatchers:self.matchers
-                              mismatchDescription:mismatchDescription];
+            [[HCMatchSequence alloc] initWithMatchers:self.matchers
+                                  mismatchDescription:mismatchDescription];
     for (id item in collection)
         if (![matchSequence matches:item])
-            return NO;
+        {
+                    return NO;
+        }
 
     return [matchSequence isFinished];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:@"a collection containing "]
-                  appendList:self.matchers start:@"[" separator:@", " end:@"]"];
+            appendList:self.matchers start:@"[" separator:@", " end:@"]"];
 }
 
 @end

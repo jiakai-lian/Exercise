@@ -26,7 +26,9 @@
 {
     self = [super init];
     if (self)
-        description = [aDescription copy];
+    {
+            description = [aDescription copy];
+    }
     return self;
 }
 
@@ -35,7 +37,7 @@
     return YES;
 }
 
-- (void)describeTo:(id<HCDescription>)aDescription
+- (void)describeTo:(id <HCDescription>)aDescription
 {
     [aDescription appendText:description];
 }

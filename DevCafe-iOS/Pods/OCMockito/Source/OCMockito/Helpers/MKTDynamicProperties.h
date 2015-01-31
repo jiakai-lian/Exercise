@@ -7,6 +7,7 @@
 @interface MKTDynamicProperties : NSObject
 
 - (instancetype)initWithClass:(Class)aClass;
+
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector;
 
 @end

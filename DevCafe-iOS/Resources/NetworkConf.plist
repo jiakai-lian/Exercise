@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>radius</key>
+        <string>2000</string>
+        <key>v</key>
+        <string>20140806</string>
+        <key>query</key>
+        <string>cafe</string>
+        <key>root_url</key>
+        <string>https://api.foursquare.com/v2/venues/search</string>
+        <key>client_secret</key>
+        <string>YZCKUYJ1WHUV2QICBXUBEILZI1DMPUIDP5SHV043O04FKBHL</string>
+        <key>client_id</key>
+        <string>ACAO2JPKM1MXHQJCK45IIFKRFR2ZVL0QASMCBCG5NPJQWF2G</string>
+    </dict>
+</plist>

@@ -7,7 +7,7 @@
 
 
 @interface MKTArgumentCaptor ()
-@property (readonly, nonatomic, strong) MKTCapturingMatcher *matcher;
+@property(readonly, nonatomic, strong) MKTCapturingMatcher *matcher;
 @end
 
 @implementation MKTArgumentCaptor
@@ -16,7 +16,9 @@
 {
     self = [super init];
     if (self)
-        _matcher = [[MKTCapturingMatcher alloc] init];
+    {
+            _matcher = [[MKTCapturingMatcher alloc] init];
+    }
     return self;
 }
 

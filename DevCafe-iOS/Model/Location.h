@@ -11,9 +11,9 @@
 
 @interface Location : NSObject
 
-@property (nonatomic, strong) NSNumber *lat;
-@property (nonatomic, strong) NSNumber *lng;
-@property (nonatomic, strong) NSNumber *distance;
-@property (nonatomic, strong) NSArray *formattedAddress;
+@property(nonatomic, strong) NSNumber *lat;
+@property(nonatomic, strong) NSNumber *lng;
+@property(nonatomic, strong) NSNumber *distance;
+@property(nonatomic, strong) NSArray *formattedAddress;
 
 @end

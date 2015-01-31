@@ -15,8 +15,8 @@ static void HCRequireMatcher(id obj)
 }
 
 
-@interface HCThrowsException()
-@property (readonly, nonatomic, strong) id <HCMatcher> exceptionMatcher;
+@interface HCThrowsException ()
+@property(readonly, nonatomic, strong) id <HCMatcher> exceptionMatcher;
 @end
 
 @implementation HCThrowsException
@@ -27,7 +27,9 @@ static void HCRequireMatcher(id obj)
 
     self = [super init];
     if (self)
-        _exceptionMatcher = exceptionMatcher;
+    {
+            _exceptionMatcher = exceptionMatcher;
+    }
     return self;
 }
 
@@ -69,7 +71,7 @@ static void HCRequireMatcher(id obj)
     return [item isKindOfClass:blockClass];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:@"a block with no arguments, throwing an exception which is "]
             appendDescriptionOf:self.exceptionMatcher];

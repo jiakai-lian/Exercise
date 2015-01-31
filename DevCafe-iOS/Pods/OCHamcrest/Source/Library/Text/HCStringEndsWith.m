@@ -14,7 +14,9 @@
 - (BOOL)matches:(id)item
 {
     if (![item respondsToSelector:@selector(hasSuffix:)])
-        return NO;
+    {
+            return NO;
+    }
 
     return [item hasSuffix:self.substring];
 }

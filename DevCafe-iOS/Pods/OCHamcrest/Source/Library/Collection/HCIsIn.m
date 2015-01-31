@@ -5,7 +5,7 @@
 
 
 @interface HCIsIn ()
-@property (readonly, nonatomic, strong) id collection;
+@property(readonly, nonatomic, strong) id collection;
 @end
 
 @implementation HCIsIn
@@ -26,7 +26,9 @@
 
     self = [super init];
     if (self)
-        _collection = collection;
+    {
+            _collection = collection;
+    }
     return self;
 }
 
@@ -35,10 +37,10 @@
     return [self.collection containsObject:item];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:@"one of "]
-                  appendList:self.collection start:@"{" separator:@", " end:@"}"];
+            appendList:self.collection start:@"{" separator:@", " end:@"}"];
 }
 
 @end

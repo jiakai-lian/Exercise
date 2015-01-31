@@ -8,7 +8,7 @@
 
 
 @interface MKTExactTimes ()
-@property (readonly, nonatomic, assign) NSUInteger wantedCount;
+@property(readonly, nonatomic, assign) NSUInteger wantedCount;
 @end
 
 @implementation MKTExactTimes
@@ -17,7 +17,9 @@
 {
     self = [super init];
     if (self)
-        _wantedCount = wantedNumberOfInvocations;
+    {
+            _wantedCount = wantedNumberOfInvocations;
+    }
     return self;
 }
 
@@ -31,7 +33,7 @@
     {
         NSString *plural = (self.wantedCount == 1) ? @"" : @"s";
         NSString *description = [NSString stringWithFormat:@"Expected %u matching invocation%@, but received %u",
-                                                           (unsigned)self.wantedCount, plural, (unsigned)matchingCount];
+                                                           (unsigned) self.wantedCount, plural, (unsigned) matchingCount];
         MKTFailTestLocation(data.testLocation, description);
     }
 }

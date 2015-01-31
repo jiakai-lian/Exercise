@@ -6,8 +6,8 @@
 
 @interface HCIsCloseTo ()
 
-@property (readonly, nonatomic, assign) double value;
-@property (readonly, nonatomic, assign) double delta;
+@property(readonly, nonatomic, assign) double value;
+@property(readonly, nonatomic, assign) double delta;
 @end
 
 
@@ -32,7 +32,9 @@
 - (BOOL)matches:(id)item
 {
     if ([self itemIsNotNumber:item])
-        return NO;
+    {
+            return NO;
+    }
 
     return fabs([item doubleValue] - self.value) <= self.delta;
 }
@@ -42,25 +44,27 @@
     return ![item isKindOfClass:[NSNumber class]];
 }
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
 {
     if ([self itemIsNotNumber:item])
-        [super describeMismatchOf:item to:mismatchDescription];
+    {
+            [super describeMismatchOf:item to:mismatchDescription];
+        }
     else
     {
         double actualDelta = fabs([item doubleValue] - self.value);
         [[[mismatchDescription appendDescriptionOf:item]
-                               appendText:@" differed by "]
-                               appendDescriptionOf:@(actualDelta)];
+                appendText:@" differed by "]
+                appendDescriptionOf:@(actualDelta)];
     }
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[[[description appendText:@"a numeric value within "]
-                    appendDescriptionOf:@(self.delta)]
-                    appendText:@" of "]
-                    appendDescriptionOf:@(self.value)];
+            appendDescriptionOf:@(self.delta)]
+            appendText:@" of "]
+            appendDescriptionOf:@(self.value)];
 }
 
 @end

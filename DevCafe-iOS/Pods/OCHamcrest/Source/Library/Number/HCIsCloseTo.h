@@ -7,6 +7,7 @@
 @interface HCIsCloseTo : HCBaseMatcher
 
 + (instancetype)isCloseTo:(double)value within:(double)delta;
+
 - (instancetype)initWithValue:(double)value delta:(double)delta;
 
 @end

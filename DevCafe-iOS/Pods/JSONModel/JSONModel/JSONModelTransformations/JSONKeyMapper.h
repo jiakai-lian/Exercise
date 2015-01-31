@@ -16,7 +16,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NSString* (^JSONModelKeyMapBlock)(NSString* keyName);
+typedef NSString *(^JSONModelKeyMapBlock)(NSString *keyName);
 
 /**
  * **You won't need to create or store instances of this class yourself.** If you want your model
@@ -52,17 +52,17 @@ typedef NSString* (^JSONModelKeyMapBlock)(NSString* keyName);
 
 /** @name Name convertors */
 /** Block, which takes in a JSON key and converts it to the corresponding property name */
-@property (readonly, nonatomic) JSONModelKeyMapBlock JSONToModelKeyBlock;
+@property(readonly, nonatomic) JSONModelKeyMapBlock JSONToModelKeyBlock;
 
 /** Block, which takes in a property name and converts it to the corresponding JSON key name */
-@property (readonly, nonatomic) JSONModelKeyMapBlock modelToJSONKeyBlock;
+@property(readonly, nonatomic) JSONModelKeyMapBlock modelToJSONKeyBlock;
 
 /** Combined convertor method
 * @param value the source name
 * @param importing YES invokes JSONToModelKeyBlock, NO - modelToJSONKeyBlock
 * @return JSONKeyMapper instance
 */
--(NSString*)convertValue:(NSString*)value isImportingToModel:(BOOL)importing;
+- (NSString *)convertValue:(NSString *)value isImportingToModel:(BOOL)importing;
 
 /** @name Creating a key mapper */
 
@@ -74,8 +74,8 @@ typedef NSString* (^JSONModelKeyMapBlock)(NSString* keyName);
  * @param toModel transforms JSON key name to your model property name
  * @param toJSON transforms your model property name to a JSON key
  */
--(instancetype)initWithJSONToModelBlock:(JSONModelKeyMapBlock)toModel
-                       modelToJSONBlock:(JSONModelKeyMapBlock)toJSON;
+- (instancetype)initWithJSONToModelBlock:(JSONModelKeyMapBlock)toModel
+                        modelToJSONBlock:(JSONModelKeyMapBlock)toJSON;
 
 /**
  * Creates a JSONKeyMapper instance, based on the mapping you provide
@@ -84,12 +84,12 @@ typedef NSString* (^JSONModelKeyMapBlock)(NSString* keyName);
  * @param map map dictionary, in the format: <pre>@{@"crazy_JSON_name":@"myCamelCaseName"}</pre>
  * @return JSONKeyMapper instance
  */
--(instancetype)initWithDictionary:(NSDictionary*)map;
+- (instancetype)initWithDictionary:(NSDictionary *)map;
 
 /**
  * Creates a JSONKeyMapper, which converts underscore_case to camelCase and vice versa.
  */
-+(instancetype)mapperFromUnderscoreCaseToCamelCase;
++ (instancetype)mapperFromUnderscoreCaseToCamelCase;
 
-+(instancetype)mapperFromUpperCaseToLowerCase;
++ (instancetype)mapperFromUpperCaseToLowerCase;
 @end

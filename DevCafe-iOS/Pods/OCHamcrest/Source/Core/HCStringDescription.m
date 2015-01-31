@@ -8,7 +8,7 @@
 
 @implementation HCStringDescription
 
-+ (NSString *)stringFrom:(id<HCSelfDescribing>)selfDescribing
++ (NSString *)stringFrom:(id <HCSelfDescribing>)selfDescribing
 {
     HCStringDescription *description = [HCStringDescription stringDescription];
     [description appendDescriptionOf:selfDescribing];
@@ -24,7 +24,9 @@
 {
     self = [super init];
     if (self)
-        accumulator = [[NSMutableString alloc] init];
+    {
+            accumulator = [[NSMutableString alloc] init];
+    }
     return self;
 }
 

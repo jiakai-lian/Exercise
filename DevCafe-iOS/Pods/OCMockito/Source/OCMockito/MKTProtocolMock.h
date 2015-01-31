@@ -9,12 +9,14 @@
  */
 @interface MKTProtocolMock : MKTBaseMockObject
 
-@property (readonly, nonatomic, strong) Protocol *mockedProtocol;
+@property(readonly, nonatomic, strong) Protocol *mockedProtocol;
 
 + (instancetype)mockForProtocol:(Protocol *)aProtocol;
+
 + (instancetype)mockForProtocol:(Protocol *)aProtocol includeOptionalMethods:(BOOL)includeOptionalMethods;
 
 - (instancetype)initWithProtocol:(Protocol *)aProtocol;
+
 - (instancetype)initWithProtocol:(Protocol *)aProtocol includeOptionalMethods:(BOOL)includeOptionalMethods;
 
 @end

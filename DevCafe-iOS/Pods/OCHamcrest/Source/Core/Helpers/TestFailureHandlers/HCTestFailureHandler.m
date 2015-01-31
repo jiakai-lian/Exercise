@@ -6,11 +6,12 @@
 
 @interface HCTestFailureHandler (SubclassResponsibility)
 - (BOOL)willHandleFailure:(HCTestFailure *)failure;
+
 - (void)executeHandlingOfFailure:(HCTestFailure *)failure;
 @end
 
 @interface HCTestFailureHandler ()
-@property (readonly, nonatomic, strong) HCTestFailureHandler *successor;
+@property(readonly, nonatomic, strong) HCTestFailureHandler *successor;
 @end
 
 
@@ -20,16 +21,22 @@
 {
     self = [super init];
     if (self)
-        _successor = successor;
+    {
+            _successor = successor;
+    }
     return self;
 }
 
 - (void)handleFailure:(HCTestFailure *)failure
 {
     if ([self willHandleFailure:failure])
-        [self executeHandlingOfFailure:failure];
+    {
+            [self executeHandlingOfFailure:failure];
+        }
     else
-        [self.successor handleFailure:failure];
+    {
+            [self.successor handleFailure:failure];
+    }
 }
 
 @end

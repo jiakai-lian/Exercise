@@ -11,7 +11,7 @@ void MKTFailTest(id testCase, const char *fileName, int lineNumber, NSString *de
 {
     HCTestFailure *failure = [[HCTestFailure alloc] initWithTestCase:testCase
                                                             fileName:[NSString stringWithUTF8String:fileName]
-                                                          lineNumber:(NSUInteger)lineNumber
+                                                          lineNumber:(NSUInteger) lineNumber
                                                               reason:description];
     HCTestFailureHandler *chain = HC_testFailureHandlerChain();
     [chain handleFailure:failure];

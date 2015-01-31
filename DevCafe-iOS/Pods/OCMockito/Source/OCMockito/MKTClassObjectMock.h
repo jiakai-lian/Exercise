@@ -11,6 +11,7 @@
 @interface MKTClassObjectMock : MKTBaseMockObject
 
 + (instancetype)mockForClass:(Class)aClass;
+
 - (instancetype)initWithClass:(Class)aClass;
 
 @end

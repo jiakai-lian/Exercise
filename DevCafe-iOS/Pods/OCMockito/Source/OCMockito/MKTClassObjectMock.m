@@ -6,7 +6,7 @@
 
 
 @interface MKTClassObjectMock ()
-@property (readonly, nonatomic, strong) Class mockedClass;
+@property(readonly, nonatomic, strong) Class mockedClass;
 @end
 
 @implementation MKTClassObjectMock
@@ -20,7 +20,9 @@
 {
     self = [super init];
     if (self)
-        _mockedClass = aClass;
+    {
+            _mockedClass = aClass;
+    }
     return self;
 }
 

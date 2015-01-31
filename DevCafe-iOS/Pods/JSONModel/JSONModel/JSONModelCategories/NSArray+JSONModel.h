@@ -21,7 +21,7 @@
 /**
  * Exposes invisible JSONModelArray methods
  */
-@interface NSArray(JSONModel)
+@interface NSArray (JSONModel)
 
 /**
  * Looks up the array's contents and tries to find a JSONModel object

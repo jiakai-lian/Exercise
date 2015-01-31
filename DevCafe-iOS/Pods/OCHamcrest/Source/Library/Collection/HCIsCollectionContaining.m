@@ -10,7 +10,7 @@
 
 
 @interface HCIsCollectionContaining ()
-@property (readonly, nonatomic, strong) id <HCMatcher> elementMatcher;
+@property(readonly, nonatomic, strong) id <HCMatcher> elementMatcher;
 @end
 
 @implementation HCIsCollectionContaining
@@ -25,7 +25,9 @@
 {
     self = [super init];
     if (self)
-        _elementMatcher = elementMatcher;
+    {
+            _elementMatcher = elementMatcher;
+    }
     return self;
 }
 
@@ -45,14 +47,18 @@
 
     for (id item in collection)
         if ([self.elementMatcher matches:item])
-            return YES;
+        {
+                    return YES;
+        }
 
     [mismatchDescription appendText:@"mismatches were: ["];
     BOOL isPastFirst = NO;
     for (id item in collection)
     {
         if (isPastFirst)
-            [mismatchDescription appendText:@", "];
+        {
+                    [mismatchDescription appendText:@", "];
+        }
         [self.elementMatcher describeMismatchOf:item to:mismatchDescription];
         isPastFirst = YES;
     }
@@ -60,10 +66,10 @@
     return NO;
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:@"a collection containing "]
-                  appendDescriptionOf:self.elementMatcher];
+            appendDescriptionOf:self.elementMatcher];
 }
 
 @end

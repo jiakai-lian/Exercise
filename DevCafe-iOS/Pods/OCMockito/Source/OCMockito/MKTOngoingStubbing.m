@@ -11,7 +11,7 @@
 
 
 @interface MKTOngoingStubbing ()
-@property (readonly, nonatomic, strong) MKTInvocationContainer *invocationContainer;
+@property(readonly, nonatomic, strong) MKTInvocationContainer *invocationContainer;
 @end
 
 @implementation MKTOngoingStubbing
@@ -20,7 +20,9 @@
 {
     self = [super init];
     if (self)
-        _invocationContainer = invocationContainer;
+    {
+            _invocationContainer = invocationContainer;
+    }
     return self;
 }
 

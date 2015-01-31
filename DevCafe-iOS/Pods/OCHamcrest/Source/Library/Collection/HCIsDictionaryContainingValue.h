@@ -7,6 +7,7 @@
 @interface HCIsDictionaryContainingValue : HCBaseMatcher
 
 + (instancetype)isDictionaryContainingValue:(id <HCMatcher>)valueMatcher;
+
 - (instancetype)initWithValueMatcher:(id <HCMatcher>)valueMatcher;
 
 @end

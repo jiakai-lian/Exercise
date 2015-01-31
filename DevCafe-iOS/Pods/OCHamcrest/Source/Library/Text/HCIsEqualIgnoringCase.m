@@ -7,7 +7,7 @@
 
 
 @interface HCIsEqualIgnoringCase ()
-@property (readonly, nonatomic, copy) NSString *string;
+@property(readonly, nonatomic, copy) NSString *string;
 @end
 
 @implementation HCIsEqualIgnoringCase
@@ -23,22 +23,26 @@
 
     self = [super init];
     if (self)
-        _string = [string copy];
+    {
+            _string = [string copy];
+    }
     return self;
 }
 
 - (BOOL)matches:(id)item
 {
     if (![item isKindOfClass:[NSString class]])
-        return NO;
+    {
+            return NO;
+    }
 
     return [self.string caseInsensitiveCompare:item] == NSOrderedSame;
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendDescriptionOf:self.string]
-                  appendText:@" ignoring case"];
+            appendText:@" ignoring case"];
 }
 
 @end

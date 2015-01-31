@@ -7,6 +7,7 @@
 @interface HCIsCollectionContaining : HCDiagnosingMatcher
 
 + (instancetype)isCollectionContaining:(id <HCMatcher>)elementMatcher;
+
 - (instancetype)initWithMatcher:(id <HCMatcher>)elementMatcher;
 
 @end

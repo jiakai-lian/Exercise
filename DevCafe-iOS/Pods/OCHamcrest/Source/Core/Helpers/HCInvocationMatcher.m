@@ -20,7 +20,9 @@
 - (BOOL)matches:(id)item
 {
     if ([self invocationNotSupportedForItem:item])
-        return NO;
+    {
+            return NO;
+    }
 
     return [_subMatcher matches:[self invokeOn:item]];
 }
@@ -38,10 +40,12 @@
     return result;
 }
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
 {
     if ([self invocationNotSupportedForItem:item])
-        [super describeMismatchOf:item to:mismatchDescription];
+    {
+            [super describeMismatchOf:item to:mismatchDescription];
+        }
     else
     {
         [self describeLongMismatchDescriptionOf:item to:mismatchDescription];
@@ -54,13 +58,13 @@
     if (!self.shortMismatchDescription)
     {
         [[[[mismatchDescription appendDescriptionOf:item]
-                                appendText:@" "]
-                                appendText:[self stringFromSelector]]
-                                appendText:@" "];
+                appendText:@" "]
+                appendText:[self stringFromSelector]]
+                appendText:@" "];
     }
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[[[description appendText:@"an object with "]
             appendText:[self stringFromSelector]]

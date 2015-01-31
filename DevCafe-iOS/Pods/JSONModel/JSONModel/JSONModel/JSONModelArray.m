@@ -19,126 +19,141 @@
 
 @implementation JSONModelArray
 {
-    NSMutableArray* _storage;
+    NSMutableArray *_storage;
     Class _targetClass;
 }
 
--(id)initWithArray:(NSArray *)array modelClass:(Class)cls
+- (id)initWithArray:(NSArray *)array modelClass:(Class)cls
 {
     self = [super init];
-    
-    if (self) {
+
+    if (self)
+    {
         _storage = [NSMutableArray arrayWithArray:array];
         _targetClass = cls;
     }
     return self;
 }
 
--(id)firstObject
+- (id)firstObject
 {
     return [self objectAtIndex:0];
 }
 
--(id)lastObject
+- (id)lastObject
 {
     return [self objectAtIndex:_storage.count - 1];
 }
 
--(id)objectAtIndex:(NSUInteger)index
+- (id)objectAtIndex:(NSUInteger)index
 {
-	return [self objectAtIndexedSubscript:index];
+    return [self objectAtIndexedSubscript:index];
 }
 
--(id)objectAtIndexedSubscript:(NSUInteger)index
+- (id)objectAtIndexedSubscript:(NSUInteger)index
 {
     id object = _storage[index];
-    if (![object isMemberOfClass:_targetClass]) {
-        NSError* err = nil;
+    if (![object isMemberOfClass:_targetClass])
+    {
+        NSError *err = nil;
         object = [[_targetClass alloc] initWithDictionary:object error:&err];
-        if (object) {
+        if (object)
+        {
             _storage[index] = object;
         }
     }
     return object;
 }
 
--(void)forwardInvocation:(NSInvocation *)anInvocation
+- (void)forwardInvocation:(NSInvocation *)anInvocation
 {
     [anInvocation invokeWithTarget:_storage];
 }
 
--(id)forwardingTargetForSelector:(SEL)selector
+- (id)forwardingTargetForSelector:(SEL)selector
 {
-    static NSArray* overridenMethods = nil;
-    if (!overridenMethods) overridenMethods = @[@"initWithArray:modelClass:",@"objectAtIndex:",@"objectAtIndexedSubscript:", @"count",@"modelWithIndexValue:",@"description",@"mutableCopy",@"firstObject",@"lastObject",@"countByEnumeratingWithState:objects:count:"];
-    if ([overridenMethods containsObject:NSStringFromSelector(selector)]) {
+    static NSArray *overridenMethods = nil;
+    if (!overridenMethods)
+    {overridenMethods = @[@"initWithArray:modelClass:", @"objectAtIndex:", @"objectAtIndexedSubscript:", @"count", @"modelWithIndexValue:", @"description", @"mutableCopy", @"firstObject", @"lastObject", @"countByEnumeratingWithState:objects:count:"];}
+    if ([overridenMethods containsObject:NSStringFromSelector(selector)])
+    {
         return self;
     }
     return _storage;
 }
 
--(NSUInteger)count
+- (NSUInteger)count
 {
     return _storage.count;
 }
 
--(id)modelWithIndexValue:(id)indexValue
+- (id)modelWithIndexValue:(id)indexValue
 {
-    if (self.count==0) return nil;
-    if (![_storage[0] indexPropertyName]) return nil;
-    
-    for (JSONModel* model in _storage) {
-        if ([[model valueForKey:model.indexPropertyName] isEqual:indexValue]) {
+    if (self.count == 0)
+    {return nil;}
+    if (![_storage[0] indexPropertyName])
+    {return nil;}
+
+    for (JSONModel *model in _storage)
+    {
+        if ([[model valueForKey:model.indexPropertyName] isEqual:indexValue])
+        {
             return model;
         }
     }
-    
+
     return nil;
 }
 
--(id)mutableCopy
+- (id)mutableCopy
 {
     //it's already mutable
     return self;
 }
 
 #pragma mark - description
--(NSString*)description
+- (NSString *)description
 {
-    NSMutableString* res = [NSMutableString stringWithFormat:@"<JSONModelArray[%@]>\n", [_targetClass description]];
-    for (id m in _storage) {
-        [res appendString: [m description]];
-        [res appendString: @",\n"];
+    NSMutableString *res = [NSMutableString stringWithFormat:@"<JSONModelArray[%@]>\n", [_targetClass description]];
+    for (id m in _storage)
+    {
+        [res appendString:[m description]];
+        [res appendString:@",\n"];
     }
     [res appendFormat:@"\n</JSONModelArray>"];
     return res;
 }
 
--(NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
-								 objects:(id __unsafe_unretained [])stackbuf
-								   count:(NSUInteger)stackbufLength
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
+                                  objects:(id __unsafe_unretained [])stackbuf
+                                    count:(NSUInteger)stackbufLength
 {
     NSUInteger count = 0;
-    
+
     unsigned long countOfItemsAlreadyEnumerated = state->state;
-    
-    if (countOfItemsAlreadyEnumerated == 0) {
+
+    if (countOfItemsAlreadyEnumerated == 0)
+    {
         state->mutationsPtr = &state->extra[0];
     }
-	
-    if (countOfItemsAlreadyEnumerated < [self count]) {
+
+    if (countOfItemsAlreadyEnumerated < [self count])
+    {
         state->itemsPtr = stackbuf;
-        while ((countOfItemsAlreadyEnumerated < [self count]) && (count < stackbufLength)) {
+        while ((countOfItemsAlreadyEnumerated < [self count]) && (count < stackbufLength))
+        {
             stackbuf[count] = [self objectAtIndex:countOfItemsAlreadyEnumerated];
             countOfItemsAlreadyEnumerated++;
             count++;
         }
-    } else {
+    }
+    else
+    {
         count = 0;
     }
-	
+
     state->state = countOfItemsAlreadyEnumerated;
-    
+
     return count;
 }
 

@@ -29,31 +29,38 @@
 #import <Security/Security.h>
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
+
 #import <UIKit/UIKit.h>
+
 #endif
 
 @interface AFHTTPRequestOperationManager ()
-@property (readwrite, nonatomic, strong) NSURL *baseURL;
+@property(readwrite, nonatomic, strong) NSURL *baseURL;
 @end
 
 @implementation AFHTTPRequestOperationManager
 
-+ (instancetype)manager {
++ (instancetype)manager
+{
     return [[self alloc] initWithBaseURL:nil];
 }
 
-- (instancetype)init {
-    return [self initWithBaseURL:nil];    
+- (instancetype)init
+{
+    return [self initWithBaseURL:nil];
 }
 
-- (instancetype)initWithBaseURL:(NSURL *)url {
+- (instancetype)initWithBaseURL:(NSURL *)url
+{
     self = [super init];
-    if (!self) {
+    if (!self)
+    {
         return nil;
     }
 
     // Ensure terminal slash for baseURL path, so that NSURL +URLWithString:relativeToURL: works as expected
-    if ([[url path] length] > 0 && ![[url absoluteString] hasSuffix:@"/"]) {
+    if ([[url path] length] > 0 && ![[url absoluteString] hasSuffix:@"/"])
+    {
         url = [url URLByAppendingPathComponent:@""];
     }
 
@@ -78,13 +85,15 @@
 #ifdef _SYSTEMCONFIGURATION_H
 #endif
 
-- (void)setRequestSerializer:(AFHTTPRequestSerializer <AFURLRequestSerialization> *)requestSerializer {
+- (void)setRequestSerializer:(AFHTTPRequestSerializer <AFURLRequestSerialization> *)requestSerializer
+{
     NSParameterAssert(requestSerializer);
 
     _requestSerializer = requestSerializer;
 }
 
-- (void)setResponseSerializer:(AFHTTPResponseSerializer <AFURLResponseSerialization> *)responseSerializer {
+- (void)setResponseSerializer:(AFHTTPResponseSerializer <AFURLResponseSerialization> *)responseSerializer
+{
     NSParameterAssert(responseSerializer);
 
     _responseSerializer = responseSerializer;
@@ -130,11 +139,13 @@
                          failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
 {
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:@"HEAD" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:nil];
-    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *requestOperation, __unused id responseObject) {
-        if (success) {
+    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *requestOperation, __unused id responseObject)
+    {
+        if (success)
+        {
             success(requestOperation);
         }
-    } failure:failure];
+    }                                                                 failure:failure];
 
     [self.operationQueue addOperation:operation];
 
@@ -209,21 +220,25 @@
 
 #pragma mark - NSObject
 
-- (NSString *)description {
+- (NSString *)description
+{
     return [NSString stringWithFormat:@"<%@: %p, baseURL: %@, operationQueue: %@>", NSStringFromClass([self class]), self, [self.baseURL absoluteString], self.operationQueue];
 }
 
 #pragma mark - NSSecureCoding
 
-+ (BOOL)supportsSecureCoding {
++ (BOOL)supportsSecureCoding
+{
     return YES;
 }
 
-- (id)initWithCoder:(NSCoder *)decoder {
+- (id)initWithCoder:(NSCoder *)decoder
+{
     NSURL *baseURL = [decoder decodeObjectForKey:NSStringFromSelector(@selector(baseURL))];
 
     self = [self initWithBaseURL:baseURL];
-    if (!self) {
+    if (!self)
+    {
         return nil;
     }
 
@@ -233,7 +248,8 @@
     return self;
 }
 
-- (void)encodeWithCoder:(NSCoder *)coder {
+- (void)encodeWithCoder:(NSCoder *)coder
+{
     [coder encodeObject:self.baseURL forKey:NSStringFromSelector(@selector(baseURL))];
     [coder encodeObject:self.requestSerializer forKey:NSStringFromSelector(@selector(requestSerializer))];
     [coder encodeObject:self.responseSerializer forKey:NSStringFromSelector(@selector(responseSerializer))];
@@ -241,12 +257,13 @@
 
 #pragma mark - NSCopying
 
-- (id)copyWithZone:(NSZone *)zone {
+- (id)copyWithZone:(NSZone *)zone
+{
     AFHTTPRequestOperationManager *HTTPClient = [[[self class] allocWithZone:zone] initWithBaseURL:self.baseURL];
 
     HTTPClient.requestSerializer = [self.requestSerializer copyWithZone:zone];
     HTTPClient.responseSerializer = [self.responseSerializer copyWithZone:zone];
-    
+
     return HTTPClient;
 }
 

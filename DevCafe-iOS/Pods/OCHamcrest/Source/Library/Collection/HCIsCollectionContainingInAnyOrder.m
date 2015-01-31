@@ -7,14 +7,14 @@
 
 
 @interface HCMatchingInAnyOrder : NSObject
-@property (readonly, nonatomic, copy) NSMutableArray *matchers;
-@property (readonly, nonatomic, strong) id <HCDescription, NSObject> mismatchDescription;
+@property(readonly, nonatomic, copy) NSMutableArray *matchers;
+@property(readonly, nonatomic, strong) id <HCDescription, NSObject> mismatchDescription;
 @end
 
 @implementation HCMatchingInAnyOrder
 
 - (instancetype)initWithMatchers:(NSArray *)itemMatchers
-             mismatchDescription:(id<HCDescription, NSObject>)description
+             mismatchDescription:(id <HCDescription, NSObject>)description
 {
     self = [super init];
     if (self)
@@ -38,19 +38,21 @@
         ++index;
     }
     [[self.mismatchDescription appendText:@"not matched: "]
-                               appendDescriptionOf:item];
+            appendDescriptionOf:item];
     return NO;
 }
 
 - (BOOL)isFinishedWith:(NSArray *)collection
 {
     if ([self.matchers count] == 0)
-        return YES;
+    {
+            return YES;
+    }
 
     [[[[self.mismatchDescription appendText:@"no item matches: "]
-                                 appendList:self.matchers start:@"" separator:@", " end:@""]
-                                 appendText:@" in "]
-                                 appendList:collection start:@"[" separator:@", " end:@"]"];
+            appendList:self.matchers start:@"" separator:@", " end:@""]
+            appendText:@" in "]
+            appendList:collection start:@"[" separator:@", " end:@"]"];
     return NO;
 }
 
@@ -58,7 +60,7 @@
 
 
 @interface HCIsCollectionContainingInAnyOrder ()
-@property (readonly, nonatomic, copy) NSArray *matchers;
+@property(readonly, nonatomic, copy) NSArray *matchers;
 @end
 
 @implementation HCIsCollectionContainingInAnyOrder
@@ -72,11 +74,13 @@
 {
     self = [super init];
     if (self)
-        _matchers = [itemMatchers copy];
+    {
+            _matchers = [itemMatchers copy];
+    }
     return self;
 }
 
-- (BOOL)matches:(id)collection describingMismatchTo:(id<HCDescription>)mismatchDescription
+- (BOOL)matches:(id)collection describingMismatchTo:(id <HCDescription>)mismatchDescription
 {
     if (![collection conformsToProtocol:@protocol(NSFastEnumeration)])
     {
@@ -85,20 +89,22 @@
     }
 
     HCMatchingInAnyOrder *matchSequence =
-        [[HCMatchingInAnyOrder alloc] initWithMatchers:self.matchers
-                                   mismatchDescription:mismatchDescription];
+            [[HCMatchingInAnyOrder alloc] initWithMatchers:self.matchers
+                                       mismatchDescription:mismatchDescription];
     for (id item in collection)
         if (![matchSequence matches:item])
-            return NO;
+        {
+                    return NO;
+        }
 
     return [matchSequence isFinishedWith:collection];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[[description appendText:@"a collection over "]
-                   appendList:self.matchers start:@"[" separator:@", " end:@"]"]
-                   appendText:@" in any order"];
+            appendList:self.matchers start:@"[" separator:@", " end:@"]"]
+            appendText:@" in any order"];
 }
 
 @end

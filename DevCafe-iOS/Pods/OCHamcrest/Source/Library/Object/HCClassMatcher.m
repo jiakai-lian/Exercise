@@ -19,23 +19,25 @@
 
     self = [super init];
     if (self)
-        _theClass = aClass;
+    {
+            _theClass = aClass;
+    }
     return self;
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [[description appendText:[self expectation]]
-                  appendText:NSStringFromClass(self.theClass)];
+            appendText:NSStringFromClass(self.theClass)];
 }
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
 {
     [mismatchDescription appendText:@"was "];
     if (item)
     {
         [[mismatchDescription appendText:NSStringFromClass([item class])]
-                              appendText:@" instance "];
+                appendText:@" instance "];
     }
     [mismatchDescription appendDescriptionOf:item];
 }

@@ -46,6 +46,7 @@
  */
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
 - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
+
 #endif
 
 ///----------------------------------------

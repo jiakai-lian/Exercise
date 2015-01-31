@@ -5,7 +5,7 @@
 
 
 @interface HCIsSame ()
-@property (readonly, nonatomic, strong) id object;
+@property(readonly, nonatomic, strong) id object;
 @end
 
 @implementation HCIsSame
@@ -19,7 +19,9 @@
 {
     self = [super init];
     if (self)
-        _object = object;
+    {
+            _object = object;
+    }
     return self;
 }
 
@@ -28,18 +30,20 @@
     return item == self.object;
 }
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
+- (void)describeMismatchOf:(id)item to:(id <HCDescription>)mismatchDescription
 {
     [mismatchDescription appendText:@"was "];
     if (item)
-        [mismatchDescription appendText:[NSString stringWithFormat:@"%p ", (__bridge void *)item]];
+    {
+            [mismatchDescription appendText:[NSString stringWithFormat:@"%p ", (__bridge void *) item]];
+    }
     [mismatchDescription appendDescriptionOf:item];
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
-    [[description appendText:[NSString stringWithFormat:@"same instance as %p ", (__bridge void *)self.object]]
-                  appendDescriptionOf:self.object];
+    [[description appendText:[NSString stringWithFormat:@"same instance as %p ", (__bridge void *) self.object]]
+            appendDescriptionOf:self.object];
 }
 
 @end

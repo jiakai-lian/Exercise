@@ -7,6 +7,7 @@
 @interface HCIsEqual : HCBaseMatcher
 
 + (instancetype)isEqualTo:(id)object;
+
 - (instancetype)initEqualTo:(id)object;
 
 @end

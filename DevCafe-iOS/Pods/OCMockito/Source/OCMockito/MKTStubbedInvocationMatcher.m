@@ -5,8 +5,8 @@
 
 
 @interface MKTStubbedInvocationMatcher ()
-@property (readonly, nonatomic, copy) NSMutableArray *answers;
-@property (nonatomic, assign) NSUInteger index;
+@property(readonly, nonatomic, copy) NSMutableArray *answers;
+@property(nonatomic, assign) NSUInteger index;
 @end
 
 @implementation MKTStubbedInvocationMatcher
@@ -15,7 +15,9 @@
 {
     self = [super init];
     if (self)
-        _answers = [[NSMutableArray alloc] init];
+    {
+            _answers = [[NSMutableArray alloc] init];
+    }
     return self;
 }
 
@@ -29,7 +31,9 @@
     id <MKTAnswer> a = self.answers[self.index];
     NSUInteger bumpedIndex = self.index + 1;
     if (bumpedIndex < self.answers.count)
-        self.index = bumpedIndex;
+    {
+            self.index = bumpedIndex;
+    }
     return [a answerInvocation:invocation];
 }
 

@@ -9,8 +9,8 @@
 @end
 
 @interface HCReturnValueGetter ()
-@property (readonly, nonatomic, assign) char const *handlerType;
-@property (readonly, nonatomic, strong) HCReturnValueGetter *successor;
+@property(readonly, nonatomic, assign) char const *handlerType;
+@property(readonly, nonatomic, strong) HCReturnValueGetter *successor;
 @end
 
 
@@ -35,7 +35,9 @@
 - (id)returnValueOfType:(char const *)type fromInvocation:(NSInvocation *)invocation
 {
     if ([self handlesReturnType:type])
-        return [self returnValueFromInvocation:invocation];
+    {
+            return [self returnValueFromInvocation:invocation];
+    }
 
     return [self.successor returnValueOfType:type fromInvocation:invocation];
 }

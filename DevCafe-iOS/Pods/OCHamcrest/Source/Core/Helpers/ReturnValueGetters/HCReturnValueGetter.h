@@ -10,6 +10,7 @@
 @interface HCReturnValueGetter : NSObject
 
 - (instancetype)initWithType:(char const *)handlerType successor:(HCReturnValueGetter *)successor;
+
 - (id)returnValueOfType:(char const *)type fromInvocation:(NSInvocation *)invocation;
 
 @end

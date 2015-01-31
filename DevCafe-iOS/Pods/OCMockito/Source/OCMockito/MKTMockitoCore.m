@@ -9,7 +9,7 @@
 
 @interface MKTMockitoCore ()
 
-@property (readonly, nonatomic, strong) MKTMockingProgress *mockingProgress;
+@property(readonly, nonatomic, strong) MKTMockingProgress *mockingProgress;
 @end
 
 
@@ -20,7 +20,9 @@
 {
     static id sharedCore = nil;
     if (!sharedCore)
-        sharedCore = [[self alloc] init];
+    {
+            sharedCore = [[self alloc] init];
+    }
     return sharedCore;
 }
 
@@ -28,7 +30,9 @@
 {
     self = [super init];
     if (self)
-        _mockingProgress = [MKTMockingProgress sharedProgress];
+    {
+            _mockingProgress = [MKTMockingProgress sharedProgress];
+    }
     return self;
 }
 

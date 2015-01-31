@@ -9,8 +9,8 @@
 @end
 
 @interface MKTReturnValueSetter ()
-@property (readonly, nonatomic, assign) char const *handlerType;
-@property (readonly, nonatomic, strong) MKTReturnValueSetter *successor;
+@property(readonly, nonatomic, assign) char const *handlerType;
+@property(readonly, nonatomic, strong) MKTReturnValueSetter *successor;
 @end
 
 
@@ -35,9 +35,13 @@
 - (void)setReturnValue:(id)returnValue ofType:(char const *)type onInvocation:(NSInvocation *)invocation
 {
     if ([self handlesReturnType:type])
-        [self setReturnValue:returnValue onInvocation:invocation];
+    {
+            [self setReturnValue:returnValue onInvocation:invocation];
+        }
     else
-        [self.successor setReturnValue:returnValue ofType:type onInvocation:invocation];
+    {
+            [self.successor setReturnValue:returnValue ofType:type onInvocation:invocation];
+    }
 }
 
 @end

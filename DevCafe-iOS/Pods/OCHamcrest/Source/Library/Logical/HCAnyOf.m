@@ -7,7 +7,7 @@
 
 
 @interface HCAnyOf ()
-@property (readonly, nonatomic, copy) NSArray *matchers;
+@property(readonly, nonatomic, copy) NSArray *matchers;
 @end
 
 @implementation HCAnyOf
@@ -21,7 +21,9 @@
 {
     self = [super init];
     if (self)
-        _matchers = [matchers copy];
+    {
+            _matchers = [matchers copy];
+    }
     return self;
 }
 
@@ -29,11 +31,13 @@
 {
     for (id <HCMatcher> oneMatcher in self.matchers)
         if ([oneMatcher matches:item])
-            return YES;
+        {
+                    return YES;
+        }
     return NO;
 }
 
-- (void)describeTo:(id<HCDescription>)description
+- (void)describeTo:(id <HCDescription>)description
 {
     [description appendList:self.matchers start:@"(" separator:@" or " end:@")"];
 }

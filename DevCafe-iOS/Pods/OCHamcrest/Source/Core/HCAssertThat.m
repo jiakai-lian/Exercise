@@ -22,26 +22,28 @@ static NSString *describeMismatch(id matcher, id actual)
 }
 
 static void reportMismatch(id testCase, id actual, id <HCMatcher> matcher,
-                           char const *fileName, int lineNumber)
+        char const *fileName, int lineNumber)
 {
     HCTestFailure *failure = [[HCTestFailure alloc] initWithTestCase:testCase
                                                             fileName:[NSString stringWithUTF8String:fileName]
-                                                          lineNumber:(NSUInteger)lineNumber
+                                                          lineNumber:(NSUInteger) lineNumber
                                                               reason:describeMismatch(matcher, actual)];
     HCTestFailureHandler *chain = HC_testFailureHandlerChain();
     [chain handleFailure:failure];
 }
 
 void HC_assertThatWithLocation(id testCase, id actual, id <HCMatcher> matcher,
-                               const char *fileName, int lineNumber)
+        const char *fileName, int lineNumber)
 {
     if (![matcher matches:actual])
-        reportMismatch(testCase, actual, matcher, fileName, lineNumber);
+    {
+            reportMismatch(testCase, actual, matcher, fileName, lineNumber);
+    }
 }
 
 void HC_assertThatAfterWithLocation(id testCase, NSTimeInterval maxTime,
-                                    HCAssertThatAfterActualBlock actualBlock, id<HCMatcher> matcher,
-                                    const char *fileName, int lineNumber)
+        HCAssertThatAfterActualBlock actualBlock, id <HCMatcher> matcher,
+        const char *fileName, int lineNumber)
 {
     BOOL match;
     id actual;
@@ -51,11 +53,15 @@ void HC_assertThatAfterWithLocation(id testCase, NSTimeInterval maxTime,
         actual = actualBlock();
         match = [matcher matches:actual];
         if (match || ([[NSDate date] compare:expiryDate] == NSOrderedDescending))
-            break;
+        {
+                    break;
+        }
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
         OSMemoryBarrier();
     }
 
     if (!match)
-        reportMismatch(testCase, actual, matcher, fileName, lineNumber);
+    {
+            reportMismatch(testCase, actual, matcher, fileName, lineNumber);
+    }
 }

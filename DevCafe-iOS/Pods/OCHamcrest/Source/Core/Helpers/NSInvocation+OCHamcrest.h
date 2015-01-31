@@ -7,7 +7,9 @@
 @interface NSInvocation (OCHamcrest)
 
 + (NSInvocation *)och_invocationWithTarget:(id)target selector:(SEL)selector;
+
 + (NSInvocation *)och_invocationOnObjectOfType:(Class)aClass selector:(SEL)selector;
+
 - (id)och_invoke;
 
 @end

@@ -7,6 +7,7 @@
 @interface HCIsCollectionContainingInAnyOrder : HCDiagnosingMatcher
 
 + (instancetype)isCollectionContainingInAnyOrder:(NSArray *)itemMatchers;
+
 - (instancetype)initWithMatchers:(NSArray *)itemMatchers;
 
 @end

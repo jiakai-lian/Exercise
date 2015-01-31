@@ -6,7 +6,9 @@
 @interface NSInvocation (OCMockito)
 
 - (NSArray *)mkt_arguments;
+
 - (void)mkt_setReturnValue:(id)returnValue;
+
 - (void)mkt_retainArgumentsWithWeakTarget;
 
 @end
