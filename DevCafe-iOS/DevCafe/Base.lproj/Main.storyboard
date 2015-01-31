@@ -19,15 +19,24 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lcN-7N-HW8" id="cnZ-XZ-cXc">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cafe" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-B0-DsS">
-                                            <rect key="frame" x="8" y="14" width="60" height="60"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_cafe" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-B0-DsS">
+                                            <rect key="frame" x="8" y="15" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="Rzq-Z1-vLh"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUr-6e-0Zr">
-                                            <rect key="frame" x="76" y="23" width="461" height="42"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUr-6e-0Zr">
+                                            <rect key="frame" x="76" y="24" width="461" height="42"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tax-7J-f8S">
+                                            <rect key="frame" x="426" y="59" width="166" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="166" id="31J-AT-Dxy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -35,7 +44,9 @@
                                     <constraints>
                                         <constraint firstItem="sgc-B0-DsS" firstAttribute="leading" secondItem="cnZ-XZ-cXc" secondAttribute="leadingMargin" id="3y1-dX-Lbg"/>
                                         <constraint firstItem="sUr-6e-0Zr" firstAttribute="centerY" secondItem="sgc-B0-DsS" secondAttribute="centerY" id="46v-kq-2wf"/>
+                                        <constraint firstItem="Tax-7J-f8S" firstAttribute="trailing" secondItem="cnZ-XZ-cXc" secondAttribute="trailingMargin" id="6py-6W-erS"/>
                                         <constraint firstItem="sUr-6e-0Zr" firstAttribute="leading" secondItem="sgc-B0-DsS" secondAttribute="trailing" constant="8" symbolic="YES" id="GAa-TJ-3ZO"/>
+                                        <constraint firstItem="Tax-7J-f8S" firstAttribute="top" secondItem="cnZ-XZ-cXc" secondAttribute="topMargin" constant="51" id="RJf-sO-qSv"/>
                                         <constraint firstItem="sgc-B0-DsS" firstAttribute="top" secondItem="cnZ-XZ-cXc" secondAttribute="topMargin" constant="6" id="d2w-jg-rOi"/>
                                         <constraint firstItem="sUr-6e-0Zr" firstAttribute="top" secondItem="cnZ-XZ-cXc" secondAttribute="topMargin" constant="15" id="nra-c0-CZs"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="sUr-6e-0Zr" secondAttribute="trailing" constant="55" id="y3h-QO-9yQ"/>
@@ -52,7 +63,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQA-mq-Ib8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="571"/>
+            <point key="canvasLocation" x="306" y="570"/>
         </scene>
     </scenes>
     <resources>

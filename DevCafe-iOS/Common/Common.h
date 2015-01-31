@@ -40,5 +40,10 @@
 #   define NSLOG(...)
 #endif
 
+//DEV Exceptions
+#define THROW_INCORRECT_TYPE_EXCEPTION @throw [NSException exceptionWithName:@"Incorrect Type" reason:@"Incorrect Type" userInfo:nil]
+#define THROW_EXCEPTION(message) @throw [NSException exceptionWithName:@"DEV Exception" reason:(message) userInfo:nil]
+
+
 
 #endif

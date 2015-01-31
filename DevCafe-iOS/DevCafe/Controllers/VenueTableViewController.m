@@ -72,6 +72,36 @@
                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     
+    if(indexPath.row < self.venues.count)
+    {
+        static int TAG_NAME = 100;
+        static int TAG_DISTANCE = 101;
+        
+        Venue * venue = [self.venues objectAtIndex:indexPath.row];
+        
+        //set name
+        if([[cell viewWithTag:TAG_NAME] isKindOfClass:[UILabel class]])
+        {
+            ((UILabel *)[cell viewWithTag:TAG_NAME]).text = venue.name;
+        }
+        else
+        {
+            THROW_INCORRECT_TYPE_EXCEPTION;
+        }
+        
+        //set distance
+        if([[cell viewWithTag:TAG_DISTANCE] isKindOfClass:[UILabel class]])
+        {
+            ((UILabel *)[cell viewWithTag:TAG_DISTANCE]).text = [[NSString alloc] initWithFormat:@"%ldm",venue.location.distance];
+        }
+        else
+        {
+            THROW_INCORRECT_TYPE_EXCEPTION;
+        }
+        
+        
+    }
+    
     
     
     
