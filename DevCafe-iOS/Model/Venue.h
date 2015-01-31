@@ -8,12 +8,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 #import "Contact.h"
 #import "Location.h"
 
-@interface Venue : NSObject
+@interface Venue : JSONModel
 
-@property(nonatomic, strong) NSString *venueId;
+@property(nonatomic, strong) NSString *id;
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, strong) Location *location;
 @property(nonatomic, strong) Contact *contact;

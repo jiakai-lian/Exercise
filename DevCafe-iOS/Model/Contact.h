@@ -8,8 +8,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
-@interface Contact : NSObject
+@interface Contact : JSONModel
 
 @property(nonatomic, strong) NSString *phone;
 @property(nonatomic, strong) NSString *formattedPhone;

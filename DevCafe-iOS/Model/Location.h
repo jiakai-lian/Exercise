@@ -8,8 +8,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
-@interface Location : NSObject
+@interface Location : JSONModel
 
 @property(nonatomic, strong) NSNumber *lat;
 @property(nonatomic, strong) NSNumber *lng;
