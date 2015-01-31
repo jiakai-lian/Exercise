@@ -22,6 +22,7 @@
 		3E0926E61A7C8E11009D0A1F /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926E51A7C8E11009D0A1F /* Location.m */; };
 		3E0926E91A7C8E5A009D0A1F /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926E81A7C8E5A009D0A1F /* Contact.m */; };
 		3E0926EC1A7C9899009D0A1F /* NetworkConfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926EB1A7C9899009D0A1F /* NetworkConfTests.m */; };
+		3E0926EF1A7C9F66009D0A1F /* ServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926EE1A7C9F66009D0A1F /* ServiceAPI.m */; };
 		F5C2D3292EABFB6E6DEC8A8E /* libPods-DevCafeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		3E0926E71A7C8E5A009D0A1F /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		3E0926E81A7C8E5A009D0A1F /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		3E0926EB1A7C9899009D0A1F /* NetworkConfTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConfTests.m; sourceTree = "<group>"; };
+		3E0926ED1A7C9F66009D0A1F /* ServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAPI.h; sourceTree = "<group>"; };
+		3E0926EE1A7C9F66009D0A1F /* ServiceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAPI.m; sourceTree = "<group>"; };
 		48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevCafeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5729012C401AEDBC761354F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8ACAB25E3018E883866E5071 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 			children = (
 				1A878BAA02E67A47B32F4354 /* NetworkConf.h */,
 				1A8783744FC536EF02F3A345 /* NetworkConf.m */,
+				3E0926ED1A7C9F66009D0A1F /* ServiceAPI.h */,
+				3E0926EE1A7C9F66009D0A1F /* ServiceAPI.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0926B81A7C859A009D0A1F /* AppDelegate.m in Sources */,
+				3E0926EF1A7C9F66009D0A1F /* ServiceAPI.m in Sources */,
 				3E0926BB1A7C859A009D0A1F /* DevCafe.xcdatamodeld in Sources */,
 				3E0926BE1A7C859A009D0A1F /* ViewController.m in Sources */,
 				3E0926E31A7C8D52009D0A1F /* Venue.m in Sources */,
