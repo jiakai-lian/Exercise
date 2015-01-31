@@ -12,7 +12,6 @@
 		3E0926B51A7C859A009D0A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926B41A7C859A009D0A1F /* main.m */; };
 		3E0926B81A7C859A009D0A1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926B71A7C859A009D0A1F /* AppDelegate.m */; };
 		3E0926BB1A7C859A009D0A1F /* DevCafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926B91A7C859A009D0A1F /* DevCafe.xcdatamodeld */; };
-		3E0926BE1A7C859A009D0A1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926BD1A7C859A009D0A1F /* ViewController.m */; };
 		3E0926C11A7C859A009D0A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0926BF1A7C859A009D0A1F /* Main.storyboard */; };
 		3E0926C31A7C859A009D0A1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0926C21A7C859A009D0A1F /* Images.xcassets */; };
 		3E0926C61A7C859A009D0A1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0926C41A7C859A009D0A1F /* LaunchScreen.xib */; };
@@ -56,8 +55,6 @@
 		3E0926B61A7C859A009D0A1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E0926B71A7C859A009D0A1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E0926BA1A7C859A009D0A1F /* DevCafe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DevCafe.xcdatamodel; sourceTree = "<group>"; };
-		3E0926BC1A7C859A009D0A1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E0926BD1A7C859A009D0A1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3E0926C01A7C859A009D0A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E0926C21A7C859A009D0A1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E0926C51A7C859A009D0A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -145,13 +142,11 @@
 		3E0926B11A7C859A009D0A1F /* DevCafe */ = {
 			isa = PBXGroup;
 			children = (
+				3E0927181A7CF7B7009D0A1F /* Views */,
+				3E0927171A7CF7AA009D0A1F /* Controllers */,
 				3E0926B61A7C859A009D0A1F /* AppDelegate.h */,
 				3E0926B71A7C859A009D0A1F /* AppDelegate.m */,
-				3E0926BC1A7C859A009D0A1F /* ViewController.h */,
-				3E0926BD1A7C859A009D0A1F /* ViewController.m */,
-				3E0926BF1A7C859A009D0A1F /* Main.storyboard */,
 				3E0926C21A7C859A009D0A1F /* Images.xcassets */,
-				3E0926C41A7C859A009D0A1F /* LaunchScreen.xib */,
 				3E0926B91A7C859A009D0A1F /* DevCafe.xcdatamodeld */,
 				3E0926B21A7C859A009D0A1F /* Supporting Files */,
 			);
@@ -262,6 +257,22 @@
 				3E09270D1A7CEFF5009D0A1F /* NSObject+Notification.m */,
 			);
 			path = SimpleEDAEngine;
+			sourceTree = "<group>";
+		};
+		3E0927171A7CF7AA009D0A1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E0927181A7CF7B7009D0A1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E0926BF1A7C859A009D0A1F /* Main.storyboard */,
+				3E0926C41A7C859A009D0A1F /* LaunchScreen.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		507FF1200214A1921F0666B4 /* Pods */ = {
@@ -459,7 +470,6 @@
 				3E0926EF1A7C9F66009D0A1F /* ServiceAPI.m in Sources */,
 				3E0926F41A7CDDA0009D0A1F /* SearchResponse.m in Sources */,
 				3E0926BB1A7C859A009D0A1F /* DevCafe.xcdatamodeld in Sources */,
-				3E0926BE1A7C859A009D0A1F /* ViewController.m in Sources */,
 				3E09270E1A7CEFF5009D0A1F /* NSDictionary+TimeStampAndContent.m in Sources */,
 				3E0926E31A7C8D52009D0A1F /* Venue.m in Sources */,
 				3E0926E91A7C8E5A009D0A1F /* Contact.m in Sources */,
