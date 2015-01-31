@@ -24,6 +24,9 @@
 		3E0926EC1A7C9899009D0A1F /* NetworkConfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926EB1A7C9899009D0A1F /* NetworkConfTests.m */; };
 		3E0926EF1A7C9F66009D0A1F /* ServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926EE1A7C9F66009D0A1F /* ServiceAPI.m */; };
 		3E0926F11A7CA43C009D0A1F /* ServiceAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926F01A7CA43B009D0A1F /* ServiceAPITests.m */; };
+		3E0926F41A7CDDA0009D0A1F /* SearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926F31A7CDDA0009D0A1F /* SearchResponse.m */; };
+		3E0926F71A7CE103009D0A1F /* SearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E0926F61A7CE103009D0A1F /* SearchResponse.json */; };
+		3E0926F91A7CE132009D0A1F /* SearchResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */; };
 		F5C2D3292EABFB6E6DEC8A8E /* libPods-DevCafeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,10 @@
 		3E0926ED1A7C9F66009D0A1F /* ServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAPI.h; sourceTree = "<group>"; };
 		3E0926EE1A7C9F66009D0A1F /* ServiceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAPI.m; sourceTree = "<group>"; };
 		3E0926F01A7CA43B009D0A1F /* ServiceAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAPITests.m; sourceTree = "<group>"; };
+		3E0926F21A7CDDA0009D0A1F /* SearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResponse.h; sourceTree = "<group>"; };
+		3E0926F31A7CDDA0009D0A1F /* SearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResponse.m; sourceTree = "<group>"; };
+		3E0926F61A7CE103009D0A1F /* SearchResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SearchResponse.json; sourceTree = "<group>"; };
+		3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResponseTests.m; sourceTree = "<group>"; };
 		48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevCafeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5729012C401AEDBC761354F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8ACAB25E3018E883866E5071 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,10 +152,12 @@
 		3E0926CE1A7C859A009D0A1F /* DevCafeTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E0926F51A7CE0E1009D0A1F /* SampleJSON */,
 				3E0926D11A7C859A009D0A1F /* DevCafeTests.m */,
-				3E0926CF1A7C859A009D0A1F /* Supporting Files */,
 				3E0926EB1A7C9899009D0A1F /* NetworkConfTests.m */,
 				3E0926F01A7CA43B009D0A1F /* ServiceAPITests.m */,
+				3E0926CF1A7C859A009D0A1F /* Supporting Files */,
+				3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */,
 			);
 			path = DevCafeTests;
 			sourceTree = "<group>";
@@ -189,6 +198,8 @@
 				3E0926E51A7C8E11009D0A1F /* Location.m */,
 				3E0926E71A7C8E5A009D0A1F /* Contact.h */,
 				3E0926E81A7C8E5A009D0A1F /* Contact.m */,
+				3E0926F21A7CDDA0009D0A1F /* SearchResponse.h */,
+				3E0926F31A7CDDA0009D0A1F /* SearchResponse.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +209,14 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		3E0926F51A7CE0E1009D0A1F /* SampleJSON */ = {
+			isa = PBXGroup;
+			children = (
+				3E0926F61A7CE103009D0A1F /* SearchResponse.json */,
+			);
+			path = SampleJSON;
 			sourceTree = "<group>";
 		};
 		507FF1200214A1921F0666B4 /* Pods */ = {
@@ -315,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0926F71A7CE103009D0A1F /* SearchResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +410,7 @@
 			files = (
 				3E0926B81A7C859A009D0A1F /* AppDelegate.m in Sources */,
 				3E0926EF1A7C9F66009D0A1F /* ServiceAPI.m in Sources */,
+				3E0926F41A7CDDA0009D0A1F /* SearchResponse.m in Sources */,
 				3E0926BB1A7C859A009D0A1F /* DevCafe.xcdatamodeld in Sources */,
 				3E0926BE1A7C859A009D0A1F /* ViewController.m in Sources */,
 				3E0926E31A7C8D52009D0A1F /* Venue.m in Sources */,
@@ -404,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0926F91A7CE132009D0A1F /* SearchResponseTests.m in Sources */,
 				3E0926EC1A7C9899009D0A1F /* NetworkConfTests.m in Sources */,
 				3E0926F11A7CA43C009D0A1F /* ServiceAPITests.m in Sources */,
 				3E0926D21A7C859A009D0A1F /* DevCafeTests.m in Sources */,

@@ -12,9 +12,9 @@
 
 @interface Location : JSONModel
 
-@property(nonatomic, strong) NSNumber *lat;
-@property(nonatomic, strong) NSNumber *lng;
-@property(nonatomic, strong) NSNumber *distance;
-@property(nonatomic, strong) NSArray *formattedAddress;
+@property(nonatomic, assign) double lat;
+@property(nonatomic, assign) double lng;
+@property(nonatomic, assign) long distance;
+@property(nonatomic, strong) NSArray<Optional> *formattedAddress;
 
 @end

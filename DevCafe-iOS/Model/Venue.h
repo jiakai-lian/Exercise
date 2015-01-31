@@ -12,6 +12,9 @@
 #import "Contact.h"
 #import "Location.h"
 
+@protocol Venue
+@end
+
 @interface Venue : JSONModel
 
 @property(nonatomic, strong) NSString *id;
