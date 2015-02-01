@@ -400,6 +400,7 @@
 				TargetAttributes = {
 					3E0926AE1A7C859A009D0A1F = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = P2WAB8MZ2N;
 					};
 					3E0926CA1A7C859A009D0A1F = {
 						CreatedOnToolsVersion = 6.1;
@@ -661,6 +662,7 @@
 			baseConfigurationReference = 5729012C401AEDBC761354F0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DevCafe/project_prefix.pch;
 				INFOPLIST_FILE = DevCafe/Info.plist;
@@ -674,6 +676,7 @@
 			baseConfigurationReference = 8ACAB25E3018E883866E5071 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DevCafe/project_prefix.pch;
 				INFOPLIST_FILE = DevCafe/Info.plist;

@@ -27,23 +27,17 @@
     [super viewDidLoad];
     //show progress hud
     [self showProgressHUD];
+    
+    //register to notification center to receive location changed message
+    [self register:@selector(whenLocationChanged:) name:LOCATION_CHANGED_NOTIFICATION];
 
-#if !(TARGET_IPHONE_SIMULATOR)
-    //get location from location handler
-    self.locationHandler = ((AppDelegate *) [[UIApplication sharedApplication] delegate]).locationHandler;
-    CLLocationCoordinate2D coordinate = self.locationHandler.location.coordinate;
-
-    [self updateVenuesWithLat:[[NSNumber alloc] initWithDouble:coordinate.latitude] andLng:[[NSNumber alloc] initWithDouble:coordinate.longitude]];
-#else
+#if (TARGET_IPHONE_SIMULATOR)
     //if run on the simulator, use mock location
     NSNumber *lat = [[NSNumber alloc]initWithDouble:40.7];
     NSNumber *lng = [[NSNumber alloc]initWithDouble:-74];
     
     [self updateVenuesWithLat:lat  andLng:lng ];
 #endif
-
-    //register to notification center to receive location changed message
-    [self register:@selector(whenLocationChanged:) name:LOCATION_CHANGED_NOTIFICATION];
 }
 
 - (void)dealloc
