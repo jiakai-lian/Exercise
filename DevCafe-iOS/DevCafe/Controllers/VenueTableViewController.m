@@ -29,6 +29,7 @@
     [self showProgressHUD];
 
 #if !(TARGET_IPHONE_SIMULATOR)
+    //get location from location handler
     self.locationHandler = ((AppDelegate *) [[UIApplication sharedApplication] delegate]).locationHandler;
     CLLocationCoordinate2D coordinate = self.locationHandler.location.coordinate;
 
@@ -52,6 +53,11 @@
 }
 
 #pragma mark method for location changed event
+/**
+ *  perform an updating action when received a location changed notifiction
+ *
+ *  @param notification : A notification from notification center
+ */
 - (void)whenLocationChanged:(NSNotification *)notification
 {
     NSDictionary *content = [notification.userInfo content];
@@ -64,6 +70,12 @@
 }
 
 #pragma mark Update Venues
+/**
+ *  update venues by lat,lng
+ *
+ *  @param lat latitude
+ *  @param lng longtitue
+ */
 - (void)updateVenuesWithLat:(NSNumber *)lat andLng:(NSNumber *)lng
 {
 
@@ -108,9 +120,10 @@
         cell = [[UITableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-
+    
     if (indexPath.row < self.venues.count)
     {
+        //tags for changable views in the cell
         static int TAG_NAME = 100;
         static int TAG_DISTANCE = 101;
         static int TAG_CALL = 102;
@@ -181,6 +194,11 @@
 }
 
 #pragma press buttons
+/**
+ *  make a call based on the venue's phone number
+ *
+ *  @param sender <#sender description#>
+ */
 
 - (IBAction)makeCall:(id)sender
 {
@@ -203,6 +221,11 @@
     }
 }
 
+/**
+ *  show a venue in the map app based on its location
+ *
+ *  @param sender <#sender description#>
+ */
 - (IBAction)showMap:(id)sender
 {
 

@@ -23,6 +23,8 @@ In this app, some aspects I have noticed can be improved in the future:
 
 4. The current layout looks good in the vertical mode. But in the horizontal mode, it wastes too much spaces
 
+5. Currently the network url and params saved into a plist file. In a real world scenario, it is possible to edit those data in iTunes. Therefore it is not secure engough to save sensitive data in plist.
+
 
 Key functionalities in this app:
 
