@@ -114,12 +114,14 @@
         static int TAG_DISTANCE = 101;
         static int TAG_CALL = 102;
         static int TAG_MAP = 103;
+        static int TAG_ADDRESS = 104;
 
         //instance type check
         if (![[cell viewWithTag:TAG_NAME] isKindOfClass:[UILabel class]] ||
                 ![[cell viewWithTag:TAG_DISTANCE] isKindOfClass:[UILabel class]] ||
                 ![[cell viewWithTag:TAG_CALL] isKindOfClass:[UIButton class]] ||
-                ![[cell viewWithTag:TAG_MAP] isKindOfClass:[UIButton class]])
+                ![[cell viewWithTag:TAG_MAP] isKindOfClass:[UIButton class]] ||
+                ![[cell viewWithTag:TAG_ADDRESS] isKindOfClass:[UILabel class]])
         {
             THROW_INCORRECT_TYPE_EXCEPTION;
         }
@@ -128,6 +130,21 @@
 
         //set name
         ((UILabel *) [cell viewWithTag:TAG_NAME]).text = venue.name;
+        
+        //set address
+        if(venue.location.formattedAddress.count == 0 )
+        {
+            ((UILabel *) [cell viewWithTag:TAG_ADDRESS]).text = @"";
+        }
+        else
+        {
+            NSString *address = [[NSString alloc]init];
+            for(NSString *string in venue.location.formattedAddress)
+            {
+                address= [address stringByAppendingString:[string stringByAppendingString:@"\n"]];
+            }
+            ((UILabel *) [cell viewWithTag:TAG_ADDRESS]).text = address;
+        }
 
         //set distance
         ((UILabel *) [cell viewWithTag:TAG_DISTANCE]).text = [[NSString alloc] initWithFormat:@"%ldm", venue.location.distance];
@@ -180,7 +197,7 @@
         Venue *venue = [self.venues objectAtIndex:index];
 
         //create phone URL and lanch external application
-        NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", venue.contact.phone]];
+        NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@", venue.contact.phone]];
         [[UIApplication sharedApplication] openURL:phoneURL];
     }
 }

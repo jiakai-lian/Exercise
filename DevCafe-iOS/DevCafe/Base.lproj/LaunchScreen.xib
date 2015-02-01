@@ -24,10 +24,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cafe" translatesAutoresizingMaskIntoConstraints="NO" id="tV6-jM-taI">
-                    <rect key="frame" x="180" y="191" width="120" height="120"/>
+                    <rect key="frame" x="160" y="191" width="160" height="160"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="9H0-AY-3hR"/>
-                        <constraint firstAttribute="width" constant="120" id="vtL-EP-iON"/>
+                        <constraint firstAttribute="height" constant="160" id="9H0-AY-3hR"/>
+                        <constraint firstAttribute="width" constant="160" id="vtL-EP-iON"/>
                     </constraints>
                 </imageView>
             </subviews>
