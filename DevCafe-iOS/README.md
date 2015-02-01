@@ -14,15 +14,23 @@ For enterprise projects, it is recommanded to apply advanced MVVC pattern or VIP
 
 
 In this app, some aspects I have noticed can be improved in the future:
+
 1. Insufficient unit test cases: Although I have applied unit test for critical cases. However, all these cases are all positive test cases, which means the error handlings in this app are net yet been tested in Unit Testing. 
+
 2. No data persistence layer: It cannot save fetched data to anywhere at this moment.
+
 3. User expereince: UI design and User expereince definitely can be improved. 
+
 4. The current layout looks good in the vertical mode. But in the horizontal mode, it wastes too much spaces
 
 
 Key functionalities in this app:
-Updating location continuely
-Fetching data asynchronously
-Items are ordered in asceeding order
-Able to make a call when press on the phone number in the list
-Able to lauch an external map app when press on the map marker button in the list.
+1.Updating location continuely
+
+2.Fetching data asynchronously
+
+3.Items are ordered in asceeding order
+
+4.Able to make a call when press on the phone number in the list
+
+5.Able to lauch an external map app when press on the map marker button in the list.
