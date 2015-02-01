@@ -30,9 +30,11 @@
 		3E0927071A7CEE5D009D0A1F /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927061A7CEE5D009D0A1F /* LocationHandler.m */; };
 		3E09270E1A7CEFF5009D0A1F /* NSDictionary+TimeStampAndContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09270B1A7CEFF5009D0A1F /* NSDictionary+TimeStampAndContent.m */; };
 		3E09270F1A7CEFF5009D0A1F /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09270D1A7CEFF5009D0A1F /* NSObject+Notification.m */; };
-		3E0927151A7CF233009D0A1F /* UIViewController+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927141A7CF233009D0A1F /* UIViewController+MBProgressHUD.m */; };
 		3E09271B1A7CF86A009D0A1F /* VenueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09271A1A7CF86A009D0A1F /* VenueTableViewController.m */; };
-		3E09271E1A7CFD83009D0A1F /* UIViewController+AlertControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09271D1A7CFD83009D0A1F /* UIViewController+AlertControllers.m */; };
+		3E0927201A7D1E25009D0A1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E09271F1A7D1E25009D0A1F /* MapKit.framework */; };
+		3E09273B1A7DA674009D0A1F /* UIViewController+AlertControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927361A7DA674009D0A1F /* UIViewController+AlertControllers.m */; };
+		3E09273D1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09273A1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m */; };
+		3E0927401A7DA743009D0A1F /* UITableView+Enhancement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09273F1A7DA743009D0A1F /* UITableView+Enhancement.m */; };
 		F5C2D3292EABFB6E6DEC8A8E /* libPods-DevCafeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */; };
 /* End PBXBuildFile section */
 
@@ -87,13 +89,16 @@
 		3E09270B1A7CEFF5009D0A1F /* NSDictionary+TimeStampAndContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TimeStampAndContent.m"; sourceTree = "<group>"; };
 		3E09270C1A7CEFF5009D0A1F /* NSObject+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
 		3E09270D1A7CEFF5009D0A1F /* NSObject+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
-		3E0927131A7CF233009D0A1F /* UIViewController+MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MBProgressHUD.h"; sourceTree = "<group>"; };
-		3E0927141A7CF233009D0A1F /* UIViewController+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBProgressHUD.m"; sourceTree = "<group>"; };
 		3E0927161A7CF430009D0A1F /* project_prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = project_prefix.pch; sourceTree = "<group>"; };
 		3E0927191A7CF86A009D0A1F /* VenueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewController.h; sourceTree = "<group>"; };
 		3E09271A1A7CF86A009D0A1F /* VenueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewController.m; sourceTree = "<group>"; };
-		3E09271C1A7CFD83009D0A1F /* UIViewController+AlertControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertControllers.h"; sourceTree = "<group>"; };
-		3E09271D1A7CFD83009D0A1F /* UIViewController+AlertControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertControllers.m"; sourceTree = "<group>"; };
+		3E09271F1A7D1E25009D0A1F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3E0927351A7DA674009D0A1F /* UIViewController+AlertControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertControllers.h"; sourceTree = "<group>"; };
+		3E0927361A7DA674009D0A1F /* UIViewController+AlertControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertControllers.m"; sourceTree = "<group>"; };
+		3E0927391A7DA674009D0A1F /* UIViewController+MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MBProgressHUD.h"; sourceTree = "<group>"; };
+		3E09273A1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBProgressHUD.m"; sourceTree = "<group>"; };
+		3E09273E1A7DA743009D0A1F /* UITableView+Enhancement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Enhancement.h"; sourceTree = "<group>"; };
+		3E09273F1A7DA743009D0A1F /* UITableView+Enhancement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Enhancement.m"; sourceTree = "<group>"; };
 		48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevCafeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5729012C401AEDBC761354F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8ACAB25E3018E883866E5071 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0927201A7D1E25009D0A1F /* MapKit.framework in Frameworks */,
 				3E0926FB1A7CEAA9009D0A1F /* CoreLocation.framework in Frameworks */,
 				07B37D6AE71CA8ACADE5B8E8 /* libPods.a in Frameworks */,
 			);
@@ -227,13 +233,10 @@
 		3E0926EA1A7C90F3009D0A1F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3E0927221A7DA4D9009D0A1F /* UIExtensions */,
 				3E0927081A7CEFF5009D0A1F /* SimpleEDAEngine */,
 				3E0927041A7CEE5D009D0A1F /* LocationService */,
 				3E0926FF1A7CEB90009D0A1F /* Common.h */,
-				3E0927131A7CF233009D0A1F /* UIViewController+MBProgressHUD.h */,
-				3E0927141A7CF233009D0A1F /* UIViewController+MBProgressHUD.m */,
-				3E09271C1A7CFD83009D0A1F /* UIViewController+AlertControllers.h */,
-				3E09271D1A7CFD83009D0A1F /* UIViewController+AlertControllers.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -285,6 +288,19 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		3E0927221A7DA4D9009D0A1F /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E0927351A7DA674009D0A1F /* UIViewController+AlertControllers.h */,
+				3E0927361A7DA674009D0A1F /* UIViewController+AlertControllers.m */,
+				3E0927391A7DA674009D0A1F /* UIViewController+MBProgressHUD.h */,
+				3E09273A1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m */,
+				3E09273E1A7DA743009D0A1F /* UITableView+Enhancement.h */,
+				3E09273F1A7DA743009D0A1F /* UITableView+Enhancement.m */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
 		507FF1200214A1921F0666B4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +315,7 @@
 		93B93B97632189950D474878 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E09271F1A7D1E25009D0A1F /* MapKit.framework */,
 				3E0926FA1A7CEAA9009D0A1F /* CoreLocation.framework */,
 				F0300F1BB413CB108F5620DC /* libPods.a */,
 				48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */,
@@ -475,20 +492,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E09273D1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m in Sources */,
 				3E09270F1A7CEFF5009D0A1F /* NSObject+Notification.m in Sources */,
 				3E0926B81A7C859A009D0A1F /* AppDelegate.m in Sources */,
 				3E0926EF1A7C9F66009D0A1F /* ServiceAPI.m in Sources */,
+				3E0927401A7DA743009D0A1F /* UITableView+Enhancement.m in Sources */,
 				3E0926F41A7CDDA0009D0A1F /* SearchResponse.m in Sources */,
 				3E0926BB1A7C859A009D0A1F /* DevCafe.xcdatamodeld in Sources */,
+				3E09273B1A7DA674009D0A1F /* UIViewController+AlertControllers.m in Sources */,
 				3E09270E1A7CEFF5009D0A1F /* NSDictionary+TimeStampAndContent.m in Sources */,
 				3E0926E31A7C8D52009D0A1F /* Venue.m in Sources */,
 				3E0926E91A7C8E5A009D0A1F /* Contact.m in Sources */,
-				3E09271E1A7CFD83009D0A1F /* UIViewController+AlertControllers.m in Sources */,
 				3E0926E61A7C8E11009D0A1F /* Location.m in Sources */,
 				3E0926B51A7C859A009D0A1F /* main.m in Sources */,
 				3E0927071A7CEE5D009D0A1F /* LocationHandler.m in Sources */,
 				3E09271B1A7CF86A009D0A1F /* VenueTableViewController.m in Sources */,
-				3E0927151A7CF233009D0A1F /* UIViewController+MBProgressHUD.m in Sources */,
 				1A8782D4A7601AD0728A955B /* NetworkConf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
