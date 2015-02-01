@@ -42,7 +42,7 @@ static NSString const *ROOT_URL = @"root_url";
 /**
  *  init the object with a property list
  *
- *  @return an initailized object reference
+ *  @return an initialized object reference
  */
 - (instancetype)init
 {

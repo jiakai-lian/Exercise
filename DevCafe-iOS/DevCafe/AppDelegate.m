@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
 
     //init location service
-    self.locationHanlder = [[LocationHandler alloc] init];
+    self.locationHandler = [[LocationHandler alloc] init];
 
 
     return YES;

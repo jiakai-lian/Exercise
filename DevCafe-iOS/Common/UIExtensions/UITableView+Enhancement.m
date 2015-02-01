@@ -10,7 +10,7 @@
 
 @implementation UITableView (Enhancement)
 
-- (NSIndexPath *)getIndexPatchbyViewInCell:(UIView *)view
+- (NSIndexPath *)getIndexPathByViewInCell:(UIView *)view
 {
     CGPoint rootViewPoint = [[view superview] convertPoint:[view center] toView:self];
     NSIndexPath *indexPath = [self indexPathForRowAtPoint:rootViewPoint];

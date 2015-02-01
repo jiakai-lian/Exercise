@@ -11,9 +11,6 @@
 
 - (instancetype)initWithTimeStamp:(NSDate *)timestamp AndContent:(id)content
 {
-//    self = [self init];
-//    [self setObject:timestamp forKey:TIMESTAMP];
-//    [self setObject:content forKey:CONTENT];
     return [self initWithObjectsAndKeys:timestamp, TIMESTAMP, content, CONTENT, nil];
 }
 

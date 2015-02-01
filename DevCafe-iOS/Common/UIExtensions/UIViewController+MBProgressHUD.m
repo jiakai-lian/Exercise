@@ -15,10 +15,10 @@
 
 @implementation UIViewController (MBProgressHUD)
 
-- (void)showProgressHUD:(NSString *)message
-{
-
-}
+//- (void)showProgressHUD:(NSString *)message
+//{
+//
+//}
 
 - (void)showProgressHUD
 {

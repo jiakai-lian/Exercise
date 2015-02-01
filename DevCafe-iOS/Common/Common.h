@@ -29,7 +29,7 @@
 #define isFaceUp    dDeviceOrientation == UIDeviceOrientationFaceUp   ? YES : NO
 #define isFaceDown  dDeviceOrientation == UIDeviceOrientationFaceDown ? YES : NO
 
-//color hex convertion
+//color hex convert
 #define UIColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
 #define UIColorFromRGBAHex(hex) [UIColor colorWithRed:((hex>>24)&0xFF)/255.0 green:((hex>>16)&0xFF)/255.0 blue:((hex>>8)&0xFF)/255.0 alpha:((hex)&0xFF)/255.0]
 

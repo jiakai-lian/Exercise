@@ -1,6 +1,6 @@
 //
 //  VenueArraySorter.m
-//  a utility class used to ordr an venue array
+//  a utility class used to order an venue array
 //
 //  Created by jiakai lian on 1/02/2015.
 //  Copyright (c) 2015 jiakai. All rights reserved.
@@ -18,15 +18,17 @@
         long distanceA = ((Venue *) a).location.distance;
         long distanceB = ((Venue *) b).location.distance;
 
-        if (ascending)
+        if(distanceA == distanceB)
         {
-            //ordered from the near to the distant
-            return (distanceA > distanceB);
+            return NSOrderedSame;
+        }
+        else if(ascending)
+        {
+            return (distanceA > distanceB)?NSOrderedDescending:NSOrderedAscending;
         }
         else
         {
-            //ordered from the distant to the near
-            return !(distanceA > distanceB);
+            return (distanceA < distanceB)?NSOrderedDescending:NSOrderedAscending;
         }
     }];
 }

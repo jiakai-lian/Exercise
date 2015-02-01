@@ -25,7 +25,8 @@ In this app, some aspects I have noticed can be improved in the future:
 
 
 Key functionalities in this app:
-1.Updating location continuely
+
+1.Updating location continuously
 
 2.Fetching data asynchronously
 

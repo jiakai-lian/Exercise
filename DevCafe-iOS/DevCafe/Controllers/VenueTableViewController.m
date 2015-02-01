@@ -24,11 +24,12 @@
 
 - (void)viewDidLoad
 {
-    //show progrss hud
+    [super viewDidLoad];
+    //show progress hud
     [self showProgressHUD];
 
 #if !(TARGET_IPHONE_SIMULATOR)
-    self.locationHandler = ((AppDelegate *) [[UIApplication sharedApplication] delegate]).locationHanlder;
+    self.locationHandler = ((AppDelegate *) [[UIApplication sharedApplication] delegate]).locationHandler;
     CLLocationCoordinate2D coordinate = self.locationHandler.location.coordinate;
 
     [self updateVenuesWithLat:[[NSNumber alloc] initWithDouble:coordinate.latitude] andLng:[[NSNumber alloc] initWithDouble:coordinate.longitude]];
@@ -85,7 +86,7 @@
 }
 
 
-#pragma mark table view controller deledates
+#pragma mark table view controller delegates
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -126,7 +127,7 @@
             THROW_INCORRECT_TYPE_EXCEPTION;
         }
 
-        Venue *venue = [self.venues objectAtIndex:indexPath.row];
+        Venue *venue = [self.venues objectAtIndex:(NSUInteger)indexPath.row];
 
         //set name
         ((UILabel *) [cell viewWithTag:TAG_NAME]).text = venue.name;
@@ -189,14 +190,14 @@
     }
 
     //get index in the item array
-    NSUInteger index = [self.tableView getIndexPatchbyViewInCell:sender].row;
+    NSUInteger index = (NSUInteger) [self.tableView getIndexPathByViewInCell:sender].row;
 
     if (index < self.venues.count)
     {
         //get the target item
         Venue *venue = [self.venues objectAtIndex:index];
 
-        //create phone URL and lanch external application
+        //create phone URL and launch external application
         NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@", venue.contact.phone]];
         [[UIApplication sharedApplication] openURL:phoneURL];
     }
@@ -211,7 +212,7 @@
     }
 
     //get index in the item array
-    NSUInteger index = [self.tableView getIndexPatchbyViewInCell:sender].row;
+    NSUInteger index = (NSUInteger) [self.tableView getIndexPathByViewInCell:sender].row;
     if (index < self.venues.count)
     {
         //get the target item

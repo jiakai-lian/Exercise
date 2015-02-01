@@ -15,7 +15,7 @@
  *
  *  @param message message content
  */
-- (void)showProgressHUD:(NSString *)message;
+//- (void)showProgressHUD:(NSString *)message;
 
 /**
  *  show a progress hud with no message

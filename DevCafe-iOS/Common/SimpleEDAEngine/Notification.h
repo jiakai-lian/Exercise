@@ -8,8 +8,8 @@
 #ifndef CQRS_EDA_Notification_h
 #define CQRS_EDA_Notification_h
 
-//different type of notification name must be uique
-static NSString *const SAMPLE_NOTIFICATION = @"sample";
+//different type of notification name must be unique
+//static NSString *const SAMPLE_NOTIFICATION = @"sample";
 
 static NSString *const LOCATION_CHANGED_NOTIFICATION = @"loaction changed";
 

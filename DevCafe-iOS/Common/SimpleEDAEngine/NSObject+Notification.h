@@ -11,7 +11,7 @@
 
 
 //===========how to use
-//===========register to the center when init or viewdidload
+//===========register to the center when init or viewDidLoad
 
 //NSString *notificationName = @"xxx";
 //
@@ -21,7 +21,7 @@
 // name:notificationName
 // object:nil];
 
-//===========must deregister when dealloc
+//===========must de-register when dealloc
 //- (void)dealloc {
 //    [[NSNotificationCenter defaultCenter] removeObserver:self];
 //}

@@ -13,7 +13,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property(strong, nonatomic) UIWindow *window;
-@property(strong, nonatomic) LocationHandler *locationHanlder;// a location handler to update location
+@property(strong, nonatomic) LocationHandler *locationHandler;// a location handler to update location
 
 //@property(readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 //@property(readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
@@ -21,7 +21,8 @@
 //
 //- (void)saveContext;
 //
-//- (NSURL *)applicationDocumentsDirectory;
+//- (
+// *)applicationDocumentsDirectory;
 
 
 @end

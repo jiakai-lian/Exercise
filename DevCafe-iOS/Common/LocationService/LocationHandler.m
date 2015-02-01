@@ -1,6 +1,6 @@
 //
 //  LocationHandler.m
-//  A hanlder class used to handle location updates
+//  A handler class used to handle location updates
 //
 //  Created by jiakai lian on 31/01/2015.
 //  Copyright (c) 2015 jiakai. All rights reserved.
