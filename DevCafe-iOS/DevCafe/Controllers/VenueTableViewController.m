@@ -147,7 +147,7 @@
             else
             {
                 //set button text
-                [((UIButton *) [cell viewWithTag:TAG_CALL]) setTitle:venue.contact.phone forState:UIControlStateNormal];
+                [((UIButton *) [cell viewWithTag:TAG_CALL]) setTitle:venue.contact.formattedPhone forState:UIControlStateNormal];
             }
         }
         else
