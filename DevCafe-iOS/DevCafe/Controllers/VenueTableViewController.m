@@ -12,6 +12,7 @@
 //#import "Venue.h"
 #import "AppDelegate.h"
 #import "UITableView+Enhancement.h"
+#import "VenueArraySorter.h"
 #import <MapKit/MapKit.h>
 
 @interface VenueTableViewController ()
@@ -38,7 +39,7 @@
     NSNumber *lng = [[NSNumber alloc]initWithDouble:-74];
     
     [self updateVenuesWithLat:lat  andLng:lng ];
-    #endif
+#endif
 
     //register to notification center to receive location changed message
     [self register:@selector(whenLocationChanged:) name:LOCATION_CHANGED_NOTIFICATION];
@@ -70,7 +71,7 @@
         NSError *err = nil;
         SearchResponse *response = [[SearchResponse alloc] initWithDictionary:responseObject error:&err];
 
-        self.venues = response.venues;
+        self.venues =  [VenueArraySorter SortVenuesByDistance:response.venues ascending:YES];
         [self.tableView reloadData];
     }                      failure:^(AFHTTPRequestOperation *operation, NSError *error)
     {

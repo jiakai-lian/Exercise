@@ -53,12 +53,12 @@
     //if the content has been changed, those asserts need to be changed accordingly
     
     XCTAssertNotNil(response.venues);
-    XCTAssertEqual(response.venues.count,1);
+    XCTAssertEqual(response.venues.count,30);
     
     Venue * venue = [response.venues firstObject];
     
-    XCTAssertEqualObjects(venue.id, @"4dfc4d85d4c001cca36c22f9");
-    XCTAssertEqualObjects(venue.name, @"Hard Rock Cafe Sydney");
+    XCTAssertEqualObjects(venue.id, @"49c3a162f964a52067561fe3");
+    XCTAssertEqualObjects(venue.name, @"Cafe Katja");
     //TODO more asserts
 }
 

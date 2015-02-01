@@ -35,6 +35,8 @@
 		3E09273B1A7DA674009D0A1F /* UIViewController+AlertControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927361A7DA674009D0A1F /* UIViewController+AlertControllers.m */; };
 		3E09273D1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09273A1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m */; };
 		3E0927401A7DA743009D0A1F /* UITableView+Enhancement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09273F1A7DA743009D0A1F /* UITableView+Enhancement.m */; };
+		3E0927451A7DB570009D0A1F /* VenueArraySorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927441A7DB570009D0A1F /* VenueArraySorter.m */; };
+		3E0927471A7DB900009D0A1F /* VenueArraySorterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0927461A7DB900009D0A1F /* VenueArraySorterTests.m */; };
 		F5C2D3292EABFB6E6DEC8A8E /* libPods-DevCafeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,9 @@
 		3E09273A1A7DA674009D0A1F /* UIViewController+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBProgressHUD.m"; sourceTree = "<group>"; };
 		3E09273E1A7DA743009D0A1F /* UITableView+Enhancement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Enhancement.h"; sourceTree = "<group>"; };
 		3E09273F1A7DA743009D0A1F /* UITableView+Enhancement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Enhancement.m"; sourceTree = "<group>"; };
+		3E0927431A7DB570009D0A1F /* VenueArraySorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueArraySorter.h; sourceTree = "<group>"; };
+		3E0927441A7DB570009D0A1F /* VenueArraySorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueArraySorter.m; sourceTree = "<group>"; };
+		3E0927461A7DB900009D0A1F /* VenueArraySorterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueArraySorterTests.m; sourceTree = "<group>"; };
 		48B526C82DDB99A0439F67A7 /* libPods-DevCafeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevCafeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5729012C401AEDBC761354F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8ACAB25E3018E883866E5071 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 		3E0926A61A7C859A009D0A1F = {
 			isa = PBXGroup;
 			children = (
+				3E0927411A7DB540009D0A1F /* BusinessLogic */,
 				3E0926EA1A7C90F3009D0A1F /* Common */,
 				3E0926B11A7C859A009D0A1F /* DevCafe */,
 				3E0926CE1A7C859A009D0A1F /* DevCafeTests */,
@@ -178,12 +184,13 @@
 		3E0926CE1A7C859A009D0A1F /* DevCafeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3E0926F51A7CE0E1009D0A1F /* SampleJSON */,
 				3E0926D11A7C859A009D0A1F /* DevCafeTests.m */,
 				3E0926EB1A7C9899009D0A1F /* NetworkConfTests.m */,
+				3E0926F51A7CE0E1009D0A1F /* SampleJSON */,
+				3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */,
 				3E0926F01A7CA43B009D0A1F /* ServiceAPITests.m */,
 				3E0926CF1A7C859A009D0A1F /* Supporting Files */,
-				3E0926F81A7CE132009D0A1F /* SearchResponseTests.m */,
+				3E0927461A7DB900009D0A1F /* VenueArraySorterTests.m */,
 			);
 			path = DevCafeTests;
 			sourceTree = "<group>";
@@ -299,6 +306,23 @@
 				3E09273F1A7DA743009D0A1F /* UITableView+Enhancement.m */,
 			);
 			path = UIExtensions;
+			sourceTree = "<group>";
+		};
+		3E0927411A7DB540009D0A1F /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				3E0927421A7DB540009D0A1F /* Utils */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		3E0927421A7DB540009D0A1F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E0927431A7DB570009D0A1F /* VenueArraySorter.h */,
+				3E0927441A7DB570009D0A1F /* VenueArraySorter.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		507FF1200214A1921F0666B4 /* Pods */ = {
@@ -507,6 +531,7 @@
 				3E0926B51A7C859A009D0A1F /* main.m in Sources */,
 				3E0927071A7CEE5D009D0A1F /* LocationHandler.m in Sources */,
 				3E09271B1A7CF86A009D0A1F /* VenueTableViewController.m in Sources */,
+				3E0927451A7DB570009D0A1F /* VenueArraySorter.m in Sources */,
 				1A8782D4A7601AD0728A955B /* NetworkConf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +542,7 @@
 			files = (
 				3E0926F91A7CE132009D0A1F /* SearchResponseTests.m in Sources */,
 				3E0926EC1A7C9899009D0A1F /* NetworkConfTests.m in Sources */,
+				3E0927471A7DB900009D0A1F /* VenueArraySorterTests.m in Sources */,
 				3E0926F11A7CA43C009D0A1F /* ServiceAPITests.m in Sources */,
 				3E0926D21A7C859A009D0A1F /* DevCafeTests.m in Sources */,
 			);
