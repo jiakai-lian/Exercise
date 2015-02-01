@@ -47,20 +47,20 @@
 
 - (void)testRootURL
 {
-    NetworkConf * conf = [NetworkConf sharedManager];
+    NetworkConf *conf = [NetworkConf sharedManager];
     XCTAssertNotNil(conf.rootURL);
     XCTAssertNotEqual(conf.rootURL.length, 0);
-    
-    NSLog(@"params = %@",conf.rootURL);
+
+    NSLog(@"params = %@", conf.rootURL);
 }
 
 - (void)testParams
 {
-    NetworkConf * conf = [NetworkConf sharedManager];
-    
+    NetworkConf *conf = [NetworkConf sharedManager];
+
     XCTAssertNotNil(conf.params);
     XCTAssertNotEqual(conf.params.count, 0);
-    NSLog(@"params = %@",conf.params);
+    NSLog(@"params = %@", conf.params);
 }
 
 @end

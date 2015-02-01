@@ -15,6 +15,6 @@
 @property(nonatomic, assign) double lat;
 @property(nonatomic, assign) double lng;
 @property(nonatomic, assign) long distance;
-@property(nonatomic, strong) NSArray<Optional> *formattedAddress;
+@property(nonatomic, strong) NSArray <Optional> *formattedAddress;
 
 @end

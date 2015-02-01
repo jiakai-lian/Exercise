@@ -10,27 +10,27 @@
 
 @implementation UIViewController (AlertControllers)
 
--(void)showAlertWithTile:(NSString *)title andMessage:(NSString *)message withCancelActionTitle:(NSString *)cancelActionTitle andCancelActionHandler:(void (^)(UIAlertAction *action))cancelActionHandler
+- (void)showAlertWithTile:(NSString *)title andMessage:(NSString *)message withCancelActionTitle:(NSString *)cancelActionTitle andCancelActionHandler:(void (^)(UIAlertAction *action))cancelActionHandler
 {
     UIAlertController *alertController = [UIAlertController
-                                          alertControllerWithTitle:title
-                                          message:message
-                                          preferredStyle:UIAlertControllerStyleAlert];
-    
+            alertControllerWithTitle:title
+                             message:message
+                      preferredStyle:UIAlertControllerStyleAlert];
+
     UIAlertAction *cancelAction = [UIAlertAction
-                                   actionWithTitle:cancelActionTitle
-                                   style:UIAlertActionStyleCancel
-                                   handler:^(UIAlertAction *action)
-                                   {
-                                       NSLOG(@"Cancel action");
-                                       if(cancelAction != nil)
-                                       {
-                                           cancelActionHandler(action);
-                                       }
-                                   }];
+            actionWithTitle:cancelActionTitle
+                      style:UIAlertActionStyleCancel
+                    handler:^(UIAlertAction *action)
+                    {
+                        NSLOG(@"Cancel action");
+                        if (cancelAction != nil)
+                        {
+                            cancelActionHandler(action);
+                        }
+                    }];
 
     [alertController addAction:cancelAction];
-    
+
     [self presentViewController:alertController animated:YES completion:nil];
 
 }

@@ -10,13 +10,12 @@
 
 @implementation SearchResponse
 
-+(JSONKeyMapper*)keyMapper
++ (JSONKeyMapper *)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
-                                                       @"response.venues": @"venues"
-                                                       }];
+            @"response.venues" : @"venues"
+    }];
 }
-
 
 
 @end

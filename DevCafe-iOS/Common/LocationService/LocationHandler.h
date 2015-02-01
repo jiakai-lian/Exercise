@@ -12,7 +12,7 @@
 @interface LocationHandler : NSObject <CLLocationManagerDelegate>
 
 
-@property(readonly,strong,nonatomic) CLLocationManager *locationManager;
-@property(readonly,strong,nonatomic) CLLocation *location;
+@property(readonly, strong, nonatomic) CLLocationManager *locationManager;
+@property(readonly, strong, nonatomic) CLLocation *location;
 
 @end

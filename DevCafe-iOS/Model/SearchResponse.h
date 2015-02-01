@@ -12,8 +12,7 @@
 
 @interface SearchResponse : JSONModel
 
-@property(nonatomic, strong) NSArray<Venue> * venues;
-
+@property(nonatomic, strong) NSArray <Venue> *venues;
 
 
 @end

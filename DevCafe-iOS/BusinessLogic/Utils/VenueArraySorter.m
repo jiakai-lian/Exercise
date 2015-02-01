@@ -11,21 +11,22 @@
 
 @implementation VenueArraySorter
 
-+ (NSArray<Venue> *) SortVenuesByDistance:(NSArray<Venue> *)venues ascending:(BOOL) ascending
++ (NSArray <Venue> *)SortVenuesByDistance:(NSArray <Venue> *)venues ascending:(BOOL)ascending
 {
-    return (NSArray<Venue> *)[venues sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        long distanceA = ((Venue *)a).location.distance;
-        long distanceB = ((Venue *)b).location.distance;
-        
-        if(ascending)
+    return (NSArray <Venue> *) [venues sortedArrayUsingComparator:^NSComparisonResult(id a, id b)
+    {
+        long distanceA = ((Venue *) a).location.distance;
+        long distanceB = ((Venue *) b).location.distance;
+
+        if (ascending)
         {
             //ordered from the near to the distant
-            return (distanceA > distanceB );
+            return (distanceA > distanceB);
         }
         else
         {
             //ordered from the distant to the near
-            return !(distanceA > distanceB );
+            return !(distanceA > distanceB);
         }
     }];
 }

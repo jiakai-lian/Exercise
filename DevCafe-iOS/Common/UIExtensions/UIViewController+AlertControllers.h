@@ -10,6 +10,6 @@
 
 @interface UIViewController (AlertControllers)
 
--(void)showAlertWithTile:(NSString *)title andMessage:(NSString *)message withCancelActionTitle:(NSString *)cancelActionTitle andCancelActionHandler:(void (^)(UIAlertAction *action))cancelActionHandler;
+- (void)showAlertWithTile:(NSString *)title andMessage:(NSString *)message withCancelActionTitle:(NSString *)cancelActionTitle andCancelActionHandler:(void (^)(UIAlertAction *action))cancelActionHandler;
 
 @end

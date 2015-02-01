@@ -9,23 +9,23 @@
 #import "UIViewController+MBProgressHUD.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface UIViewController()
-@property (strong,nonatomic) MBProgressHUD *hud;
+@interface UIViewController ()
+@property(strong, nonatomic) MBProgressHUD *hud;
 @end
 
 @implementation UIViewController (MBProgressHUD)
 
-- (void) showProgressHUD:(NSString *)message
+- (void)showProgressHUD:(NSString *)message
 {
 
 }
 
-- (void) showProgressHUD
+- (void)showProgressHUD
 {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
-- (void) hideProgressHUD
+- (void)hideProgressHUD
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }

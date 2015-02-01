@@ -12,7 +12,7 @@
 
 @interface Contact : JSONModel
 
-@property(nonatomic, strong) NSString<Optional> *phone;
-@property(nonatomic, strong) NSString<Optional> *formattedPhone;
+@property(nonatomic, strong) NSString <Optional> *phone;
+@property(nonatomic, strong) NSString <Optional> *formattedPhone;
 
 @end

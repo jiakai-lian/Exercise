@@ -18,11 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+
     //init location service
-    self.locationHanlder = [[LocationHandler alloc]init];
-    
-    
+    self.locationHanlder = [[LocationHandler alloc] init];
+
+
     return YES;
 }
 

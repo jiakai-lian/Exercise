@@ -12,6 +12,6 @@
 
 
 @interface ServiceAPI : NSObject
-+ (void) SearchCafesWithLat:(NSNumber *)lat andLng:(NSNumber *)lng success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-                    failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
++ (void)SearchCafesWithLat:(NSNumber *)lat andLng:(NSNumber *)lng success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+                   failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 @end

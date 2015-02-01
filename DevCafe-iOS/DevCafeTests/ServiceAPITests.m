@@ -16,12 +16,14 @@
 
 @implementation ServiceAPITests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
@@ -42,21 +44,24 @@
 {
     // Set the flag to YES
     __block BOOL waitingForBlock = YES;
-    
+
     // Call the asynchronous method
-    NSNumber *lat = [[NSNumber alloc]initWithDouble:33.8861];
-    NSNumber *lng = [[NSNumber alloc]initWithDouble:151.2111];
-    
-    [ServiceAPI SearchCafesWithLat:lat andLng:lng success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSNumber *lat = [[NSNumber alloc] initWithDouble:33.8861];
+    NSNumber *lng = [[NSNumber alloc] initWithDouble:151.2111];
+
+    [ServiceAPI SearchCafesWithLat:lat andLng:lng success:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
         waitingForBlock = NO;
-        XCTAssertTrue(true,@"method succeed");
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        XCTAssertTrue(true, @"method succeed");
+    }                      failure:^(AFHTTPRequestOperation *operation, NSError *error)
+    {
         waitingForBlock = NO;
-        XCTAssertTrue(false,@"method failed");
+        XCTAssertTrue(false, @"method failed");
     }];
-    
+
     // Run the loop
-    while(waitingForBlock) {
+    while (waitingForBlock)
+    {
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
                                  beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     }

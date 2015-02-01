@@ -9,7 +9,6 @@
 #import "VenueTableViewController.h"
 #import "ServiceAPI.h"
 #import "SearchResponse.h"
-//#import "Venue.h"
 #import "AppDelegate.h"
 #import "UITableView+Enhancement.h"
 #import "VenueArraySorter.h"
@@ -34,7 +33,7 @@
 
     [self updateVenuesWithLat:[[NSNumber alloc] initWithDouble:coordinate.latitude] andLng:[[NSNumber alloc] initWithDouble:coordinate.longitude]];
 #else
-    //if run on the simulator
+    //if run on the simulator, use mock location
     NSNumber *lat = [[NSNumber alloc]initWithDouble:40.7];
     NSNumber *lng = [[NSNumber alloc]initWithDouble:-74];
     
@@ -55,8 +54,11 @@
 - (void)whenLocationChanged:(NSNotification *)notification
 {
     NSDictionary *content = [notification.userInfo content];
+    
+    //read lat lng from content dictionary
     NSNumber *lat = [content objectForKey:@"lat"];
     NSNumber *lng = [content objectForKey:@"lng"];
+    
     [self updateVenuesWithLat:lat andLng:lng];
 }
 
@@ -71,7 +73,7 @@
         NSError *err = nil;
         SearchResponse *response = [[SearchResponse alloc] initWithDictionary:responseObject error:&err];
 
-        self.venues =  [VenueArraySorter SortVenuesByDistance:response.venues ascending:YES];
+        self.venues = [VenueArraySorter SortVenuesByDistance:response.venues ascending:YES];
         [self.tableView reloadData];
     }                      failure:^(AFHTTPRequestOperation *operation, NSError *error)
     {
@@ -113,65 +115,41 @@
         static int TAG_CALL = 102;
         static int TAG_MAP = 103;
 
+        //instance type check
+        if (![[cell viewWithTag:TAG_NAME] isKindOfClass:[UILabel class]] ||
+                ![[cell viewWithTag:TAG_DISTANCE] isKindOfClass:[UILabel class]] ||
+                ![[cell viewWithTag:TAG_CALL] isKindOfClass:[UIButton class]] ||
+                ![[cell viewWithTag:TAG_MAP] isKindOfClass:[UIButton class]])
+        {
+            THROW_INCORRECT_TYPE_EXCEPTION;
+        }
+
         Venue *venue = [self.venues objectAtIndex:indexPath.row];
 
         //set name
-        if ([[cell viewWithTag:TAG_NAME] isKindOfClass:[UILabel class]])
-        {
-            ((UILabel *) [cell viewWithTag:TAG_NAME]).text = venue.name;
-            //((MarqueeLabel *) [cell viewWithTag:TAG_NAME]).rate = 50.0;
-        }
-        else
-        {
-            THROW_INCORRECT_TYPE_EXCEPTION;
-        }
+        ((UILabel *) [cell viewWithTag:TAG_NAME]).text = venue.name;
 
         //set distance
-        if ([[cell viewWithTag:TAG_DISTANCE] isKindOfClass:[UILabel class]])
+        ((UILabel *) [cell viewWithTag:TAG_DISTANCE]).text = [[NSString alloc] initWithFormat:@"%ldm", venue.location.distance];
+
+        //if no contact data
+        if ((venue.contact == nil) || (venue.contact.phone.length == 0))
         {
-            ((UILabel *) [cell viewWithTag:TAG_DISTANCE]).text = [[NSString alloc] initWithFormat:@"%ldm", venue.location.distance];
+            //hide to button
+            ((UIButton *) [cell viewWithTag:TAG_CALL]).hidden = YES;
         }
         else
         {
-            THROW_INCORRECT_TYPE_EXCEPTION;
+            //set button text
+            [((UIButton *) [cell viewWithTag:TAG_CALL]) setTitle:venue.contact.formattedPhone forState:UIControlStateNormal];
         }
 
-        //set call button selector
-        if ([[cell viewWithTag:TAG_CALL] isKindOfClass:[UIButton class]])
+        //if no location data
+        if ((venue.location.lat == 0) || (venue.location.lng == 0))
         {
-            //if no contact data
-            if ((venue.contact == nil) || (venue.contact.phone.length == 0))
-            {
-                //hide to button
-                ((UIButton *) [cell viewWithTag:TAG_CALL]).hidden = YES;
-            }
-            else
-            {
-                //set button text
-                [((UIButton *) [cell viewWithTag:TAG_CALL]) setTitle:venue.contact.formattedPhone forState:UIControlStateNormal];
-            }
+            //hide to button
+            ((UIButton *) [cell viewWithTag:TAG_MAP]).hidden = YES;
         }
-        else
-        {
-            THROW_INCORRECT_TYPE_EXCEPTION;
-        }
-
-
-        //set map button selector
-        if ([[cell viewWithTag:TAG_MAP] isKindOfClass:[UIButton class]])
-        {
-            //if no location data
-            if ((venue.location.lat == 0) || (venue.location.lng == 0))
-            {
-                //hide to button
-                ((UIButton *) [cell viewWithTag:TAG_MAP]).hidden = YES;
-            }
-        }
-        else
-        {
-            THROW_INCORRECT_TYPE_EXCEPTION;
-        }
-
     }
 
     return cell;
@@ -188,55 +166,51 @@
 
 - (IBAction)makeCall:(id)sender
 {
-
-    if ([sender isKindOfClass:[UIView class]])
-    {
-        //get index in the item array
-        NSUInteger index = [self.tableView getIndexPatchbyViewInCell:sender].row;
-
-        if (index < self.venues.count)
-        {
-            //get the target item
-            Venue *venue = [self.venues objectAtIndex:index];
-
-            //create phone URL and lanch external application
-            NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", venue.contact.phone]];
-            [[UIApplication sharedApplication] openURL:phoneURL];
-        }
-    }
-    else
+    if (![sender isKindOfClass:[UIView class]])
     {
         THROW_INCORRECT_TYPE_EXCEPTION;
+    }
+
+    //get index in the item array
+    NSUInteger index = [self.tableView getIndexPatchbyViewInCell:sender].row;
+
+    if (index < self.venues.count)
+    {
+        //get the target item
+        Venue *venue = [self.venues objectAtIndex:index];
+
+        //create phone URL and lanch external application
+        NSURL *phoneURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", venue.contact.phone]];
+        [[UIApplication sharedApplication] openURL:phoneURL];
     }
 }
 
 - (IBAction)showMap:(id)sender
 {
 
-    if ([sender isKindOfClass:[UIView class]])
-    {
-        //get index in the item array
-        NSUInteger index = [self.tableView getIndexPatchbyViewInCell:sender].row;
-        if (index < self.venues.count)
-        {
-            //get the target item
-            Venue *venue = [self.venues objectAtIndex:index];
-
-            // Create an MKMapItem to pass to the Maps app
-            CLLocationCoordinate2D coordinate =
-                    CLLocationCoordinate2DMake(venue.location.lat, venue.location.lng);
-            MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate
-                                                           addressDictionary:nil];
-            MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
-            [mapItem setName:venue.name];
-            // Pass the map item to the Maps app
-            [mapItem openInMapsWithLaunchOptions:nil];
-        }
-    }
-    else
+    if (![sender isKindOfClass:[UIView class]])
     {
         THROW_INCORRECT_TYPE_EXCEPTION;
     }
+
+    //get index in the item array
+    NSUInteger index = [self.tableView getIndexPatchbyViewInCell:sender].row;
+    if (index < self.venues.count)
+    {
+        //get the target item
+        Venue *venue = [self.venues objectAtIndex:index];
+
+        // Create an MKMapItem to pass to the Maps app
+        CLLocationCoordinate2D coordinate =
+                CLLocationCoordinate2DMake(venue.location.lat, venue.location.lng);
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate
+                                                       addressDictionary:nil];
+        MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+        [mapItem setName:venue.name];
+        // Pass the map item to the Maps app
+        [mapItem openInMapsWithLaunchOptions:nil];
+    }
+
 }
 
 @end

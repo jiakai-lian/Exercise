@@ -9,19 +9,19 @@
 
 @implementation NSObject (Notification)
 
-- (void) register:(SEL)selector name:(NSString *)notificationName
+- (void)register:(SEL)selector name:(NSString *)notificationName
 {
     [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:selector
-     name:notificationName
-     object:nil];
+            addObserver:self
+               selector:selector
+                   name:notificationName
+                 object:nil];
 }
 
 - (void)postNotification:(NSString *)notificationName WithContent:(id)content//post notification method and logic
 {
-    NSDictionary *dictionary = [[NSDictionary alloc]initWithDefaultTimeStamp:content];
-    
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithDefaultTimeStamp:content];
+
     [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:dictionary];
 }
 
@@ -32,7 +32,7 @@
 //    
 //}
 
-- (void) deregister
+- (void)deregister
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

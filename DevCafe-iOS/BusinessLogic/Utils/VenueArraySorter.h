@@ -11,6 +11,6 @@
 
 @interface VenueArraySorter : NSObject
 //order a venue array by location.distance
-+ (NSArray<Venue> *) SortVenuesByDistance:(NSArray<Venue> *)venues ascending:(BOOL) ascending;
++ (NSArray <Venue> *)SortVenuesByDistance:(NSArray <Venue> *)venues ascending:(BOOL)ascending;
 
 @end

@@ -10,6 +10,6 @@
 
 @interface UITableView (Enhancement)
 
-- (NSIndexPath *)getIndexPatchbyViewInCell:(UIView *) view;
+- (NSIndexPath *)getIndexPatchbyViewInCell:(UIView *)view;
 
 @end

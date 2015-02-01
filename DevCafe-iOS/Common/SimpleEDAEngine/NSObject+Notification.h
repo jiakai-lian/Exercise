@@ -30,9 +30,11 @@
 
 @interface NSObject (Notification)
 
-- (void) register:(SEL)selector name:(NSString *)notificationName;
+- (void)register:(SEL)selector name:(NSString *)notificationName;
+
 - (void)postNotification:(NSString *)notificationName WithContent:(id)content;
-- (void) deregister;
+
+- (void)deregister;
 //- (void)responseToNotification:(NSNotification*)notification;
 
 @end

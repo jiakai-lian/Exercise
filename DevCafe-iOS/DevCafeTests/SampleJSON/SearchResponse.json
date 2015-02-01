@@ -4,2077 +4,2077 @@
     },
     "response": {
         "venues": [
-                   {
-                   "id": "49c3a162f964a52067561fe3",
-                   "name": "Cafe Katja",
-                   "contact": {
-                   "phone": "2122199545",
-                   "formattedPhone": "(212) 219-9545"
-                   },
-                   "location": {
-                   "address": "79 Orchard St",
-                   "crossStreet": "btwn Broome & Grand St",
-                   "lat": 40.71777563379729,
-                   "lng": -73.99044933198735,
-                   "distance": 2136,
-                   "postalCode": "10002",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "79 Orchard St (btwn Broome & Grand St)",
-                                        "纽约, NY 10002",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "52e81612bcbc57f1066b7a01",
-                                  "name": "Austrian Restaurant",
-                                  "pluralName": "Austrian Restaurants",
-                                  "shortName": "Austrian",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/austrian_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 5479,
-                   "usersCount": 3205,
-                   "tipCount": 87
-                   },
-                   "url": "http://www.cafe-katja.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-katja/49c3a162f964a52067561fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/49c3a162f964a52067561fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 3,
-                   "summary": "3 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 3,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "55023938"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a52004e61ee3",
-                   "name": "Cafe Habana",
-                   "contact": {
-                   "phone": "2126252001",
-                   "formattedPhone": "(212) 625-2001"
-                   },
-                   "location": {
-                   "address": "17 Prince St",
-                   "crossStreet": "at Elizabeth St",
-                   "lat": 40.72284169882771,
-                   "lng": -73.9941164689654,
-                   "distance": 2590,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "17 Prince St (at Elizabeth St)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d154941735",
-                                  "name": "Cuban Restaurant",
-                                  "pluralName": "Cuban Restaurants",
-                                  "shortName": "Cuban",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 26099,
-                   "usersCount": 16306,
-                   "tipCount": 451
-                   },
-                   "url": "http://cafehabana.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-habana/3fd66200f964a52004e61ee3/menu",
-                   "mobileUrl": "https://foursquare.com/v/3fd66200f964a52004e61ee3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 2,
-                   "summary": "2 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 2,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a520efe81ee3",
-                   "name": "The River Café",
-                   "contact": {
-                   "phone": "7185225200",
-                   "formattedPhone": "(718) 522-5200",
-                   "twitter": "therivercafe"
-                   },
-                   "location": {
-                   "address": "1 Water St",
-                   "crossStreet": "at Brooklyn Bridge",
-                   "lat": 40.7037369396286,
-                   "lng": -73.9947760105133,
-                   "distance": 606,
-                   "postalCode": "11201",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "1 Water St (at Brooklyn Bridge)",
-                                        "Brooklyn, NY 11201",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 3729,
-                   "usersCount": 3181,
-                   "tipCount": 87
-                   },
-                   "url": "http://www.rivercafe.com",
-                   "hasMenu": true,
-                   "reservations": {
-                   "url": "http://www.opentable.com/single.aspx?rid=820&ref=9601"
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/the-river-caf%C3%A9/3fd66200f964a520efe81ee3/menu",
-                   "mobileUrl": "https://foursquare.com/v/3fd66200f964a520efe81ee3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 2,
-                   "summary": "2 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 2,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "35406086"
-                   },
-                   "storeId": "",
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "40c10d00f964a520dd001fe3",
-                   "name": "Ruby's Cafe",
-                   "contact": {
-                   "phone": "2129255755",
-                   "formattedPhone": "(212) 925-5755",
-                   "twitter": "rubyscafenyc"
-                   },
-                   "location": {
-                   "address": "219 Mulberry St",
-                   "crossStreet": "btwn Prince & Spring",
-                   "lat": 40.722185,
-                   "lng": -73.996205,
-                   "distance": 2490,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "219 Mulberry St (btwn Prince & Spring)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d169941735",
-                                  "name": "Australian Restaurant",
-                                  "pluralName": "Australian Restaurants",
-                                  "shortName": "Australian",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/australian_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 7992,
-                   "usersCount": 4469,
-                   "tipCount": 177
-                   },
-                   "url": "http://www.rubyscafe.com",
-                   "hasMenu": true,
-                   "delivery": {
-                   "url": "http://www.seamless.com/food-delivery/restaurant.38769.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
-                   "provider": {
-                   "name": "seamless"
-                   }
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/rubys-cafe/40c10d00f964a520dd001fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/40c10d00f964a520dd001fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 4,
-                   "summary": "4 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 4,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "42664464"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "428a8580f964a52083231fe3",
-                   "name": "Hard Rock Cafe New York",
-                   "contact": {
-                   "phone": "2123433355",
-                   "formattedPhone": "(212) 343-3355",
-                   "twitter": "hardrock",
-                   "facebook": "50401128319",
-                   "facebookUsername": "hardrock",
-                   "facebookName": "Hard Rock"
-                   },
-                   "location": {
-                   "address": "1501 Broadway",
-                   "crossStreet": "at W 43rd St",
-                   "lat": 40.75688403086968,
-                   "lng": -73.9865630865097,
-                   "distance": 6432,
-                   "postalCode": "10036",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "1501 Broadway (at W 43rd St)",
-                                        "纽约, NY 10036",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 40307,
-                   "usersCount": 33098,
-                   "tipCount": 412
-                   },
-                   "url": "http://www.facebook.com/hardrock",
-                   "hasMenu": true,
-                   "delivery": {
-                   "url": "http://www.seamless.com/food-delivery/restaurant.20816.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
-                   "provider": {
-                   "name": "seamless"
-                   }
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/hard-rock-cafe-new-york/428a8580f964a52083231fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/428a8580f964a52083231fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 8,
-                   "summary": "8 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 8,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "storeId": "",
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "41c0d000f964a520901e1fe3",
-                   "name": "Cafe el Portal",
-                   "contact": {
-                   "phone": "2122264642",
-                   "formattedPhone": "(212) 226-4642"
-                   },
-                   "location": {
-                   "address": "174 Elizabeth St",
-                   "crossStreet": "Spring",
-                   "lat": 40.720819044789096,
-                   "lng": -73.99480819702148,
-                   "distance": 2358,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "174 Elizabeth St (Spring)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d1c1941735",
-                                  "name": "Mexican Restaurant",
-                                  "pluralName": "Mexican Restaurants",
-                                  "shortName": "Mexican",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/mexican_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 2915,
-                   "usersCount": 2027,
-                   "tipCount": 56
-                   },
-                   "url": "http://cafeelportalnyc.com",
-                   "hasMenu": true,
-                   "delivery": {
-                   "url": "http://www.seamless.com/food-delivery/restaurant.3398.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
-                   "provider": {
-                   "name": "seamless"
-                   }
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-el-portal/41c0d000f964a520901e1fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/41c0d000f964a520901e1fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 2,
-                   "summary": "2 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 2,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "49cfef8cf964a520e65a1fe3",
-                   "name": "Cafe Pedlar",
-                   "contact": {
-                   "phone": "7188557129",
-                   "formattedPhone": "(718) 855-7129",
-                   "twitter": "cafepedlar"
-                   },
-                   "location": {
-                   "address": "210 Court St",
-                   "crossStreet": "at Warren St.",
-                   "lat": 40.68679615636459,
-                   "lng": -73.9937893563088,
-                   "distance": 1560,
-                   "postalCode": "11201",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "210 Court St (at Warren St.)",
-                                        "Brooklyn, NY 11201",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d1e0931735",
-                                  "name": "Coffee Shop",
-                                  "pluralName": "Coffee Shops",
-                                  "shortName": "Coffee Shop",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 12865,
-                   "usersCount": 2860,
-                   "tipCount": 82
-                   },
-                   "url": "http://cafepedlar.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-pedlar/49cfef8cf964a520e65a1fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/49cfef8cf964a520e65a1fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 1,
-                   "summary": "One person is checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 1,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "69005643"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4f551c48e4b0ce972e8c5224",
-                   "name": "Cafe Mogador",
-                   "contact": {
-                   "phone": "7184869222",
-                   "formattedPhone": "(718) 486-9222"
-                   },
-                   "location": {
-                   "address": "133 Wythe Ave",
-                   "crossStreet": "btwn N 7th & N 8th St",
-                   "lat": 40.719761870251624,
-                   "lng": -73.96005359080041,
-                   "distance": 4025,
-                   "postalCode": "11249",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "133 Wythe Ave (btwn N 7th & N 8th St)",
-                                        "Brooklyn, NY 11249",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d1c3941735",
-                                  "name": "Moroccan Restaurant",
-                                  "pluralName": "Moroccan Restaurants",
-                                  "shortName": "Moroccan",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/moroccan_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 10205,
-                   "usersCount": 5510,
-                   "tipCount": 144
-                   },
-                   "url": "http://cafemogador.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-mogador/4f551c48e4b0ce972e8c5224/menu",
-                   "mobileUrl": "https://foursquare.com/v/4f551c48e4b0ce972e8c5224/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 2,
-                   "summary": "2 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 2,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "429cfa80f964a520ac241fe3",
-                   "name": "Cafe Luluc",
-                   "contact": {
-                   "phone": "7186253815",
-                   "formattedPhone": "(718) 625-3815"
-                   },
-                   "location": {
-                   "address": "214 Smith St",
-                   "crossStreet": "btw Baltic & Butler",
-                   "lat": 40.684467,
-                   "lng": -73.992103,
-                   "distance": 1853,
-                   "postalCode": "11201",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "214 Smith St (btw Baltic & Butler)",
-                                        "Brooklyn, NY 11201",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 7107,
-                   "usersCount": 4151,
-                   "tipCount": 151
-                   },
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-luluc/429cfa80f964a520ac241fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/429cfa80f964a520ac241fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a520e3e51ee3",
-                   "name": "Fanelli Cafe",
-                   "contact": {
-                   "phone": "2122269412",
-                   "formattedPhone": "(212) 226-9412"
-                   },
-                   "location": {
-                   "address": "94 Prince St",
-                   "crossStreet": "at Mercer St",
-                   "lat": 40.724583,
-                   "lng": -73.99861,
-                   "distance": 2739,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "94 Prince St (at Mercer St)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 9576,
-                   "usersCount": 6717,
-                   "tipCount": 133
-                   },
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/fanelli-cafe/3fd66200f964a520e3e51ee3/menu",
-                   "mobileUrl": "https://foursquare.com/v/3fd66200f964a520e3e51ee3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 3,
-                   "summary": "3 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 3,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "41044980f964a520750b1fe3",
-                   "name": "Cafe Mogador",
-                   "contact": {
-                   "phone": "2126772226",
-                   "formattedPhone": "(212) 677-2226"
-                   },
-                   "location": {
-                   "address": "101 Saint Marks Pl",
-                   "crossStreet": "btwn 1st Ave & Avenue A",
-                   "lat": 40.727293,
-                   "lng": -73.984517,
-                   "distance": 3307,
-                   "postalCode": "10009",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "101 Saint Marks Pl (btwn 1st Ave & Avenue A)",
-                                        "纽约, NY 10009",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d115941735",
-                                  "name": "Middle Eastern Restaurant",
-                                  "pluralName": "Middle Eastern Restaurants",
-                                  "shortName": "Middle Eastern",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/middleeastern_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 15990,
-                   "usersCount": 9723,
-                   "tipCount": 228
-                   },
-                   "url": "http://www.cafemogador.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-mogador/41044980f964a520750b1fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/41044980f964a520750b1fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 1,
-                   "summary": "One person is checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 1,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "97401758"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "49bc236af964a5201b541fe3",
-                   "name": "Café Select",
-                   "contact": {
-                   "phone": "2129259322",
-                   "formattedPhone": "(212) 925-9322",
-                   "twitter": "cafeselectnyc"
-                   },
-                   "location": {
-                   "address": "212 Lafayette St",
-                   "crossStreet": "at Kenmare St",
-                   "lat": 40.72168299578927,
-                   "lng": -73.99779886007309,
-                   "distance": 2420,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "212 Lafayette St (at Kenmare St)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d158941735",
-                                  "name": "Swiss Restaurant",
-                                  "pluralName": "Swiss Restaurants",
-                                  "shortName": "Swiss",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/swiss_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 12400,
-                   "usersCount": 7219,
-                   "tipCount": 164
-                   },
-                   "url": "http://www.cafeselectnyc.com",
-                   "hasMenu": true,
-                   "reservations": {
-                   "url": "http://www.opentable.com/single.aspx?rid=74152&ref=9601"
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/caf%C3%A9-select/49bc236af964a5201b541fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/49bc236af964a5201b541fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "54416e5b498e86146f66c333",
-                   "name": "Cafe Bustelo Pop-Up Cafe: New York City",
-                   "contact": {},
-                   "location": {
-                   "address": "168 Bowery",
-                   "lat": 40.72043312807754,
-                   "lng": -73.9942714168711,
-                   "distance": 2325,
-                   "postalCode": "10002",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "168 Bowery",
-                                        "纽约, NY 10002",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16d941735",
-                                  "name": "Café",
-                                  "pluralName": "Cafés",
-                                  "shortName": "Café",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 131,
-                   "usersCount": 113,
-                   "tipCount": 2
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4ab27744f964a520486b20e3",
-                   "name": "Harry's Cafe and Steak",
-                   "contact": {
-                   "phone": "2127859200",
-                   "formattedPhone": "(212) 785-9200",
-                   "twitter": "harrysnyc"
-                   },
-                   "location": {
-                   "address": "1 Hanover Sq",
-                   "lat": 40.70448927882712,
-                   "lng": -74.00969982147217,
-                   "distance": 959,
-                   "postalCode": "10004",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "1 Hanover Sq",
-                                        "纽约, NY 10004",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 8608,
-                   "usersCount": 4634,
-                   "tipCount": 93
-                   },
-                   "url": "http://www.harrysnyc.com",
-                   "hasMenu": true,
-                   "delivery": {
-                   "url": "http://www.seamless.com/food-delivery/restaurant.3756.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
-                   "provider": {
-                   "name": "seamless"
-                   }
-                   },
-                   "reservations": {
-                   "url": "http://www.opentable.com/single.aspx?rid=54454&ref=9601"
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/harrys-cafe-and-steak/4ab27744f964a520486b20e3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4ab27744f964a520486b20e3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "93014239"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "46936ee3f964a520d0481fe3",
-                   "name": "Shanghai Café",
-                   "contact": {
-                   "phone": "2129663988",
-                   "formattedPhone": "(212) 966-3988"
-                   },
-                   "location": {
-                   "address": "100 Mott St",
-                   "crossStreet": "btwn Canal & Hester St",
-                   "lat": 40.71733412016059,
-                   "lng": -73.9974851229737,
-                   "distance": 1941,
-                   "postalCode": "10013",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "100 Mott St (btwn Canal & Hester St)",
-                                        "纽约, NY 10013",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d145941735",
-                                  "name": "Chinese Restaurant",
-                                  "pluralName": "Chinese Restaurants",
-                                  "shortName": "Chinese",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 13848,
-                   "usersCount": 7664,
-                   "tipCount": 220
-                   },
-                   "url": "http://shanghaicafenyc.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/shanghai-caf%C3%A9/46936ee3f964a520d0481fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/46936ee3f964a520d0481fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 1,
-                   "summary": "One person is checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 1,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a520b9e81ee3",
-                   "name": "The Paris Cafe",
-                   "contact": {
-                   "phone": "2122409797",
-                   "formattedPhone": "(212) 240-9797",
-                   "twitter": "theparisnyc"
-                   },
-                   "location": {
-                   "address": "119 South St",
-                   "crossStreet": "at Peck Slip",
-                   "lat": 40.70722543517103,
-                   "lng": -74.00139888511124,
-                   "distance": 812,
-                   "postalCode": "10038",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "119 South St (at Peck Slip)",
-                                        "纽约, NY 10038",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d116941735",
-                                  "name": "Bar",
-                                  "pluralName": "Bars",
-                                  "shortName": "Bar",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 3246,
-                   "usersCount": 1765,
-                   "tipCount": 29
-                   },
-                   "url": "http://theparistavern.com",
-                   "hasMenu": true,
-                   "reservations": {
-                   "url": "http://www.opentable.com/single.aspx?rid=117622&ref=9601"
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/the-paris-cafe/3fd66200f964a520b9e81ee3/menu",
-                   "mobileUrl": "https://foursquare.com/v/3fd66200f964a520b9e81ee3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "80732520"
-                   },
-                   "storeId": "",
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a52036ea1ee3",
-                   "name": "Cafe Orlin",
-                   "contact": {
-                   "phone": "2127771447",
-                   "formattedPhone": "(212) 777-1447",
-                   "twitter": "cafeorlin"
-                   },
-                   "location": {
-                   "address": "41 Saint Marks Pl",
-                   "crossStreet": "btwn 1st & 2nd Ave.",
-                   "lat": 40.72846270165082,
-                   "lng": -73.98732733228006,
-                   "distance": 3343,
-                   "postalCode": "10003",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "41 Saint Marks Pl (btwn 1st & 2nd Ave.)",
-                                        "纽约, NY 10003",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16d941735",
-                                  "name": "Café",
-                                  "pluralName": "Cafés",
-                                  "shortName": "Café",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 17459,
-                   "usersCount": 10867,
-                   "tipCount": 259
-                   },
-                   "url": "http://www.cafeorlin.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-orlin/3fd66200f964a52036ea1ee3/menu",
-                   "mobileUrl": "https://foursquare.com/v/3fd66200f964a52036ea1ee3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "48807456"
-                   },
-                   "storeId": "",
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4baabd4cf964a520c6833ae3",
-                   "name": "Café Gitane",
-                   "contact": {
-                   "phone": "2123349552",
-                   "formattedPhone": "(212) 334-9552"
-                   },
-                   "location": {
-                   "address": "242 Mott St",
-                   "crossStreet": "at Prince St",
-                   "lat": 40.7232331966193,
-                   "lng": -73.99501746059,
-                   "distance": 2620,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "242 Mott St (at Prince St)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d10c941735",
-                                  "name": "French Restaurant",
-                                  "pluralName": "French Restaurants",
-                                  "shortName": "French",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/french_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 10327,
-                   "usersCount": 6497,
-                   "tipCount": 211
-                   },
-                   "url": "http://cafegitanenyc.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/caf%C3%A9-gitane/4baabd4cf964a520c6833ae3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4baabd4cf964a520c6833ae3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4b085df4f964a520300a23e3",
-                   "name": "Iris Cafe",
-                   "contact": {
-                   "phone": "7187227395",
-                   "formattedPhone": "(718) 722-7395",
-                   "twitter": "iriscafenyc"
-                   },
-                   "location": {
-                   "address": "20 Columbia Pl.",
-                   "crossStreet": "at Joralemon St.",
-                   "lat": 40.693131214483635,
-                   "lng": -73.99863860077083,
-                   "distance": 773,
-                   "postalCode": "11201-4564",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "20 Columbia Pl. (at Joralemon St.)",
-                                        "Brooklyn, NY 11201-4564",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16d941735",
-                                  "name": "Café",
-                                  "pluralName": "Cafés",
-                                  "shortName": "Café",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 5602,
-                   "usersCount": 2219,
-                   "tipCount": 100
-                   },
-                   "url": "http://iriscafenyc.com",
-                   "hasMenu": true,
-                   "reservations": {
-                   "url": "http://www.opentable.com/single.aspx?rid=139141&ref=9601"
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/iris-cafe/4b085df4f964a520300a23e3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4b085df4f964a520300a23e3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "75892448"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a520afe91ee3",
-                   "name": "Great Jones Cafe",
-                   "contact": {
-                   "phone": "2126749304",
-                   "formattedPhone": "(212) 674-9304"
-                   },
-                   "location": {
-                   "address": "54 Great Jones St",
-                   "crossStreet": "Btw Bowery & Lafayette",
-                   "lat": 40.72649448951005,
-                   "lng": -73.99214744567871,
-                   "distance": 3022,
-                   "postalCode": "10012",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "54 Great Jones St (Btw Bowery & Lafayette)",
-                                        "纽约, NY 10012",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d17a941735",
-                                  "name": "Cajun / Creole Restaurant",
-                                  "pluralName": "Cajun / Creole Restaurants",
-                                  "shortName": "Cajun / Creole",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cajun_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 7667,
-                   "usersCount": 4344,
-                   "tipCount": 131
-                   },
-                   "url": "http://www.greatjones.com",
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 2,
-                   "summary": "2 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 2,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "82473491"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "49bf289bf964a5200a551fe3",
-                   "name": "Cafe Cluny",
-                   "contact": {
-                   "phone": "2122556900",
-                   "formattedPhone": "(212) 255-6900"
-                   },
-                   "location": {
-                   "address": "284 W 12th St",
-                   "crossStreet": "at W 4th St",
-                   "lat": 40.73753535747528,
-                   "lng": -74.003886,
-                   "distance": 4191,
-                   "postalCode": "10014",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "284 W 12th St (at W 4th St)",
-                                        "纽约, NY 10014",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 10553,
-                   "usersCount": 6836,
-                   "tipCount": 180
-                   },
-                   "url": "http://www.cafecluny.com",
-                   "hasMenu": true,
-                   "reservations": {
-                   "url": "http://www.opentable.com/single.aspx?rid=8027&ref=9601"
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-cluny/49bf289bf964a5200a551fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/49bf289bf964a5200a551fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 1,
-                   "summary": "One person is checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 1,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "venuePage": {
-                   "id": "84824424"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "3fd66200f964a52057ee1ee3",
-                   "name": "Heights Cafe",
-                   "contact": {
-                   "phone": "7186255555",
-                   "formattedPhone": "(718) 625-5555",
-                   "twitter": "heightscafe"
-                   },
-                   "location": {
-                   "address": "84 Montague St",
-                   "crossStreet": "at Hicks St",
-                   "lat": 40.69527216619761,
-                   "lng": -73.99585532161291,
-                   "distance": 631,
-                   "postalCode": "11201",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "84 Montague St (at Hicks St)",
-                                        "Brooklyn, NY 11201",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d14e941735",
-                                  "name": "American Restaurant",
-                                  "pluralName": "American Restaurants",
-                                  "shortName": "American",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 3433,
-                   "usersCount": 2506,
-                   "tipCount": 39
-                   },
-                   "url": "http://www.heightscafeny.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/heights-cafe/3fd66200f964a52057ee1ee3/menu",
-                   "mobileUrl": "https://foursquare.com/v/3fd66200f964a52057ee1ee3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "51104675"
-                   },
-                   "storeId": "",
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "5186eeb0498e1d856d27ba04",
-                   "name": "Cafe Hong Kong 粵江春",
-                   "contact": {
-                   "phone": "2126085359",
-                   "formattedPhone": "(212) 608-5359"
-                   },
-                   "location": {
-                   "address": "51 Bayard St",
-                   "crossStreet": "at Elizabeth St",
-                   "lat": 40.715529,
-                   "lng": -73.997555,
-                   "distance": 1740,
-                   "postalCode": "10013",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "51 Bayard St (at Elizabeth St)",
-                                        "纽约, NY 10013",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d145941735",
-                                  "name": "Chinese Restaurant",
-                                  "pluralName": "Chinese Restaurants",
-                                  "shortName": "Chinese",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 895,
-                   "usersCount": 534,
-                   "tipCount": 21
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4a0fc3c8f964a52085761fe3",
-                   "name": "Cafe Cortadito",
-                   "contact": {
-                   "phone": "2126143080",
-                   "formattedPhone": "(212) 614-3080",
-                   "twitter": "cafecortadito"
-                   },
-                   "location": {
-                   "address": "210 E 3rd St",
-                   "crossStreet": "at Avenue B",
-                   "lat": 40.722534,
-                   "lng": -73.982745,
-                   "distance": 2900,
-                   "postalCode": "10009",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "210 E 3rd St (at Avenue B)",
-                                        "纽约, NY 10009",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d154941735",
-                                  "name": "Cuban Restaurant",
-                                  "pluralName": "Cuban Restaurants",
-                                  "shortName": "Cuban",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 4999,
-                   "usersCount": 3596,
-                   "tipCount": 70
-                   },
-                   "url": "http://www.cafecortadito.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-cortadito/4a0fc3c8f964a52085761fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4a0fc3c8f964a52085761fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "102768028"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "5244bd0e11d2d511de3e244e",
-                   "name": "Russ & Daughters Café",
-                   "contact": {
-                   "phone": "2124754881",
-                   "formattedPhone": "(212) 475-4881",
-                   "twitter": "loxpopuli"
-                   },
-                   "location": {
-                   "address": "127 Orchard St",
-                   "lat": 40.719588272985966,
-                   "lng": -73.9894392788162,
-                   "distance": 2355,
-                   "postalCode": "10002",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "127 Orchard St",
-                                        "纽约, NY 10002",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16d941735",
-                                  "name": "Café",
-                                  "pluralName": "Cafés",
-                                  "shortName": "Café",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 2332,
-                   "usersCount": 1884,
-                   "tipCount": 77
-                   },
-                   "url": "http://www.russanddaughterscafe.com",
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "http://russanddaughterscafe.com/assets/images/menu.jpg",
-                   "mobileUrl": "http://russanddaughterscafe.com/assets/images/menu.jpg",
-                   "externalUrl": "http://russanddaughterscafe.com/assets/images/menu.jpg"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "77300877"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4a85ffcdf964a520060020e3",
-                   "name": "Cafe Himalaya",
-                   "contact": {
-                   "phone": "2123580160",
-                   "formattedPhone": "(212) 358-0160"
-                   },
-                   "location": {
-                   "address": "78 E 1st St",
-                   "crossStreet": "btwn 1st Ave & Ave A",
-                   "lat": 40.72292092888391,
-                   "lng": -73.98825705073803,
-                   "distance": 2737,
-                   "postalCode": "10009",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "78 E 1st St (btwn 1st Ave & Ave A)",
-                                        "纽约, NY 10009",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "52af39fb3cf9994f4e043be9",
-                                  "name": "Tibetan Restaurant",
-                                  "pluralName": "Tibetan Restaurants",
-                                  "shortName": "Tibetan",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tibetan_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 2751,
-                   "usersCount": 1758,
-                   "tipCount": 72
-                   },
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-himalaya/4a85ffcdf964a520060020e3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4a85ffcdf964a520060020e3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4de26e06814df7ebdc14af8b",
-                   "name": "Vineapple Cafe",
-                   "contact": {
-                   "phone": "3477991701",
-                   "formattedPhone": "(347) 799-1701",
-                   "twitter": "vineapplecafe"
-                   },
-                   "location": {
-                   "address": "71 Pineapple St",
-                   "crossStreet": "btwn Henry & Hicks",
-                   "lat": 40.69834998317835,
-                   "lng": -73.99289409776352,
-                   "distance": 627,
-                   "postalCode": "11201",
-                   "cc": "US",
-                   "city": "Brooklyn",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "71 Pineapple St (btwn Henry & Hicks)",
-                                        "Brooklyn, NY 11201",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16d941735",
-                                  "name": "Café",
-                                  "pluralName": "Cafés",
-                                  "shortName": "Café",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 5119,
-                   "usersCount": 1690,
-                   "tipCount": 89
-                   },
-                   "url": "http://vineapple.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/vineapple-cafe-brooklyn-ny/4de26e06814df7ebdc14af8b/menu",
-                   "mobileUrl": "https://foursquare.com/v/4de26e06814df7ebdc14af8b/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "94802691"
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4a67c01df964a52001ca1fe3",
-                   "name": "Noodle Cafe Zen",
-                   "contact": {
-                   "phone": "2125336855",
-                   "formattedPhone": "(212) 533-6855"
-                   },
-                   "location": {
-                   "address": "31 Saint Marks Pl",
-                   "crossStreet": "btw 2nd & 3rd",
-                   "lat": 40.72901831789177,
-                   "lng": -73.98834313555265,
-                   "distance": 3376,
-                   "postalCode": "10003",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "31 Saint Marks Pl (btw 2nd & 3rd)",
-                                        "纽约, NY 10003",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d1d2941735",
-                                  "name": "Sushi Restaurant",
-                                  "pluralName": "Sushi Restaurants",
-                                  "shortName": "Sushi",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/sushi_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 5263,
-                   "usersCount": 2979,
-                   "tipCount": 72
-                   },
-                   "url": "http://zensushinyc.com",
-                   "hasMenu": true,
-                   "delivery": {
-                   "url": "http://www.seamless.com/food-delivery/restaurant.28884.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
-                   "provider": {
-                   "name": "seamless"
-                   }
-                   },
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/noodle-cafe-zen/4a67c01df964a52001ca1fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4a67c01df964a52001ca1fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 2,
-                   "summary": "2 people are checked in here",
-                   "groups": [
-                              {
-                              "type": "others",
-                              "name": "Other people here",
-                              "count": 2,
-                              "items": []
-                              }
-                              ]
-                   },
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4d03ae3437036dcbfba10bfb",
-                   "name": "Ferrara Bakery & Cafe",
-                   "contact": {
-                   "phone": "2122266150",
-                   "formattedPhone": "(212) 226-6150",
-                   "twitter": "ferrarabakery"
-                   },
-                   "location": {
-                   "address": "195 Grand St",
-                   "crossStreet": "btwn Mott & Mulberry",
-                   "lat": 40.71916835899313,
-                   "lng": -73.99709343910217,
-                   "distance": 2147,
-                   "postalCode": "10013",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "195 Grand St (btwn Mott & Mulberry)",
-                                        "纽约, NY 10013",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16a941735",
-                                  "name": "Bakery",
-                                  "pluralName": "Bakeries",
-                                  "shortName": "Bakery",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": true,
-                   "stats": {
-                   "checkinsCount": 12535,
-                   "usersCount": 10285,
-                   "tipCount": 164
-                   },
-                   "url": "http://www.ferraracafe.com",
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/ferrara-bakery--cafe/4d03ae3437036dcbfba10bfb/menu",
-                   "mobileUrl": "https://foursquare.com/v/4d03ae3437036dcbfba10bfb/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "venuePage": {
-                   "id": "84293248"
-                   },
-                   "storeId": "",
-                   "referralId": "v-1422754215"
-                   },
-                   {
-                   "id": "4a0f5c9cf964a52053761fe3",
-                   "name": "Cafe Petisco",
-                   "contact": {
-                   "phone": "2123870366",
-                   "formattedPhone": "(212) 387-0366"
-                   },
-                   "location": {
-                   "address": "189 E Broadway",
-                   "crossStreet": "at Jefferson St",
-                   "lat": 40.71407780909403,
-                   "lng": -73.98896768689156,
-                   "distance": 1822,
-                   "postalCode": "10002",
-                   "cc": "US",
-                   "city": "纽约",
-                   "state": "NY",
-                   "country": "美国",
-                   "formattedAddress": [
-                                        "189 E Broadway (at Jefferson St)",
-                                        "纽约, NY 10002",
-                                        "美国"
-                                        ]
-                   },
-                   "categories": [
-                                  {
-                                  "id": "4bf58dd8d48988d16d941735",
-                                  "name": "Café",
-                                  "pluralName": "Cafés",
-                                  "shortName": "Café",
-                                  "icon": {
-                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
-                                  "suffix": ".png"
-                                  },
-                                  "primary": true
-                                  }
-                                  ],
-                   "verified": false,
-                   "stats": {
-                   "checkinsCount": 3123,
-                   "usersCount": 1296,
-                   "tipCount": 46
-                   },
-                   "hasMenu": true,
-                   "menu": {
-                   "type": "Menu",
-                   "label": "Menu",
-                   "anchor": "View Menu",
-                   "url": "https://foursquare.com/v/cafe-petisco/4a0f5c9cf964a52053761fe3/menu",
-                   "mobileUrl": "https://foursquare.com/v/4a0f5c9cf964a52053761fe3/device_menu"
-                   },
-                   "specials": {
-                   "count": 0,
-                   "items": []
-                   },
-                   "hereNow": {
-                   "count": 0,
-                   "summary": "Nobody here",
-                   "groups": []
-                   },
-                   "referralId": "v-1422754215"
-                   }
-                   ]
+            {
+                "id": "49c3a162f964a52067561fe3",
+                "name": "Cafe Katja",
+                "contact": {
+                    "phone": "2122199545",
+                    "formattedPhone": "(212) 219-9545"
+                },
+                "location": {
+                    "address": "79 Orchard St",
+                    "crossStreet": "btwn Broome & Grand St",
+                    "lat": 40.71777563379729,
+                    "lng": -73.99044933198735,
+                    "distance": 2136,
+                    "postalCode": "10002",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "79 Orchard St (btwn Broome & Grand St)",
+                        "纽约, NY 10002",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "52e81612bcbc57f1066b7a01",
+                        "name": "Austrian Restaurant",
+                        "pluralName": "Austrian Restaurants",
+                        "shortName": "Austrian",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/austrian_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 5479,
+                    "usersCount": 3205,
+                    "tipCount": 87
+                },
+                "url": "http://www.cafe-katja.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-katja/49c3a162f964a52067561fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/49c3a162f964a52067561fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 3,
+                    "summary": "3 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 3,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "55023938"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a52004e61ee3",
+                "name": "Cafe Habana",
+                "contact": {
+                    "phone": "2126252001",
+                    "formattedPhone": "(212) 625-2001"
+                },
+                "location": {
+                    "address": "17 Prince St",
+                    "crossStreet": "at Elizabeth St",
+                    "lat": 40.72284169882771,
+                    "lng": -73.9941164689654,
+                    "distance": 2590,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "17 Prince St (at Elizabeth St)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d154941735",
+                        "name": "Cuban Restaurant",
+                        "pluralName": "Cuban Restaurants",
+                        "shortName": "Cuban",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 26099,
+                    "usersCount": 16306,
+                    "tipCount": 451
+                },
+                "url": "http://cafehabana.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-habana/3fd66200f964a52004e61ee3/menu",
+                    "mobileUrl": "https://foursquare.com/v/3fd66200f964a52004e61ee3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 2,
+                    "summary": "2 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 2,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a520efe81ee3",
+                "name": "The River Café",
+                "contact": {
+                    "phone": "7185225200",
+                    "formattedPhone": "(718) 522-5200",
+                    "twitter": "therivercafe"
+                },
+                "location": {
+                    "address": "1 Water St",
+                    "crossStreet": "at Brooklyn Bridge",
+                    "lat": 40.7037369396286,
+                    "lng": -73.9947760105133,
+                    "distance": 606,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "1 Water St (at Brooklyn Bridge)",
+                        "Brooklyn, NY 11201",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 3729,
+                    "usersCount": 3181,
+                    "tipCount": 87
+                },
+                "url": "http://www.rivercafe.com",
+                "hasMenu": true,
+                "reservations": {
+                    "url": "http://www.opentable.com/single.aspx?rid=820&ref=9601"
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/the-river-caf%C3%A9/3fd66200f964a520efe81ee3/menu",
+                    "mobileUrl": "https://foursquare.com/v/3fd66200f964a520efe81ee3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 2,
+                    "summary": "2 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 2,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "35406086"
+                },
+                "storeId": "",
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "40c10d00f964a520dd001fe3",
+                "name": "Ruby's Cafe",
+                "contact": {
+                    "phone": "2129255755",
+                    "formattedPhone": "(212) 925-5755",
+                    "twitter": "rubyscafenyc"
+                },
+                "location": {
+                    "address": "219 Mulberry St",
+                    "crossStreet": "btwn Prince & Spring",
+                    "lat": 40.722185,
+                    "lng": -73.996205,
+                    "distance": 2490,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "219 Mulberry St (btwn Prince & Spring)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d169941735",
+                        "name": "Australian Restaurant",
+                        "pluralName": "Australian Restaurants",
+                        "shortName": "Australian",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/australian_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 7992,
+                    "usersCount": 4469,
+                    "tipCount": 177
+                },
+                "url": "http://www.rubyscafe.com",
+                "hasMenu": true,
+                "delivery": {
+                    "url": "http://www.seamless.com/food-delivery/restaurant.38769.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
+                    "provider": {
+                        "name": "seamless"
+                    }
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/rubys-cafe/40c10d00f964a520dd001fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/40c10d00f964a520dd001fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 4,
+                    "summary": "4 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 4,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "42664464"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "428a8580f964a52083231fe3",
+                "name": "Hard Rock Cafe New York",
+                "contact": {
+                    "phone": "2123433355",
+                    "formattedPhone": "(212) 343-3355",
+                    "twitter": "hardrock",
+                    "facebook": "50401128319",
+                    "facebookUsername": "hardrock",
+                    "facebookName": "Hard Rock"
+                },
+                "location": {
+                    "address": "1501 Broadway",
+                    "crossStreet": "at W 43rd St",
+                    "lat": 40.75688403086968,
+                    "lng": -73.9865630865097,
+                    "distance": 6432,
+                    "postalCode": "10036",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "1501 Broadway (at W 43rd St)",
+                        "纽约, NY 10036",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 40307,
+                    "usersCount": 33098,
+                    "tipCount": 412
+                },
+                "url": "http://www.facebook.com/hardrock",
+                "hasMenu": true,
+                "delivery": {
+                    "url": "http://www.seamless.com/food-delivery/restaurant.20816.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
+                    "provider": {
+                        "name": "seamless"
+                    }
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/hard-rock-cafe-new-york/428a8580f964a52083231fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/428a8580f964a52083231fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 8,
+                    "summary": "8 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 8,
+                            "items": []
+                        }
+                    ]
+                },
+                "storeId": "",
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "41c0d000f964a520901e1fe3",
+                "name": "Cafe el Portal",
+                "contact": {
+                    "phone": "2122264642",
+                    "formattedPhone": "(212) 226-4642"
+                },
+                "location": {
+                    "address": "174 Elizabeth St",
+                    "crossStreet": "Spring",
+                    "lat": 40.720819044789096,
+                    "lng": -73.99480819702148,
+                    "distance": 2358,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "174 Elizabeth St (Spring)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1c1941735",
+                        "name": "Mexican Restaurant",
+                        "pluralName": "Mexican Restaurants",
+                        "shortName": "Mexican",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/mexican_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 2915,
+                    "usersCount": 2027,
+                    "tipCount": 56
+                },
+                "url": "http://cafeelportalnyc.com",
+                "hasMenu": true,
+                "delivery": {
+                    "url": "http://www.seamless.com/food-delivery/restaurant.3398.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
+                    "provider": {
+                        "name": "seamless"
+                    }
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-el-portal/41c0d000f964a520901e1fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/41c0d000f964a520901e1fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 2,
+                    "summary": "2 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 2,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "49cfef8cf964a520e65a1fe3",
+                "name": "Cafe Pedlar",
+                "contact": {
+                    "phone": "7188557129",
+                    "formattedPhone": "(718) 855-7129",
+                    "twitter": "cafepedlar"
+                },
+                "location": {
+                    "address": "210 Court St",
+                    "crossStreet": "at Warren St.",
+                    "lat": 40.68679615636459,
+                    "lng": -73.9937893563088,
+                    "distance": 1560,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "210 Court St (at Warren St.)",
+                        "Brooklyn, NY 11201",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1e0931735",
+                        "name": "Coffee Shop",
+                        "pluralName": "Coffee Shops",
+                        "shortName": "Coffee Shop",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 12865,
+                    "usersCount": 2860,
+                    "tipCount": 82
+                },
+                "url": "http://cafepedlar.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-pedlar/49cfef8cf964a520e65a1fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/49cfef8cf964a520e65a1fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 1,
+                    "summary": "One person is checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 1,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "69005643"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4f551c48e4b0ce972e8c5224",
+                "name": "Cafe Mogador",
+                "contact": {
+                    "phone": "7184869222",
+                    "formattedPhone": "(718) 486-9222"
+                },
+                "location": {
+                    "address": "133 Wythe Ave",
+                    "crossStreet": "btwn N 7th & N 8th St",
+                    "lat": 40.719761870251624,
+                    "lng": -73.96005359080041,
+                    "distance": 4025,
+                    "postalCode": "11249",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "133 Wythe Ave (btwn N 7th & N 8th St)",
+                        "Brooklyn, NY 11249",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1c3941735",
+                        "name": "Moroccan Restaurant",
+                        "pluralName": "Moroccan Restaurants",
+                        "shortName": "Moroccan",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/moroccan_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 10205,
+                    "usersCount": 5510,
+                    "tipCount": 144
+                },
+                "url": "http://cafemogador.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-mogador/4f551c48e4b0ce972e8c5224/menu",
+                    "mobileUrl": "https://foursquare.com/v/4f551c48e4b0ce972e8c5224/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 2,
+                    "summary": "2 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 2,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "429cfa80f964a520ac241fe3",
+                "name": "Cafe Luluc",
+                "contact": {
+                    "phone": "7186253815",
+                    "formattedPhone": "(718) 625-3815"
+                },
+                "location": {
+                    "address": "214 Smith St",
+                    "crossStreet": "btw Baltic & Butler",
+                    "lat": 40.684467,
+                    "lng": -73.992103,
+                    "distance": 1853,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "214 Smith St (btw Baltic & Butler)",
+                        "Brooklyn, NY 11201",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 7107,
+                    "usersCount": 4151,
+                    "tipCount": 151
+                },
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-luluc/429cfa80f964a520ac241fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/429cfa80f964a520ac241fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a520e3e51ee3",
+                "name": "Fanelli Cafe",
+                "contact": {
+                    "phone": "2122269412",
+                    "formattedPhone": "(212) 226-9412"
+                },
+                "location": {
+                    "address": "94 Prince St",
+                    "crossStreet": "at Mercer St",
+                    "lat": 40.724583,
+                    "lng": -73.99861,
+                    "distance": 2739,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "94 Prince St (at Mercer St)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 9576,
+                    "usersCount": 6717,
+                    "tipCount": 133
+                },
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/fanelli-cafe/3fd66200f964a520e3e51ee3/menu",
+                    "mobileUrl": "https://foursquare.com/v/3fd66200f964a520e3e51ee3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 3,
+                    "summary": "3 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 3,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "41044980f964a520750b1fe3",
+                "name": "Cafe Mogador",
+                "contact": {
+                    "phone": "2126772226",
+                    "formattedPhone": "(212) 677-2226"
+                },
+                "location": {
+                    "address": "101 Saint Marks Pl",
+                    "crossStreet": "btwn 1st Ave & Avenue A",
+                    "lat": 40.727293,
+                    "lng": -73.984517,
+                    "distance": 3307,
+                    "postalCode": "10009",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "101 Saint Marks Pl (btwn 1st Ave & Avenue A)",
+                        "纽约, NY 10009",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d115941735",
+                        "name": "Middle Eastern Restaurant",
+                        "pluralName": "Middle Eastern Restaurants",
+                        "shortName": "Middle Eastern",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/middleeastern_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 15990,
+                    "usersCount": 9723,
+                    "tipCount": 228
+                },
+                "url": "http://www.cafemogador.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-mogador/41044980f964a520750b1fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/41044980f964a520750b1fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 1,
+                    "summary": "One person is checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 1,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "97401758"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "49bc236af964a5201b541fe3",
+                "name": "Café Select",
+                "contact": {
+                    "phone": "2129259322",
+                    "formattedPhone": "(212) 925-9322",
+                    "twitter": "cafeselectnyc"
+                },
+                "location": {
+                    "address": "212 Lafayette St",
+                    "crossStreet": "at Kenmare St",
+                    "lat": 40.72168299578927,
+                    "lng": -73.99779886007309,
+                    "distance": 2420,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "212 Lafayette St (at Kenmare St)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d158941735",
+                        "name": "Swiss Restaurant",
+                        "pluralName": "Swiss Restaurants",
+                        "shortName": "Swiss",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/swiss_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 12400,
+                    "usersCount": 7219,
+                    "tipCount": 164
+                },
+                "url": "http://www.cafeselectnyc.com",
+                "hasMenu": true,
+                "reservations": {
+                    "url": "http://www.opentable.com/single.aspx?rid=74152&ref=9601"
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/caf%C3%A9-select/49bc236af964a5201b541fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/49bc236af964a5201b541fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "54416e5b498e86146f66c333",
+                "name": "Cafe Bustelo Pop-Up Cafe: New York City",
+                "contact": {},
+                "location": {
+                    "address": "168 Bowery",
+                    "lat": 40.72043312807754,
+                    "lng": -73.9942714168711,
+                    "distance": 2325,
+                    "postalCode": "10002",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "168 Bowery",
+                        "纽约, NY 10002",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Café",
+                        "pluralName": "Cafés",
+                        "shortName": "Café",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 131,
+                    "usersCount": 113,
+                    "tipCount": 2
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4ab27744f964a520486b20e3",
+                "name": "Harry's Cafe and Steak",
+                "contact": {
+                    "phone": "2127859200",
+                    "formattedPhone": "(212) 785-9200",
+                    "twitter": "harrysnyc"
+                },
+                "location": {
+                    "address": "1 Hanover Sq",
+                    "lat": 40.70448927882712,
+                    "lng": -74.00969982147217,
+                    "distance": 959,
+                    "postalCode": "10004",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "1 Hanover Sq",
+                        "纽约, NY 10004",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 8608,
+                    "usersCount": 4634,
+                    "tipCount": 93
+                },
+                "url": "http://www.harrysnyc.com",
+                "hasMenu": true,
+                "delivery": {
+                    "url": "http://www.seamless.com/food-delivery/restaurant.3756.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
+                    "provider": {
+                        "name": "seamless"
+                    }
+                },
+                "reservations": {
+                    "url": "http://www.opentable.com/single.aspx?rid=54454&ref=9601"
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/harrys-cafe-and-steak/4ab27744f964a520486b20e3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4ab27744f964a520486b20e3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "93014239"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "46936ee3f964a520d0481fe3",
+                "name": "Shanghai Café",
+                "contact": {
+                    "phone": "2129663988",
+                    "formattedPhone": "(212) 966-3988"
+                },
+                "location": {
+                    "address": "100 Mott St",
+                    "crossStreet": "btwn Canal & Hester St",
+                    "lat": 40.71733412016059,
+                    "lng": -73.9974851229737,
+                    "distance": 1941,
+                    "postalCode": "10013",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "100 Mott St (btwn Canal & Hester St)",
+                        "纽约, NY 10013",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d145941735",
+                        "name": "Chinese Restaurant",
+                        "pluralName": "Chinese Restaurants",
+                        "shortName": "Chinese",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 13848,
+                    "usersCount": 7664,
+                    "tipCount": 220
+                },
+                "url": "http://shanghaicafenyc.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/shanghai-caf%C3%A9/46936ee3f964a520d0481fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/46936ee3f964a520d0481fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 1,
+                    "summary": "One person is checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 1,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a520b9e81ee3",
+                "name": "The Paris Cafe",
+                "contact": {
+                    "phone": "2122409797",
+                    "formattedPhone": "(212) 240-9797",
+                    "twitter": "theparisnyc"
+                },
+                "location": {
+                    "address": "119 South St",
+                    "crossStreet": "at Peck Slip",
+                    "lat": 40.70722543517103,
+                    "lng": -74.00139888511124,
+                    "distance": 812,
+                    "postalCode": "10038",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "119 South St (at Peck Slip)",
+                        "纽约, NY 10038",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d116941735",
+                        "name": "Bar",
+                        "pluralName": "Bars",
+                        "shortName": "Bar",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 3246,
+                    "usersCount": 1765,
+                    "tipCount": 29
+                },
+                "url": "http://theparistavern.com",
+                "hasMenu": true,
+                "reservations": {
+                    "url": "http://www.opentable.com/single.aspx?rid=117622&ref=9601"
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/the-paris-cafe/3fd66200f964a520b9e81ee3/menu",
+                    "mobileUrl": "https://foursquare.com/v/3fd66200f964a520b9e81ee3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "80732520"
+                },
+                "storeId": "",
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a52036ea1ee3",
+                "name": "Cafe Orlin",
+                "contact": {
+                    "phone": "2127771447",
+                    "formattedPhone": "(212) 777-1447",
+                    "twitter": "cafeorlin"
+                },
+                "location": {
+                    "address": "41 Saint Marks Pl",
+                    "crossStreet": "btwn 1st & 2nd Ave.",
+                    "lat": 40.72846270165082,
+                    "lng": -73.98732733228006,
+                    "distance": 3343,
+                    "postalCode": "10003",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "41 Saint Marks Pl (btwn 1st & 2nd Ave.)",
+                        "纽约, NY 10003",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Café",
+                        "pluralName": "Cafés",
+                        "shortName": "Café",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 17459,
+                    "usersCount": 10867,
+                    "tipCount": 259
+                },
+                "url": "http://www.cafeorlin.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-orlin/3fd66200f964a52036ea1ee3/menu",
+                    "mobileUrl": "https://foursquare.com/v/3fd66200f964a52036ea1ee3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "48807456"
+                },
+                "storeId": "",
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4baabd4cf964a520c6833ae3",
+                "name": "Café Gitane",
+                "contact": {
+                    "phone": "2123349552",
+                    "formattedPhone": "(212) 334-9552"
+                },
+                "location": {
+                    "address": "242 Mott St",
+                    "crossStreet": "at Prince St",
+                    "lat": 40.7232331966193,
+                    "lng": -73.99501746059,
+                    "distance": 2620,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "242 Mott St (at Prince St)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d10c941735",
+                        "name": "French Restaurant",
+                        "pluralName": "French Restaurants",
+                        "shortName": "French",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/french_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 10327,
+                    "usersCount": 6497,
+                    "tipCount": 211
+                },
+                "url": "http://cafegitanenyc.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/caf%C3%A9-gitane/4baabd4cf964a520c6833ae3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4baabd4cf964a520c6833ae3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4b085df4f964a520300a23e3",
+                "name": "Iris Cafe",
+                "contact": {
+                    "phone": "7187227395",
+                    "formattedPhone": "(718) 722-7395",
+                    "twitter": "iriscafenyc"
+                },
+                "location": {
+                    "address": "20 Columbia Pl.",
+                    "crossStreet": "at Joralemon St.",
+                    "lat": 40.693131214483635,
+                    "lng": -73.99863860077083,
+                    "distance": 773,
+                    "postalCode": "11201-4564",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "20 Columbia Pl. (at Joralemon St.)",
+                        "Brooklyn, NY 11201-4564",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Café",
+                        "pluralName": "Cafés",
+                        "shortName": "Café",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 5602,
+                    "usersCount": 2219,
+                    "tipCount": 100
+                },
+                "url": "http://iriscafenyc.com",
+                "hasMenu": true,
+                "reservations": {
+                    "url": "http://www.opentable.com/single.aspx?rid=139141&ref=9601"
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/iris-cafe/4b085df4f964a520300a23e3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4b085df4f964a520300a23e3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "75892448"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a520afe91ee3",
+                "name": "Great Jones Cafe",
+                "contact": {
+                    "phone": "2126749304",
+                    "formattedPhone": "(212) 674-9304"
+                },
+                "location": {
+                    "address": "54 Great Jones St",
+                    "crossStreet": "Btw Bowery & Lafayette",
+                    "lat": 40.72649448951005,
+                    "lng": -73.99214744567871,
+                    "distance": 3022,
+                    "postalCode": "10012",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "54 Great Jones St (Btw Bowery & Lafayette)",
+                        "纽约, NY 10012",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d17a941735",
+                        "name": "Cajun / Creole Restaurant",
+                        "pluralName": "Cajun / Creole Restaurants",
+                        "shortName": "Cajun / Creole",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cajun_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 7667,
+                    "usersCount": 4344,
+                    "tipCount": 131
+                },
+                "url": "http://www.greatjones.com",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 2,
+                    "summary": "2 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 2,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "82473491"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "49bf289bf964a5200a551fe3",
+                "name": "Cafe Cluny",
+                "contact": {
+                    "phone": "2122556900",
+                    "formattedPhone": "(212) 255-6900"
+                },
+                "location": {
+                    "address": "284 W 12th St",
+                    "crossStreet": "at W 4th St",
+                    "lat": 40.73753535747528,
+                    "lng": -74.003886,
+                    "distance": 4191,
+                    "postalCode": "10014",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "284 W 12th St (at W 4th St)",
+                        "纽约, NY 10014",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 10553,
+                    "usersCount": 6836,
+                    "tipCount": 180
+                },
+                "url": "http://www.cafecluny.com",
+                "hasMenu": true,
+                "reservations": {
+                    "url": "http://www.opentable.com/single.aspx?rid=8027&ref=9601"
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-cluny/49bf289bf964a5200a551fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/49bf289bf964a5200a551fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 1,
+                    "summary": "One person is checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 1,
+                            "items": []
+                        }
+                    ]
+                },
+                "venuePage": {
+                    "id": "84824424"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "3fd66200f964a52057ee1ee3",
+                "name": "Heights Cafe",
+                "contact": {
+                    "phone": "7186255555",
+                    "formattedPhone": "(718) 625-5555",
+                    "twitter": "heightscafe"
+                },
+                "location": {
+                    "address": "84 Montague St",
+                    "crossStreet": "at Hicks St",
+                    "lat": 40.69527216619761,
+                    "lng": -73.99585532161291,
+                    "distance": 631,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "84 Montague St (at Hicks St)",
+                        "Brooklyn, NY 11201",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d14e941735",
+                        "name": "American Restaurant",
+                        "pluralName": "American Restaurants",
+                        "shortName": "American",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 3433,
+                    "usersCount": 2506,
+                    "tipCount": 39
+                },
+                "url": "http://www.heightscafeny.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/heights-cafe/3fd66200f964a52057ee1ee3/menu",
+                    "mobileUrl": "https://foursquare.com/v/3fd66200f964a52057ee1ee3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "51104675"
+                },
+                "storeId": "",
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "5186eeb0498e1d856d27ba04",
+                "name": "Cafe Hong Kong 粵江春",
+                "contact": {
+                    "phone": "2126085359",
+                    "formattedPhone": "(212) 608-5359"
+                },
+                "location": {
+                    "address": "51 Bayard St",
+                    "crossStreet": "at Elizabeth St",
+                    "lat": 40.715529,
+                    "lng": -73.997555,
+                    "distance": 1740,
+                    "postalCode": "10013",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "51 Bayard St (at Elizabeth St)",
+                        "纽约, NY 10013",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d145941735",
+                        "name": "Chinese Restaurant",
+                        "pluralName": "Chinese Restaurants",
+                        "shortName": "Chinese",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 895,
+                    "usersCount": 534,
+                    "tipCount": 21
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4a0fc3c8f964a52085761fe3",
+                "name": "Cafe Cortadito",
+                "contact": {
+                    "phone": "2126143080",
+                    "formattedPhone": "(212) 614-3080",
+                    "twitter": "cafecortadito"
+                },
+                "location": {
+                    "address": "210 E 3rd St",
+                    "crossStreet": "at Avenue B",
+                    "lat": 40.722534,
+                    "lng": -73.982745,
+                    "distance": 2900,
+                    "postalCode": "10009",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "210 E 3rd St (at Avenue B)",
+                        "纽约, NY 10009",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d154941735",
+                        "name": "Cuban Restaurant",
+                        "pluralName": "Cuban Restaurants",
+                        "shortName": "Cuban",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 4999,
+                    "usersCount": 3596,
+                    "tipCount": 70
+                },
+                "url": "http://www.cafecortadito.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-cortadito/4a0fc3c8f964a52085761fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4a0fc3c8f964a52085761fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "102768028"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "5244bd0e11d2d511de3e244e",
+                "name": "Russ & Daughters Café",
+                "contact": {
+                    "phone": "2124754881",
+                    "formattedPhone": "(212) 475-4881",
+                    "twitter": "loxpopuli"
+                },
+                "location": {
+                    "address": "127 Orchard St",
+                    "lat": 40.719588272985966,
+                    "lng": -73.9894392788162,
+                    "distance": 2355,
+                    "postalCode": "10002",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "127 Orchard St",
+                        "纽约, NY 10002",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Café",
+                        "pluralName": "Cafés",
+                        "shortName": "Café",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 2332,
+                    "usersCount": 1884,
+                    "tipCount": 77
+                },
+                "url": "http://www.russanddaughterscafe.com",
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "http://russanddaughterscafe.com/assets/images/menu.jpg",
+                    "mobileUrl": "http://russanddaughterscafe.com/assets/images/menu.jpg",
+                    "externalUrl": "http://russanddaughterscafe.com/assets/images/menu.jpg"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "77300877"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4a85ffcdf964a520060020e3",
+                "name": "Cafe Himalaya",
+                "contact": {
+                    "phone": "2123580160",
+                    "formattedPhone": "(212) 358-0160"
+                },
+                "location": {
+                    "address": "78 E 1st St",
+                    "crossStreet": "btwn 1st Ave & Ave A",
+                    "lat": 40.72292092888391,
+                    "lng": -73.98825705073803,
+                    "distance": 2737,
+                    "postalCode": "10009",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "78 E 1st St (btwn 1st Ave & Ave A)",
+                        "纽约, NY 10009",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "52af39fb3cf9994f4e043be9",
+                        "name": "Tibetan Restaurant",
+                        "pluralName": "Tibetan Restaurants",
+                        "shortName": "Tibetan",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tibetan_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 2751,
+                    "usersCount": 1758,
+                    "tipCount": 72
+                },
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-himalaya/4a85ffcdf964a520060020e3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4a85ffcdf964a520060020e3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4de26e06814df7ebdc14af8b",
+                "name": "Vineapple Cafe",
+                "contact": {
+                    "phone": "3477991701",
+                    "formattedPhone": "(347) 799-1701",
+                    "twitter": "vineapplecafe"
+                },
+                "location": {
+                    "address": "71 Pineapple St",
+                    "crossStreet": "btwn Henry & Hicks",
+                    "lat": 40.69834998317835,
+                    "lng": -73.99289409776352,
+                    "distance": 627,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "71 Pineapple St (btwn Henry & Hicks)",
+                        "Brooklyn, NY 11201",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Café",
+                        "pluralName": "Cafés",
+                        "shortName": "Café",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 5119,
+                    "usersCount": 1690,
+                    "tipCount": 89
+                },
+                "url": "http://vineapple.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/vineapple-cafe-brooklyn-ny/4de26e06814df7ebdc14af8b/menu",
+                    "mobileUrl": "https://foursquare.com/v/4de26e06814df7ebdc14af8b/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "94802691"
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4a67c01df964a52001ca1fe3",
+                "name": "Noodle Cafe Zen",
+                "contact": {
+                    "phone": "2125336855",
+                    "formattedPhone": "(212) 533-6855"
+                },
+                "location": {
+                    "address": "31 Saint Marks Pl",
+                    "crossStreet": "btw 2nd & 3rd",
+                    "lat": 40.72901831789177,
+                    "lng": -73.98834313555265,
+                    "distance": 3376,
+                    "postalCode": "10003",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "31 Saint Marks Pl (btw 2nd & 3rd)",
+                        "纽约, NY 10003",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1d2941735",
+                        "name": "Sushi Restaurant",
+                        "pluralName": "Sushi Restaurants",
+                        "shortName": "Sushi",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/sushi_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 5263,
+                    "usersCount": 2979,
+                    "tipCount": 72
+                },
+                "url": "http://zensushinyc.com",
+                "hasMenu": true,
+                "delivery": {
+                    "url": "http://www.seamless.com/food-delivery/restaurant.28884.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
+                    "provider": {
+                        "name": "seamless"
+                    }
+                },
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/noodle-cafe-zen/4a67c01df964a52001ca1fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4a67c01df964a52001ca1fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 2,
+                    "summary": "2 people are checked in here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 2,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4d03ae3437036dcbfba10bfb",
+                "name": "Ferrara Bakery & Cafe",
+                "contact": {
+                    "phone": "2122266150",
+                    "formattedPhone": "(212) 226-6150",
+                    "twitter": "ferrarabakery"
+                },
+                "location": {
+                    "address": "195 Grand St",
+                    "crossStreet": "btwn Mott & Mulberry",
+                    "lat": 40.71916835899313,
+                    "lng": -73.99709343910217,
+                    "distance": 2147,
+                    "postalCode": "10013",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "195 Grand St (btwn Mott & Mulberry)",
+                        "纽约, NY 10013",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "shortName": "Bakery",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 12535,
+                    "usersCount": 10285,
+                    "tipCount": 164
+                },
+                "url": "http://www.ferraracafe.com",
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/ferrara-bakery--cafe/4d03ae3437036dcbfba10bfb/menu",
+                    "mobileUrl": "https://foursquare.com/v/4d03ae3437036dcbfba10bfb/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "venuePage": {
+                    "id": "84293248"
+                },
+                "storeId": "",
+                "referralId": "v-1422754215"
+            },
+            {
+                "id": "4a0f5c9cf964a52053761fe3",
+                "name": "Cafe Petisco",
+                "contact": {
+                    "phone": "2123870366",
+                    "formattedPhone": "(212) 387-0366"
+                },
+                "location": {
+                    "address": "189 E Broadway",
+                    "crossStreet": "at Jefferson St",
+                    "lat": 40.71407780909403,
+                    "lng": -73.98896768689156,
+                    "distance": 1822,
+                    "postalCode": "10002",
+                    "cc": "US",
+                    "city": "纽约",
+                    "state": "NY",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "189 E Broadway (at Jefferson St)",
+                        "纽约, NY 10002",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Café",
+                        "pluralName": "Cafés",
+                        "shortName": "Café",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 3123,
+                    "usersCount": 1296,
+                    "tipCount": 46
+                },
+                "hasMenu": true,
+                "menu": {
+                    "type": "Menu",
+                    "label": "Menu",
+                    "anchor": "View Menu",
+                    "url": "https://foursquare.com/v/cafe-petisco/4a0f5c9cf964a52053761fe3/menu",
+                    "mobileUrl": "https://foursquare.com/v/4a0f5c9cf964a52053761fe3/device_menu"
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1422754215"
+            }
+        ]
     }
 }
