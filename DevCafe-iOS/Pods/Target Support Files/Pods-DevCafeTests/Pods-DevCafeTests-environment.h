@@ -66,6 +66,12 @@
 #define COCOAPODS_VERSION_MINOR_MKFoundationKit_AutoDescribe 3
 #define COCOAPODS_VERSION_PATCH_MKFoundationKit_AutoDescribe 0
 
+// MarqueeLabel
+#define COCOAPODS_POD_AVAILABLE_MarqueeLabel
+#define COCOAPODS_VERSION_MAJOR_MarqueeLabel 2
+#define COCOAPODS_VERSION_MINOR_MarqueeLabel 2
+#define COCOAPODS_VERSION_PATCH_MarqueeLabel 1
+
 // OCHamcrest
 #define COCOAPODS_POD_AVAILABLE_OCHamcrest
 #define COCOAPODS_VERSION_MAJOR_OCHamcrest 4

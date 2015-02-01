@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - JSONModel (1.0.2)
+  - MarqueeLabel (2.2.1)
   - MBProgressHUD (0.9)
   - MKFoundationKit/AutoDescribe (1.3.0)
   - OCHamcrest (4.1.1)
@@ -30,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - JSONModel
+  - MarqueeLabel
   - MBProgressHUD
   - MKFoundationKit/AutoDescribe
   - OCHamcrest
@@ -38,6 +40,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
+  MarqueeLabel: bc105ed113f79e51fb68d1fa3983238c0dcda47f
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
   MKFoundationKit: 70963bb9832074225e9586531451d7edff6184e4
   OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420

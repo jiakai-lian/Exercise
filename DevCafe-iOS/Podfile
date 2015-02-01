@@ -10,6 +10,7 @@ pod 'MBProgressHUD'
 pod 'MKFoundationKit/AutoDescribe'
 #pod 'ELCImagePickerController'
 #pod 'MagicalRecord'
+pod 'MarqueeLabel'
 #end
 
 target 'DevCafeTests' do

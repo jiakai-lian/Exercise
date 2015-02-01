@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-DevCafeTests-MarqueeLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DevCafeTests-OCHamcrest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MarqueeLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,62 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00F077607F72F34FC2E5553A</key>
+		<key>07BB4837CCDDA5803AE4D62A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>18EC17E11CECA2D41F5C9226</key>
+		<key>0E20E6DD70E3A3E08A504B2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>267F7CD64496AC0FF92C3AF8</key>
+		<key>340C9FD0FF95DA8D1603EE5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC1948D7F4ED3B9ACF91254A</key>
+		<key>42CC7BA747D12201247F4478</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD9A6EDD9EB9FF70C9105FAF</key>
+		<key>4E143DC7144AF4A769A7E259</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC5757B7587738A7478190CC</key>
+		<key>5535980A7C61377575A93D0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF768136D53B5E238485CD9E</key>
+		<key>585BD521BEE6664DA7C8408B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E56E01E375043624C2B33A2B</key>
+		<key>6CE7E0E696508A77CF7C7350</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFE34D1111023B1A50257E7E</key>
+		<key>A8E369A9826D35418CE49A85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F60C87E6DD20529ADFA6A5E1</key>
+		<key>AF62127CA82CD41BDB938CD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F71FA7A9740E55D432BBC40E</key>
+		<key>B214225F386A0994B0626977</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F9AA2FC4A7A5C9B5126CBAAC</key>
+		<key>CCB71A939428AA44A75866AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD408156C628C1FD2813A023</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E74D6283AF68860CEF92FF0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

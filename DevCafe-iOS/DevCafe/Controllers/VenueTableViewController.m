@@ -50,7 +50,7 @@
     [self deregister];
 }
 
-#pragma mark Update Venues
+#pragma mark method for location changed event
 - (void)whenLocationChanged:(NSNotification *)notification
 {
     NSDictionary *content = [notification.userInfo content];
@@ -118,6 +118,7 @@
         if ([[cell viewWithTag:TAG_NAME] isKindOfClass:[UILabel class]])
         {
             ((UILabel *) [cell viewWithTag:TAG_NAME]).text = venue.name;
+            //((MarqueeLabel *) [cell viewWithTag:TAG_NAME]).rate = 50.0;
         }
         else
         {
@@ -142,6 +143,11 @@
             {
                 //hide to button
                 ((UIButton *) [cell viewWithTag:TAG_CALL]).hidden = YES;
+            }
+            else
+            {
+                //set button text
+                [((UIButton *) [cell viewWithTag:TAG_CALL]) setTitle:venue.contact.phone forState:UIControlStateNormal];
             }
         }
         else
