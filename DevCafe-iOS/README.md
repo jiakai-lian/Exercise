@@ -5,6 +5,21 @@ Therefore it is suggested that run this app in a real device to check the full f
 Users have to give the app permission to use location services when lanching the app at the first time. Otherwise, this app cannot worked properly.
 This app have been onlytested in a iOS8 device. 
 
+
+Key features in this app:
+
+1.Updating location continuously
+
+2.Fetching data asynchronously
+
+3.Items are ordered in asceeding order
+
+4.Able to make a call when press on the phone number in the list
+
+5.Able to launch an external map app when press on the map marker button in the list.
+
+
+
 Insteaded of simply finishing the task, I mainly use my time to play with architecture.
 This app still follows a simple MVC pattern in a hign level
 But I added additional layers , like business logic layer and network layer to divide the responsibilities of controllers.
@@ -30,14 +45,3 @@ In this app, some aspects I have noticed can be improved in the future:
 6. The procdure of fetching data can be improved better.
 
 
-Key features in this app:
-
-1.Updating location continuously
-
-2.Fetching data asynchronously
-
-3.Items are ordered in asceeding order
-
-4.Able to make a call when press on the phone number in the list
-
-5.Able to lauch an external map app when press on the map marker button in the list.
