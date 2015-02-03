@@ -32,16 +32,16 @@ For enterprise projects, it is recommanded to apply advanced MVVC pattern or VIP
 
 In this app, some aspects I have noticed can be improved in the future:
 
-1. Insufficient unit test cases: Although I have applied unit test for critical cases. However, all these cases are all positive test cases, which means the error handlings in this app are net yet been tested in Unit Testing. 
+1. Insufficient unit test cases: Although I have applied unit test for critical cases. However, all these cases are all positive test cases, which means the error handlings in this app are net yet been tested. 
 
 2. No data persistence layer: It cannot save fetched data to anywhere at this moment.
 
 3. User expereince: UI design and User expereince definitely can be improved. 
 
-4. The current layout looks good in the vertical mode. But in the horizontal mode, it wastes too much spaces
+4. The current layout looks good in the vertical mode. But in the horizontal mode, it wastes too much space
 
-5. Currently the network url and params saved into a plist file. In a real world scenario, it is possible to edit those data in iTunes. Therefore it is not secure engough to save sensitive data in plist.
+5. Currently the network url and params saved into a plist file. In a real world scenario, it is possible to edit those data in iTunes. Therefore it is not secure enough to save sensitive data in plist.
 
-6. The procdure of fetching data can be improved better.
+6. The procedure of fetching data can be improved better.
 
 
